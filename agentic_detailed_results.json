@@ -1,0 +1,73 @@
+{
+  "n_machines": 7,
+  "overrides": 0,
+  "actions": {
+    "monitor": 6,
+    "schedule_maintenance": 1
+  },
+  "results": [
+    {
+      "machine_id": "1",
+      "classical_risk": 0.1,
+      "heuristic_score": 0.8173423896014493,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false
+    },
+    {
+      "machine_id": "3",
+      "classical_risk": 0.0,
+      "heuristic_score": 0.5692666299175437,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false
+    },
+    {
+      "machine_id": "5",
+      "classical_risk": 0.0,
+      "heuristic_score": 0.5935927540242111,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false
+    },
+    {
+      "machine_id": "7",
+      "classical_risk": 0.0,
+      "heuristic_score": 0.7611128571510977,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false
+    },
+    {
+      "machine_id": "9",
+      "classical_risk": 0.15,
+      "heuristic_score": 0.7921702200213886,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false
+    },
+    {
+      "machine_id": "11",
+      "classical_risk": 0.15,
+      "heuristic_score": 0.7984718392510748,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false
+    },
+    {
+      "machine_id": "13",
+      "classical_risk": 0.3,
+      "heuristic_score": 0.5379860717112016,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "schedule_maintenance",
+      "priority": "P3",
+      "override": false
+    }
+  ]
+}

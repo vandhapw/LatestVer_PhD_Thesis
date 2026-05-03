@@ -1,0 +1,687 @@
+{
+  "results": {
+    "timestamp": "2026-05-02 17:32:48",
+    "graph": {
+      "clusters": [
+        {
+          "machines": [
+            "M-2",
+            "M-3",
+            "M-4",
+            "M-5",
+            "M-6",
+            "M-7",
+            "M-8",
+            "M-9",
+            "M-10",
+            "M-11",
+            "M-12",
+            "M-13",
+            "M-14",
+            "M-15",
+            "M-16",
+            "M-17",
+            "M-18",
+            "M-19",
+            "M-20",
+            "M-21",
+            "M-22",
+            "M-23",
+            "M-24",
+            "M-25",
+            "M-26",
+            "M-27",
+            "M-28",
+            "M-29",
+            "M-30",
+            "M-31",
+            "M-32",
+            "M-33",
+            "M-34",
+            "M-35",
+            "M-36",
+            "M-37",
+            "M-38",
+            "M-39",
+            "M-40",
+            "M-41",
+            "M-42",
+            "M-43",
+            "M-44",
+            "M-45",
+            "M-46",
+            "M-47",
+            "M-48",
+            "M-49",
+            "M-50"
+          ],
+          "type": "thermal",
+          "propagation_risk": 1.0,
+          "root_machine": "M-13",
+          "size": 49
+        }
+      ],
+      "max_propagation_risk": 1.0,
+      "cascade_warning": true,
+      "graph_scores": {
+        "1": 0.0416,
+        "2": 0.0636,
+        "3": 0.048,
+        "4": 0.0569,
+        "5": 0.0218,
+        "6": 0.0553,
+        "7": 0.0678,
+        "8": 0.0605,
+        "9": 0.0982,
+        "10": 0.094,
+        "11": 0.0666,
+        "12": 0.0541,
+        "13": 0.0599,
+        "14": 0.0528,
+        "15": 0.0789,
+        "16": 0.0601,
+        "17": 0.063,
+        "18": 0.0645,
+        "19": 0.0492,
+        "20": 0.0531,
+        "21": 0.0623,
+        "22": 0.0974,
+        "23": 0.0464,
+        "24": 0.0491,
+        "25": 0.0614,
+        "26": 0.0607,
+        "27": 0.0826,
+        "28": 0.1078,
+        "29": 0.0277,
+        "30": 0.0695,
+        "31": 0.0379,
+        "32": 0.089,
+        "33": 0.0946,
+        "34": 0.0685,
+        "35": 0.0618,
+        "36": 0.0556,
+        "37": 0.0534,
+        "38": 0.0832,
+        "39": 0.0822,
+        "40": 0.0816,
+        "41": 0.0433,
+        "42": 0.0561,
+        "43": 0.0662,
+        "44": 0.0427,
+        "45": 0.0366,
+        "46": 0.0912,
+        "47": 0.048,
+        "48": 0.0427,
+        "49": 0.046,
+        "50": 0.0743
+      },
+      "n_edges": 1225,
+      "method": "classical_graph_message_passing"
+    },
+    "correlation": {
+      "interpretation": "Critical finding: A single massive thermal cluster encompasses 49 out of 50 machines (M-2 through M-50) with maximum propagation risk (1.0). The cluster is rooted at M-13, meaning thermal failures originating from M-13 can cascade across nearly the entire machine population. With 1225 edges indicating dense interconnections, a thermal event at M-13 could propagate to all 48 connected machines. High-score machines M-28 (0.1078), M-9 (0.0982), M-22 (0.0974), M-33 (0.0946), and M-10 (0.094) represent additional high-vulnerability nodes that could amplify or trigger secondary cascades. The near-complete graph connectivity means there are virtually no natural firebreaks to limit thermal failure propagation.",
+      "recommended_actions": [
+        "Immediately inspect and monitor root machine M-13 for early thermal stress indicators - this is the primary cascade origin point",
+        "Install enhanced thermal monitoring and automatic thermal shutdown thresholds on high-score machines M-28, M-9, M-22, M-33, and M-10",
+        "Implement thermal isolation barriers between machine groups to create artificial firebreaks, breaking the single large cluster into smaller sub-clusters of no more than 8-10 machines",
+        "Deploy independent cooling systems for M-13 and surrounding machines to prevent thermal spillover",
+        "Establish staggered operational schedules to reduce simultaneous thermal load across the cluster",
+        "Create emergency isolation protocols allowing rapid physical disconnection of M-13 or any high-score machine showing thermal anomalies",
+        "Investigate whether M-1 can serve as a backup for critical operations given it is the only machine outside the thermal cluster"
+      ],
+      "cascade_risk_assessment": "high"
+    },
+    "scheduling_opt": {
+      "schedule": [],
+      "total_downtime_hours": 0,
+      "total_cost": 0.0,
+      "machines_scheduled": 0,
+      "sa_iterations": 2000,
+      "sa_best_cost": 0.0,
+      "greedy_cost": 1398.62,
+      "improvement_vs_greedy_pct": 100.0,
+      "method": "simulated_annealing"
+    },
+    "scheduling_llm": {
+      "assessment": "OPTIMASI GAGAL - Solusi degenerate: jadwal kosong ditemukan SA dengan biaya 0 karena tidak ada mesin yang dijadwalkan. Perbaikan 100% vs greedy tidak valid karena merupakan artefak matematis, bukan solusi operasional yang dapat diterapkan. SA memerlukan penalti besar pada solusi kosong agar tidak mengejar solusi trivial.",
+      "adjustments": [
+        "Tambahkan constraint hard bahwa semua mesin harus dijadwalkan (penalti sangat besar jika mesin tidak masuk jadwal)",
+        "Set minimum cost threshold sehingga solusi kosong tidak bisa menjadi optimum",
+        "Batasi acceptance probability SA untuk menolak solusi dengan 0 mesin terjadwal",
+        "Jalankan ulang SA dengan parameter konstrain yang lebih ketat dan validasi solusi non-kosong di setiap iterasi",
+        "Gunakan solusi greedy (biaya 1398.62) sebagai baseline dan pastikan SA hanya menerima solusi yang menjadwalkan minimal jumlah mesin yang sama"
+      ],
+      "human_readable_summary": "Hasil optimasi SA menunjukkan kegagalan serius: tidak ada mesin yang dijadwalkan sama sekali, menghasilkan biaya 0 dan downtime 0. Ini adalah solusi degenerate yang tidak valid secara operasional. Algoritma SA menemukan celah bahwa tanpa menjadwalkan apapun, biaya menjadi nol - ini bukan perbaikan nyata meskipun terlihat 100% lebih baik dari greedy (1398.62). Perlu dilakukan perbaikan konstrain agar SA tidak bisa menghasilkan jadwal kosong, dan optimasi harus dijalankan ulang dengan penalti yang memaksa semua mesin masuk jadwal."
+    },
+    "patterns": {
+      "patterns": [],
+      "total_patterns": 0,
+      "novel_count": 0,
+      "model_update_needed": false
+    },
+    "report": {
+      "raw": "Peringatan pemeliharaan harian 2 Mei 2026: Terdapat 14 dari 50 mesin yang berada dalam tingkat risiko sedang. Saat ini belum ada jadwal pemeliharaan yang ditetapkan untuk mesin-mesin tersebut. Sistem menunjukkan kondisi stabil dengan 1 klaster terdeteksi dan tidak ada anomali baru yang memerlukan pembaruan model."
+    },
+    "risk_dist": {
+      "HIGH": 0,
+      "MEDIUM": 14,
+      "LOW": 36
+    },
+    "threshold_opt": {
+      "optimized": false,
+      "reason": "insufficient_history",
+      "n_events": 0,
+      "method": "nelder_mead"
+    }
+  },
+  "agent_logs": [
+    {
+      "timestamp": "2026-05-01 16:41:05.326",
+      "machine_id": "ALL",
+      "agent_name": "Graph Correlation (Classical)",
+      "agent_number": "Opt\u2461",
+      "trigger": "daily",
+      "elapsed_sec": 0.016,
+      "input_summary": {
+        "n_machines": "50",
+        "n_edges": "1225"
+      },
+      "output": {
+        "clusters": [
+          {
+            "machines": [
+              "M-2",
+              "M-3",
+              "M-4",
+              "M-5",
+              "M-6",
+              "M-7",
+              "M-8",
+              "M-9",
+              "M-10",
+              "M-11",
+              "M-12",
+              "M-13",
+              "M-14",
+              "M-15",
+              "M-16",
+              "M-17",
+              "M-18",
+              "M-19",
+              "M-20",
+              "M-21",
+              "M-22",
+              "M-23",
+              "M-24",
+              "M-25",
+              "M-26",
+              "M-27",
+              "M-28",
+              "M-29",
+              "M-30",
+              "M-31",
+              "M-32",
+              "M-33",
+              "M-34",
+              "M-35",
+              "M-36",
+              "M-37",
+              "M-38",
+              "M-39",
+              "M-40",
+              "M-41",
+              "M-42",
+              "M-43",
+              "M-44",
+              "M-45",
+              "M-46",
+              "M-47",
+              "M-48",
+              "M-49",
+              "M-50"
+            ],
+            "type": "thermal",
+            "propagation_risk": 1.0,
+            "root_machine": "M-13",
+            "size": 49
+          }
+        ],
+        "max_propagation_risk": 1.0,
+        "cascade_warning": true,
+        "graph_scores": {
+          "1": 0.0416,
+          "2": 0.0636,
+          "3": 0.048,
+          "4": 0.0569,
+          "5": 0.0218,
+          "6": 0.0553,
+          "7": 0.0678,
+          "8": 0.0605,
+          "9": 0.0982,
+          "10": 0.094,
+          "11": 0.0666,
+          "12": 0.0541,
+          "13": 0.0599,
+          "14": 0.0528,
+          "15": 0.0789,
+          "16": 0.0601,
+          "17": 0.063,
+          "18": 0.0645,
+          "19": 0.0492,
+          "20": 0.0531,
+          "21": 0.0623,
+          "22": 0.0974,
+          "23": 0.0464,
+          "24": 0.0491,
+          "25": 0.0614,
+          "26": 0.0607,
+          "27": 0.0826,
+          "28": 0.1078,
+          "29": 0.0277,
+          "30": 0.0695,
+          "31": 0.0379,
+          "32": 0.089,
+          "33": 0.0946,
+          "34": 0.0685,
+          "35": 0.0618,
+          "36": 0.0556,
+          "37": 0.0534,
+          "38": 0.0832,
+          "39": 0.0822,
+          "40": 0.0816,
+          "41": 0.0433,
+          "42": 0.0561,
+          "43": 0.0662,
+          "44": 0.0427,
+          "45": 0.0366,
+          "46": 0.0912,
+          "47": 0.048,
+          "48": 0.0427,
+          "49": 0.046,
+          "50": 0.0743
+        },
+        "n_edges": 1225,
+        "method": "classical_graph_message_passing"
+      },
+      "notes": "Classical mirror of QGNN"
+    },
+    {
+      "timestamp": "2026-05-01 16:41:17.107",
+      "machine_id": "ALL",
+      "agent_name": "Correlation Agent (LLM)",
+      "agent_number": "\u2464",
+      "trigger": "daily",
+      "elapsed_sec": 11.781,
+      "input_summary": {
+        "graph_clusters": "1",
+        "max_propagation": "1.0"
+      },
+      "output": {
+        "interpretation": "A single massive thermal cluster encompasses 49 of 50 machines (M-2 through M-50) with maximum propagation risk (1.0), indicating near-certain cascade potential. Root cause traced to M-13, the thermal origin point. The fully-connected topology (1225 edges) means no natural isolation barriers exist between machines. High-graph-score machines M-28 (0.1078), M-9 (0.0982), M-22 (0.0974), M-33 (0.0946), and M-46 (0.0912) represent critical propagation nodes that could accelerate thermal cascade across the entire cluster. A failure at M-13 will propagate to all 49 machines with certainty unless immediate isolation is achieved.",
+        "recommended_actions": [
+          "Immediately cool and isolate M-13 to eliminate the thermal root source before cascade initiates",
+          "Deploy emergency thermal barriers around high-propagation nodes M-28, M-9, M-22, M-33, and M-46 to disrupt the most active transmission paths",
+          "Segment the monolithic 49-machine cluster into smaller isolated thermal zones with independent cooling to break the fully-connected topology",
+          "Implement predictive thermal monitoring on all 49 machines with automated shutdown triggers at 80% thermal threshold",
+          "Establish thermal isolation corridors between machine groups to reduce edge connectivity from 1225 to below critical cascade threshold"
+        ],
+        "cascade_risk_assessment": "high"
+      },
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-05-01 16:41:17.201",
+      "machine_id": "ALL",
+      "agent_name": "Scheduling Optimizer (SA)",
+      "agent_number": "Opt\u2462",
+      "trigger": "daily",
+      "elapsed_sec": 0.094,
+      "input_summary": {
+        "n_machines": "50",
+        "max_simultaneous": "5"
+      },
+      "output": {
+        "schedule": [],
+        "total_downtime_hours": 0,
+        "total_cost": 0.0,
+        "machines_scheduled": 0,
+        "sa_iterations": 2000,
+        "sa_best_cost": 0.0,
+        "greedy_cost": 1398.62,
+        "improvement_vs_greedy_pct": 100.0,
+        "method": "simulated_annealing"
+      },
+      "notes": "Classical mirror of QAOA"
+    },
+    {
+      "timestamp": "2026-05-01 16:41:37.608",
+      "machine_id": "ALL",
+      "agent_name": "Scheduling Agent (LLM)",
+      "agent_number": "\u2467",
+      "trigger": "daily",
+      "elapsed_sec": 20.407,
+      "input_summary": {
+        "scheduled": "0",
+        "cost": "0.0"
+      },
+      "output": {
+        "assessment": "Infeasible/Invalid solution. The simulated annealing algorithm returned an empty schedule, resulting in a zero-cost but completely non-operational outcome. A 100% improvement over the greedy algorithm is an artifact of the null state, not a valid optimization.",
+        "adjustments": [
+          "Add a hard constraint to reject empty schedules during SA evaluation.",
+          "Penalize unscheduled machines heavily in the cost function to prevent the algorithm from selecting the null state.",
+          "Re-run the optimization ensuring a minimum threshold of scheduled machines."
+        ],
+        "human_readable_summary": "Hasil optimasi Simulated Annealing gagal menghasilkan jadwal yang valid karena menghasilkan jadwal kosong (tidak ada mesin yang dijadwalkan) dengan biaya dan waktu henti nol. Meskipun terlihat sebagai peningkatan 100% dibandingkan metode greedy, jadwal kosong ini tidak dapat diterapkan secara operasional. Penyesuaian diperlukan pada algoritma untuk menolak solusi kosong dan memberikan penalti yang besar pada mesin yang tidak dijadwalkan sebelum menjalankan ulang optimasi."
+      },
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-05-01 16:41:40.436",
+      "machine_id": "ALL",
+      "agent_name": "Anomaly Pattern Agent",
+      "agent_number": "\u2468",
+      "trigger": "daily",
+      "elapsed_sec": 2.828,
+      "input_summary": {
+        "machines_analyzed": "0"
+      },
+      "output": {
+        "patterns": [],
+        "total_patterns": 0,
+        "novel_count": 0,
+        "model_update_needed": false
+      },
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-05-01 16:41:47.701",
+      "machine_id": "ALL",
+      "agent_name": "Reporting Agent (Daily)",
+      "agent_number": "\u2463",
+      "trigger": "daily",
+      "elapsed_sec": 7.25,
+      "input_summary": {
+        "risk_distribution": "{'HIGH': 0, 'MEDIUM': 14, 'LOW': 36}"
+      },
+      "output": {
+        "raw": "Ringkasan pemantauan 1 Mei 2026: dari 50 mesin terpantau, terdapat 14 mesin berisiko SEDANG yang memerlukan perhatian. Tidak ditemukan mesin berisiko TINGGI, namun pemantauan berkala pada mesin-mesin berisiko sedang tetap disarankan. Saat ini belum ada jadwal pemeliharaan yang tercatat."
+      },
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-05-01 16:41:47.701",
+      "machine_id": "ALL",
+      "agent_name": "Threshold Optimizer (Nelder-Mead)",
+      "agent_number": "Opt\u2464",
+      "trigger": "daily",
+      "elapsed_sec": 0.0,
+      "input_summary": {
+        "n_history": "0",
+        "current_thresholds": "{'temperature': {'warn': 85, 'crit': 95}, 'vibration': {'war"
+      },
+      "output": {
+        "optimized": false,
+        "reason": "insufficient_history",
+        "n_events": 0,
+        "method": "nelder_mead"
+      },
+      "notes": "Classical mirror of Quantum Annealing"
+    },
+    {
+      "timestamp": "2026-05-02 17:32:48.718",
+      "machine_id": "ALL",
+      "agent_name": "Graph Correlation (Classical)",
+      "agent_number": "Opt\u2461",
+      "trigger": "daily",
+      "elapsed_sec": 0.013,
+      "input_summary": {
+        "n_machines": "50",
+        "n_edges": "1225"
+      },
+      "output": {
+        "clusters": [
+          {
+            "machines": [
+              "M-2",
+              "M-3",
+              "M-4",
+              "M-5",
+              "M-6",
+              "M-7",
+              "M-8",
+              "M-9",
+              "M-10",
+              "M-11",
+              "M-12",
+              "M-13",
+              "M-14",
+              "M-15",
+              "M-16",
+              "M-17",
+              "M-18",
+              "M-19",
+              "M-20",
+              "M-21",
+              "M-22",
+              "M-23",
+              "M-24",
+              "M-25",
+              "M-26",
+              "M-27",
+              "M-28",
+              "M-29",
+              "M-30",
+              "M-31",
+              "M-32",
+              "M-33",
+              "M-34",
+              "M-35",
+              "M-36",
+              "M-37",
+              "M-38",
+              "M-39",
+              "M-40",
+              "M-41",
+              "M-42",
+              "M-43",
+              "M-44",
+              "M-45",
+              "M-46",
+              "M-47",
+              "M-48",
+              "M-49",
+              "M-50"
+            ],
+            "type": "thermal",
+            "propagation_risk": 1.0,
+            "root_machine": "M-13",
+            "size": 49
+          }
+        ],
+        "max_propagation_risk": 1.0,
+        "cascade_warning": true,
+        "graph_scores": {
+          "1": 0.0416,
+          "2": 0.0636,
+          "3": 0.048,
+          "4": 0.0569,
+          "5": 0.0218,
+          "6": 0.0553,
+          "7": 0.0678,
+          "8": 0.0605,
+          "9": 0.0982,
+          "10": 0.094,
+          "11": 0.0666,
+          "12": 0.0541,
+          "13": 0.0599,
+          "14": 0.0528,
+          "15": 0.0789,
+          "16": 0.0601,
+          "17": 0.063,
+          "18": 0.0645,
+          "19": 0.0492,
+          "20": 0.0531,
+          "21": 0.0623,
+          "22": 0.0974,
+          "23": 0.0464,
+          "24": 0.0491,
+          "25": 0.0614,
+          "26": 0.0607,
+          "27": 0.0826,
+          "28": 0.1078,
+          "29": 0.0277,
+          "30": 0.0695,
+          "31": 0.0379,
+          "32": 0.089,
+          "33": 0.0946,
+          "34": 0.0685,
+          "35": 0.0618,
+          "36": 0.0556,
+          "37": 0.0534,
+          "38": 0.0832,
+          "39": 0.0822,
+          "40": 0.0816,
+          "41": 0.0433,
+          "42": 0.0561,
+          "43": 0.0662,
+          "44": 0.0427,
+          "45": 0.0366,
+          "46": 0.0912,
+          "47": 0.048,
+          "48": 0.0427,
+          "49": 0.046,
+          "50": 0.0743
+        },
+        "n_edges": 1225,
+        "method": "classical_graph_message_passing"
+      },
+      "notes": "Classical mirror of QGNN"
+    },
+    {
+      "timestamp": "2026-05-02 17:33:52.776",
+      "machine_id": "ALL",
+      "agent_name": "Correlation Agent (LLM)",
+      "agent_number": "\u2464",
+      "trigger": "daily",
+      "elapsed_sec": 64.056,
+      "input_summary": {
+        "graph_clusters": "1",
+        "max_propagation": "1.0"
+      },
+      "output": {
+        "interpretation": "Critical finding: A single massive thermal cluster encompasses 49 out of 50 machines (M-2 through M-50) with maximum propagation risk (1.0). The cluster is rooted at M-13, meaning thermal failures originating from M-13 can cascade across nearly the entire machine population. With 1225 edges indicating dense interconnections, a thermal event at M-13 could propagate to all 48 connected machines. High-score machines M-28 (0.1078), M-9 (0.0982), M-22 (0.0974), M-33 (0.0946), and M-10 (0.094) represent additional high-vulnerability nodes that could amplify or trigger secondary cascades. The near-complete graph connectivity means there are virtually no natural firebreaks to limit thermal failure propagation.",
+        "recommended_actions": [
+          "Immediately inspect and monitor root machine M-13 for early thermal stress indicators - this is the primary cascade origin point",
+          "Install enhanced thermal monitoring and automatic thermal shutdown thresholds on high-score machines M-28, M-9, M-22, M-33, and M-10",
+          "Implement thermal isolation barriers between machine groups to create artificial firebreaks, breaking the single large cluster into smaller sub-clusters of no more than 8-10 machines",
+          "Deploy independent cooling systems for M-13 and surrounding machines to prevent thermal spillover",
+          "Establish staggered operational schedules to reduce simultaneous thermal load across the cluster",
+          "Create emergency isolation protocols allowing rapid physical disconnection of M-13 or any high-score machine showing thermal anomalies",
+          "Investigate whether M-1 can serve as a backup for critical operations given it is the only machine outside the thermal cluster"
+        ],
+        "cascade_risk_assessment": "high"
+      },
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-05-02 17:33:52.851",
+      "machine_id": "ALL",
+      "agent_name": "Scheduling Optimizer (SA)",
+      "agent_number": "Opt\u2462",
+      "trigger": "daily",
+      "elapsed_sec": 0.069,
+      "input_summary": {
+        "n_machines": "50",
+        "max_simultaneous": "5"
+      },
+      "output": {
+        "schedule": [],
+        "total_downtime_hours": 0,
+        "total_cost": 0.0,
+        "machines_scheduled": 0,
+        "sa_iterations": 2000,
+        "sa_best_cost": 0.0,
+        "greedy_cost": 1398.62,
+        "improvement_vs_greedy_pct": 100.0,
+        "method": "simulated_annealing"
+      },
+      "notes": "Classical mirror of QAOA"
+    },
+    {
+      "timestamp": "2026-05-02 17:34:19.264",
+      "machine_id": "ALL",
+      "agent_name": "Scheduling Agent (LLM)",
+      "agent_number": "\u2467",
+      "trigger": "daily",
+      "elapsed_sec": 26.41,
+      "input_summary": {
+        "scheduled": "0",
+        "cost": "0.0"
+      },
+      "output": {
+        "assessment": "OPTIMASI GAGAL - Solusi degenerate: jadwal kosong ditemukan SA dengan biaya 0 karena tidak ada mesin yang dijadwalkan. Perbaikan 100% vs greedy tidak valid karena merupakan artefak matematis, bukan solusi operasional yang dapat diterapkan. SA memerlukan penalti besar pada solusi kosong agar tidak mengejar solusi trivial.",
+        "adjustments": [
+          "Tambahkan constraint hard bahwa semua mesin harus dijadwalkan (penalti sangat besar jika mesin tidak masuk jadwal)",
+          "Set minimum cost threshold sehingga solusi kosong tidak bisa menjadi optimum",
+          "Batasi acceptance probability SA untuk menolak solusi dengan 0 mesin terjadwal",
+          "Jalankan ulang SA dengan parameter konstrain yang lebih ketat dan validasi solusi non-kosong di setiap iterasi",
+          "Gunakan solusi greedy (biaya 1398.62) sebagai baseline dan pastikan SA hanya menerima solusi yang menjadwalkan minimal jumlah mesin yang sama"
+        ],
+        "human_readable_summary": "Hasil optimasi SA menunjukkan kegagalan serius: tidak ada mesin yang dijadwalkan sama sekali, menghasilkan biaya 0 dan downtime 0. Ini adalah solusi degenerate yang tidak valid secara operasional. Algoritma SA menemukan celah bahwa tanpa menjadwalkan apapun, biaya menjadi nol - ini bukan perbaikan nyata meskipun terlihat 100% lebih baik dari greedy (1398.62). Perlu dilakukan perbaikan konstrain agar SA tidak bisa menghasilkan jadwal kosong, dan optimasi harus dijalankan ulang dengan penalti yang memaksa semua mesin masuk jadwal."
+      },
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-05-02 17:34:35.063",
+      "machine_id": "ALL",
+      "agent_name": "Anomaly Pattern Agent",
+      "agent_number": "\u2468",
+      "trigger": "daily",
+      "elapsed_sec": 15.797,
+      "input_summary": {
+        "machines_analyzed": "0"
+      },
+      "output": {
+        "patterns": [],
+        "total_patterns": 0,
+        "novel_count": 0,
+        "model_update_needed": false
+      },
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-05-02 17:35:13.175",
+      "machine_id": "ALL",
+      "agent_name": "Reporting Agent (Daily)",
+      "agent_number": "\u2463",
+      "trigger": "daily",
+      "elapsed_sec": 38.106,
+      "input_summary": {
+        "risk_distribution": "{'HIGH': 0, 'MEDIUM': 14, 'LOW': 36}"
+      },
+      "output": {
+        "raw": "Peringatan pemeliharaan harian 2 Mei 2026: Terdapat 14 dari 50 mesin yang berada dalam tingkat risiko sedang. Saat ini belum ada jadwal pemeliharaan yang ditetapkan untuk mesin-mesin tersebut. Sistem menunjukkan kondisi stabil dengan 1 klaster terdeteksi dan tidak ada anomali baru yang memerlukan pembaruan model."
+      },
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-05-02 17:35:13.177",
+      "machine_id": "ALL",
+      "agent_name": "Threshold Optimizer (Nelder-Mead)",
+      "agent_number": "Opt\u2464",
+      "trigger": "daily",
+      "elapsed_sec": 0.0,
+      "input_summary": {
+        "n_history": "0",
+        "current_thresholds": "{'temperature': {'warn': 85, 'crit': 95}, 'vibration': {'war"
+      },
+      "output": {
+        "optimized": false,
+        "reason": "insufficient_history",
+        "n_events": 0,
+        "method": "nelder_mead"
+      },
+      "notes": "Classical mirror of Quantum Annealing"
+    }
+  ]
+}

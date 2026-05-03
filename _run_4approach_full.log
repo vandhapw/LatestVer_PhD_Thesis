@@ -1,0 +1,99 @@
+
+================================================================================
+ LOADING TEST-SPLIT DATA FROM MONGODB
+================================================================================
+[DATA] Connected to server_db.simulated_smart_manufactured_data
+[DATA] Train: 25 machines
+[DATA] Test: 25 machines
+
+================================================================================
+ APPROACH A: Non-Agentic (rule-based, threshold from training split)
+================================================================================
+  Completed: 25 machines analyzed
+
+================================================================================
+ APPROACH B: Agentic AI (sensor-only inputs, no label leakage)
+================================================================================
+  [AGENTIC] 25/25 machines selected (threshold proximity only)
+    [1/25] M-1  agents complete
+    [2/25] M-3  agents complete
+    [3/25] M-5  agents complete
+    [4/25] M-7  agents complete
+    [5/25] M-9  agents complete
+    [6/25] M-11  agents complete
+    [7/25] M-13  agents complete
+    [8/25] M-15  agents complete
+    [9/25] M-17  agents complete
+    [10/25] M-19  agents complete
+    [11/25] M-21  agents complete
+    [12/25] M-23  agents complete
+    [13/25] M-25  agents complete
+    [14/25] M-27  agents complete
+    [15/25] M-29  agents complete
+    [16/25] M-31  agents complete
+    [17/25] M-33  agents complete
+    [18/25] M-35  agents complete
+    [19/25] M-37  agents complete
+    [20/25] M-39  agents complete
+    [21/25] M-41  agents complete
+    [22/25] M-43  agents complete
+    [23/25] M-45  agents complete
+    [24/25] M-47  agents complete
+    [25/25] M-49  agents complete
+  Completed: 25 machines analyzed
+
+================================================================================
+ APPROACH C: Fleet-Relative (Mahalanobis + peer-z + isolation; no LLM, no labels)
+================================================================================
+  [Fleet-Relative] derived score_threshold from TRAIN fleet: 0.5491
+  Completed: 25 machines analyzed
+
+================================================================================
+ APPROACH D: Sliding-Window (per-machine z-score on own history; no LLM, no labels)
+================================================================================
+  [Sliding-Window] derived score_threshold from TRAIN fleet: 0.4261
+  Completed: 25 machines analyzed
+
+
+====================================================================================================
+ COMPARATIVE STUDY (post-audit + fleet-relative + sliding-window): 4 approaches
+====================================================================================================
+
+  AUDIT DISCLOSURE:
+  - Bounds derived from training split (machine_id even).
+  - This report computed on TEST split (machine_id odd) only.
+  - Ground-truth fields (failure_type, anomaly_flag, etc.) are
+    NEVER passed as features to any approach.
+  - Approach C (Fleet-Relative) and D (Sliding-Window) decision
+    thresholds are derived from train fleet at quantile=0.5 and
+    applied to test (no peeking).
+  - Results are from a single snapshot; not cross-validated.
+
+  Test machines:        25
+  Need attention (GT):  10 (40.0%)
+  Status distribution:  {'Normal': 15, 'Warning': 8, 'Fault': 2}
+
+  Metric               Rule-Based    Agentic AI Fleet-Relative Sliding-Window
+  ────────────────────────────────────────────────────────────────────────
+  TP                          0             0             3             5 
+  FP                          4             4             7             6 
+  FN                         10            10             7             5 
+  TN                         11            11             8             9 
+  precision              0.0000        0.0000        0.3000        0.4545 
+  recall                 0.0000        0.0000        0.3000        0.5000 
+  f1_score               0.0000        0.0000        0.3000        0.4762 
+  accuracy               0.4400        0.4400        0.4400        0.5600 
+
+  Capability coverage (% of test machines):
+  Capability                         Rule-Based    Agentic AI Fleet-Relative Sliding-Window
+  ────────────────────────────────────────────────────────────────────────────────────────
+  root_cause_analysis                      0.0%          0.0%          0.0%          0.0% 
+  explainability                           0.0%          0.0%          0.0%          0.0% 
+  cross_machine_correlation                0.0%        100.0%        100.0%          0.0% 
+  self_reflection                          0.0%        100.0%          0.0%          0.0% 
+  scheduling_optimization                  0.0%          0.0%          0.0%          0.0% 
+  pattern_detection                        0.0%          0.0%          0.0%        100.0% 
+
+====================================================================================================
+
+[SAVED] comparison_results.json

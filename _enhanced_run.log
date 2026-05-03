@@ -1,0 +1,65 @@
+
+================================================================================
+ ENHANCED AGENTIC AI — 9 AGENTS + QUANTUM COMPUTING
+ Smart Manufacturing Pipeline (T-GCN + Ollama Cloud)
+================================================================================
+
+Usage:
+  python agenticai_enhanced.py                # Full pipeline (all 50 machines)
+  python agenticai_enhanced.py --machine 40   # Single machine focus
+================================================================================
+
+
+==========================================================================================
+ ENHANCED AGENTIC AI — 9 AGENTS + QUANTUM COMPUTING
+==========================================================================================
+[CONNECTED] MongoDB: mongodb://superUser:superUpsil!@10.247.166.188:27019/server_db?authSource=admin
+[CONNECTED] Collection: simulated_smart_manufactured_data
+
+[STEP 1] Mengambil data sensor terbaru dari MongoDB...
+  → 50 mesin dimuat.
+
+[STEP 2] Menjalankan 4 Original Agents (top-5 risiko tertinggi)...
+  → M-3 | Risk: 0.15 | Done
+  → M-4 | Risk: 0.15 | Done
+  → M-5 | Risk: 0.15 | Done
+  → M-7 | Risk: 0.15 | Done
+  → M-8 | Risk: 0.15 | Done
+
+[STEP 3] Agent 5 — Correlation Agent (inter-machine dependency)...
+  → Correlation analysis complete.
+
+[STEP 4] Agent 6 — Explainability Agent (XAI counterfactuals)...
+  → M-3 | XAI complete
+  → M-4 | XAI complete
+  → M-5 | XAI complete
+  → M-7 | XAI complete
+  → M-8 | XAI complete
+
+[STEP 5] Agent 7 — Consensus Agent (multi-model validation)...
+  → M-3 | Consensus complete
+  → M-4 | Consensus complete
+  → M-5 | Consensus complete
+  → M-7 | Consensus complete
+  → M-8 | Consensus complete
+
+[STEP 6] Agent 8 — Predictive Scheduling Agent (QAOA-optimized)...
+  → Scheduling optimization complete.
+
+[STEP 7] Agent 9 — Anomaly Pattern Learning Agent (VQC + QGNN)...
+  → Pattern learning complete.
+
+[STEP 8] Quantum Computing Simulations...
+  [QAOA] Running scheduling optimization...
+  → QAOA: 7 machines scheduled, cost=38.8058
+  [VQC] Running anomaly classification...
+  → VQC: 16 anomalies / 34 normal
+  [QGNN] Running graph dependency analysis...
+  → QGNN: 1225 edges, avg anomaly=0.1221
+[DISCONNECTED] MongoDB connection closed
+
+[SAVED] Results → enhanced_pipeline_results.json
+
+==========================================================================================
+ PIPELINE COMPLETE — All 9 agents + 3 quantum algorithms executed.
+==========================================================================================

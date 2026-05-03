@@ -1,0 +1,1011 @@
+{
+  "_audit_disclosure": "Pipeline rewrite (post-audit): no quantum-labelled heuristics; no ground-truth fields passed to LLM agents; bounds derived from training subset; metrics reported on held-out test split.",
+  "seed": 42,
+  "timestamp": "2026-05-03 01:51:47",
+  "split": {
+    "train_ids": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50
+    ],
+    "test_ids": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45,
+      47,
+      49
+    ]
+  },
+  "n_test_machines": 25,
+  "events": [
+    {
+      "machine_id": 1,
+      "timestamp": "2026-05-03 00:53:50",
+      "temperature": 75.4106,
+      "vibration": 56.8118,
+      "humidity": 56.531,
+      "pressure": 3.028,
+      "energy": 3.1284,
+      "energy_consumption": 3.1284,
+      "predicted_remaining_life": 253.24,
+      "anchor_machine": 40,
+      "graph_distance": 39,
+      "influence_score": 0.000405
+    },
+    {
+      "machine_id": 3,
+      "timestamp": "2026-05-03 00:53:50",
+      "temperature": 68.7723,
+      "vibration": 47.3782,
+      "humidity": 58.9234,
+      "pressure": 3.0307,
+      "energy": 2.3502,
+      "energy_consumption": 2.3502,
+      "predicted_remaining_life": 257.8,
+      "anchor_machine": 40,
+      "graph_distance": 37,
+      "influence_score": 0.000494
+    },
+    {
+      "machine_id": 5,
+      "timestamp": "2026-05-03 00:53:50",
+      "temperature": 75.3694,
+      "vibration": 44.0056,
+      "humidity": 57.3572,
+      "pressure": 2.8476,
+      "energy": 2.7328,
+      "energy_consumption": 2.7328,
+      "predicted_remaining_life": 255.99,
+      "anchor_machine": 40,
+      "graph_distance": 35,
+      "influence_score": 0.000604
+    },
+    {
+      "machine_id": 7,
+      "timestamp": "2026-05-03 00:53:50",
+      "temperature": 69.85,
+      "vibration": 49.8944,
+      "humidity": 47.7808,
+      "pressure": 2.1134,
+      "energy": 2.8509,
+      "energy_consumption": 2.8509,
+      "predicted_remaining_life": 256.66,
+      "anchor_machine": 40,
+      "graph_distance": 33,
+      "influence_score": 0.000738
+    },
+    {
+      "machine_id": 9,
+      "timestamp": "2026-05-03 00:53:50",
+      "temperature": 69.6754,
+      "vibration": 54.9065,
+      "humidity": 68.8395,
+      "pressure": 2.5345,
+      "energy": 1.7565,
+      "energy_consumption": 1.7565,
+      "predicted_remaining_life": 252.34,
+      "anchor_machine": 40,
+      "graph_distance": 31,
+      "influence_score": 0.000901
+    },
+    {
+      "machine_id": 11,
+      "timestamp": "2026-05-03 00:53:50",
+      "temperature": 70.6163,
+      "vibration": 51.7241,
+      "humidity": 60.223,
+      "pressure": 3.6263,
+      "energy": 2.9776,
+      "energy_consumption": 2.9776,
+      "predicted_remaining_life": 251.18,
+      "anchor_machine": 40,
+      "graph_distance": 29,
+      "influence_score": 0.0011
+    },
+    {
+      "machine_id": 13,
+      "timestamp": "2026-05-03 00:53:50",
+      "temperature": 79.6435,
+      "vibration": 53.9414,
+      "humidity": 52.4913,
+      "pressure": 3.2201,
+      "energy": 2.5774,
+      "energy_consumption": 2.5774,
+      "predicted_remaining_life": 252.96,
+      "anchor_machine": 40,
+      "graph_distance": 27,
+      "influence_score": 0.001344
+    },
+    {
+      "machine_id": 15,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 77.9195,
+      "vibration": 55.7861,
+      "humidity": 48.1341,
+      "pressure": 3.1261,
+      "energy": 2.1856,
+      "energy_consumption": 2.1856,
+      "predicted_remaining_life": 253.98,
+      "anchor_machine": 40,
+      "graph_distance": 25,
+      "influence_score": 0.001642
+    },
+    {
+      "machine_id": 17,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 72.9651,
+      "vibration": 44.9713,
+      "humidity": 57.336,
+      "pressure": 3.7148,
+      "energy": 2.9548,
+      "energy_consumption": 2.9548,
+      "predicted_remaining_life": 255.61,
+      "anchor_machine": 40,
+      "graph_distance": 23,
+      "influence_score": 0.002005
+    },
+    {
+      "machine_id": 19,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 71.9269,
+      "vibration": 48.0742,
+      "humidity": 52.7356,
+      "pressure": 2.7339,
+      "energy": 2.0584,
+      "energy_consumption": 2.0584,
+      "predicted_remaining_life": 256.18,
+      "anchor_machine": 40,
+      "graph_distance": 21,
+      "influence_score": 0.002449
+    },
+    {
+      "machine_id": 21,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 73.4533,
+      "vibration": 58.4326,
+      "humidity": 50.2572,
+      "pressure": 3.341,
+      "energy": 2.6597,
+      "energy_consumption": 2.6597,
+      "predicted_remaining_life": 255.43,
+      "anchor_machine": 40,
+      "graph_distance": 19,
+      "influence_score": 0.002991
+    },
+    {
+      "machine_id": 23,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 77.2631,
+      "vibration": 51.6862,
+      "humidity": 61.0504,
+      "pressure": 3.0061,
+      "energy": 2.8336,
+      "energy_consumption": 2.8336,
+      "predicted_remaining_life": 254.33,
+      "anchor_machine": 40,
+      "graph_distance": 17,
+      "influence_score": 0.003654
+    },
+    {
+      "machine_id": 25,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 74.5731,
+      "vibration": 50.8445,
+      "humidity": 46.1347,
+      "pressure": 2.6939,
+      "energy": 2.4748,
+      "energy_consumption": 2.4748,
+      "predicted_remaining_life": 253.85,
+      "anchor_machine": 40,
+      "graph_distance": 15,
+      "influence_score": 0.004463
+    },
+    {
+      "machine_id": 27,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 67.5114,
+      "vibration": 54.9235,
+      "humidity": 63.6837,
+      "pressure": 2.6643,
+      "energy": 3.1419,
+      "energy_consumption": 3.1419,
+      "predicted_remaining_life": 253.72,
+      "anchor_machine": 40,
+      "graph_distance": 13,
+      "influence_score": 0.005451
+    },
+    {
+      "machine_id": 29,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 75.4254,
+      "vibration": 47.681,
+      "humidity": 59.0449,
+      "pressure": 2.8337,
+      "energy": 2.4413,
+      "energy_consumption": 2.4413,
+      "predicted_remaining_life": 254.58,
+      "anchor_machine": 40,
+      "graph_distance": 11,
+      "influence_score": 0.006657
+    },
+    {
+      "machine_id": 31,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 76.2659,
+      "vibration": 55.2699,
+      "humidity": 53.1173,
+      "pressure": 3.3251,
+      "energy": 2.5623,
+      "energy_consumption": 2.5623,
+      "predicted_remaining_life": 255.32,
+      "anchor_machine": 40,
+      "graph_distance": 9,
+      "influence_score": 0.008131
+    },
+    {
+      "machine_id": 33,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 80.458,
+      "vibration": 41.471,
+      "humidity": 46.7125,
+      "pressure": 3.5948,
+      "energy": 2.858,
+      "energy_consumption": 2.858,
+      "predicted_remaining_life": 256.1,
+      "anchor_machine": 40,
+      "graph_distance": 7,
+      "influence_score": 0.009932
+    },
+    {
+      "machine_id": 35,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 76.7759,
+      "vibration": 44.0134,
+      "humidity": 56.8752,
+      "pressure": 2.4141,
+      "energy": 3.0486,
+      "energy_consumption": 3.0486,
+      "predicted_remaining_life": 256.08,
+      "anchor_machine": 40,
+      "graph_distance": 5,
+      "influence_score": 0.012131
+    },
+    {
+      "machine_id": 37,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 83.3868,
+      "vibration": 46.554,
+      "humidity": 57.1914,
+      "pressure": 2.8849,
+      "energy": 2.1499,
+      "energy_consumption": 2.1499,
+      "predicted_remaining_life": 251.93,
+      "anchor_machine": 40,
+      "graph_distance": 3,
+      "influence_score": 0.014816
+    },
+    {
+      "machine_id": 39,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 80.9151,
+      "vibration": 49.7535,
+      "humidity": 45.0474,
+      "pressure": 2.9534,
+      "energy": 3.2032,
+      "energy_consumption": 3.2032,
+      "predicted_remaining_life": 251.93,
+      "anchor_machine": 40,
+      "graph_distance": 1,
+      "influence_score": 0.018097
+    },
+    {
+      "machine_id": 41,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 70.2897,
+      "vibration": 56.9516,
+      "humidity": 58.8638,
+      "pressure": 3.0579,
+      "energy": 2.869,
+      "energy_consumption": 2.869,
+      "predicted_remaining_life": 256.67,
+      "anchor_machine": 40,
+      "graph_distance": 1,
+      "influence_score": 0.018097
+    },
+    {
+      "machine_id": 43,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 78.813,
+      "vibration": 51.85,
+      "humidity": 56.1312,
+      "pressure": 2.3427,
+      "energy": 2.0541,
+      "energy_consumption": 2.0541,
+      "predicted_remaining_life": 255.12,
+      "anchor_machine": 40,
+      "graph_distance": 3,
+      "influence_score": 0.014816
+    },
+    {
+      "machine_id": 45,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 75.5854,
+      "vibration": 52.5144,
+      "humidity": 56.1964,
+      "pressure": 2.8354,
+      "energy": 3.2774,
+      "energy_consumption": 3.2774,
+      "predicted_remaining_life": 255.35,
+      "anchor_machine": 40,
+      "graph_distance": 5,
+      "influence_score": 0.012131
+    },
+    {
+      "machine_id": 47,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 74.7186,
+      "vibration": 51.1627,
+      "humidity": 55.5978,
+      "pressure": 2.8453,
+      "energy": 1.6737,
+      "energy_consumption": 1.6737,
+      "predicted_remaining_life": 256.13,
+      "anchor_machine": 40,
+      "graph_distance": 7,
+      "influence_score": 0.009932
+    },
+    {
+      "machine_id": 49,
+      "timestamp": "2026-05-03 00:53:51",
+      "temperature": 70.8348,
+      "vibration": 53.0643,
+      "humidity": 54.8495,
+      "pressure": 2.8385,
+      "energy": 2.5342,
+      "energy_consumption": 2.5342,
+      "predicted_remaining_life": 252.2,
+      "anchor_machine": 40,
+      "graph_distance": 9,
+      "influence_score": 0.008131
+    }
+  ],
+  "reasonings": [
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 253.24
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 257.8
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 255.99
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 256.66
+    },
+    {
+      "risk_score": 0.35,
+      "severity": "MEDIUM",
+      "flags": [
+        "humidity=CRITICAL(68.84>=66.71)"
+      ],
+      "predicted_rul": 252.34
+    },
+    {
+      "risk_score": 0.35,
+      "severity": "MEDIUM",
+      "flags": [
+        "pressure=CRITICAL(3.63>=3.56)"
+      ],
+      "predicted_rul": 251.18
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 252.96
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 253.98
+    },
+    {
+      "risk_score": 0.35,
+      "severity": "MEDIUM",
+      "flags": [
+        "pressure=CRITICAL(3.71>=3.56)"
+      ],
+      "predicted_rul": 255.61
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 256.18
+    },
+    {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "vibration=WARN(58.43>=57.22)"
+      ],
+      "predicted_rul": 255.43
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 254.33
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 253.85
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 253.72
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 254.58
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 255.32
+    },
+    {
+      "risk_score": 0.35,
+      "severity": "MEDIUM",
+      "flags": [
+        "pressure=CRITICAL(3.59>=3.56)"
+      ],
+      "predicted_rul": 256.1
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 256.08
+    },
+    {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "temperature=WARN(83.39>=81.36)"
+      ],
+      "predicted_rul": 251.93
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 251.93
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 256.67
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 255.12
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 255.35
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 256.13
+    },
+    {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 252.2
+    }
+  ],
+  "agents": {
+    "original_top5": [
+      {
+        "machine_id": 9,
+        "risk_score": 0.35,
+        "severity": "MEDIUM",
+        "monitoring": {
+          "raw": "```json\n{\n  \"risk_level\": \"CRITICAL\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"confidence\": 0.95\n}\n```"
+        },
+        "diagnosis": {
+          "raw": "```json\n{\n  \"probable_cause\": \"lubrication\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 24\n}\n```"
+        },
+        "planning": {
+          "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P2\",\n  \"reason\": \"Bearing requires lubrication within 24h to prevent further degradation.\",\n  \"notify_supervisor\": true\n}\n```"
+        },
+        "reporting": {
+          "raw": "Peringatan perawatan untuk Mesin M-9: bearing membutuhkan pelumasan segera. Jadwalkan perawatan dengan prioritas P2 dalam waktu 24 jam untuk mencegah kerusakan lebih lanjut. Harap segera ditindaklanjuti oleh supervisor."
+        }
+      },
+      {
+        "machine_id": 11,
+        "risk_score": 0.35,
+        "severity": "MEDIUM",
+        "monitoring": {
+          "raw": "```json\n{\n  \"risk_level\": \"CRITICAL\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"energy\",\n  \"confidence\": 0.99\n}\n```"
+        },
+        "diagnosis": {
+          "error": "Server disconnected without sending a response."
+        },
+        "planning": {
+          "raw": "```json\n{\n  \"action\": \"inspect\",\n  \"priority\": \"P3\",\n  \"reason\": \"Server disconnection requires verification; sufficient RUL allows time for inspection.\",\n  \"notify_supervisor\": true\n}\n```"
+        },
+        "reporting": {
+          "raw": "Mesin M-11 mengalami pemutusan koneksi server tanpa respons. Mesin memerlukan inspeksi dengan prioritas P3 untuk memverifikasi gangguan ini, meski tidak mendesak karena sisa umur pakai (RUL) masih mencukupi. Mohon supervisor untuk menjadwalkan pemeriksaan terkait."
+        }
+      },
+      {
+        "machine_id": 17,
+        "risk_score": 0.35,
+        "severity": "MEDIUM",
+        "monitoring": {
+          "raw": "```json\n{\n  \"risk_level\": \"CRITICAL\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"confidence\": 1.0\n}\n```"
+        },
+        "diagnosis": {
+          "raw": "```json\n{\n  \"probable_cause\": \"unknown\",\n  \"affected_component\": \"pump\",\n  \"urgency_hours\": 24\n}\n```"
+        },
+        "planning": {
+          "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P2\",\n  \"reason\": \"Unknown pump cause, 24h urgency window requires planned investigation\",\n  \"notify_supervisor\": true\n}\n```"
+        },
+        "reporting": {
+          "raw": "Mesin M-17 terdeteksi masalah pada komponen pompa dengan penyebab yang belum diketahui. Jadwalkan pemeliharaan dengan prioritas P2 dalam waktu 24 jam ke depan untuk investigasi lebih lanjut. Perhatian dan tindak lanjut segera dari supervisor sangat diperlukan."
+        }
+      },
+      {
+        "machine_id": 33,
+        "risk_score": 0.35,
+        "severity": "MEDIUM",
+        "monitoring": {
+          "raw": "```json\n{\n  \"risk_level\": \"CRITICAL\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"energy\",\n  \"confidence\": 1.0\n}\n```"
+        },
+        "diagnosis": {
+          "raw": "```json\n{\n  \"probable_cause\": \"electrical\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 24\n}\n```"
+        },
+        "planning": {
+          "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P2\",\n  \"reason\": \"Electrical motor issue requires repair within 24h to prevent degradation.\",\n  \"notify_supervisor\": true\n}\n```"
+        },
+        "reporting": {
+          "raw": "Mesin M-33 memerlukan perawatan prioritas P2 akibat masalah listrik pada motornya. Perbaikan harus dilakukan dalam 24 jam untuk mencegah kerusakan lebih lanjut. Segera jadwalkan perawatan untuk mesin tersebut."
+        }
+      },
+      {
+        "machine_id": 21,
+        "risk_score": 0.15,
+        "severity": "LOW",
+        "monitoring": {
+          "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"vibration\",\n  \"confidence\": 0.85\n}\n```"
+        },
+        "diagnosis": {
+          "raw": "```json\n{\n  \"probable_cause\": \"bearing_wear\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 48\n}\n```"
+        },
+        "planning": {
+          "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Bearing wear identified but low risk and high RUL; plan replacement during next downtime.\",\n  \"notify_supervisor\": false\n}\n```"
+        },
+        "reporting": {
+          "raw": "Terdeteksi keausan bearing pada Mesin M-21 yang perlu ditangani dalam 48 jam. Mengingat risikonya rendah, pergantian bearing dapat dijadwalkan saat downtime berikutnya dengan prioritas P3. Harap segera atur jadwal pemeliharaan untuk mesin ini."
+        }
+      }
+    ],
+    "correlation": {
+      "raw": "```json\n{\n  \"correlated_clusters\": [\n    {\n      \"machines\": [\n        \"M-33\",\n        \"M-37\",\n        \"M-39\",\n        \"M-43\"\n      ],\n      \"correlation_type\": \"thermal\",\n      \"propagation_risk\": 0.82,\n      \"root_machine\": \"M-37\",\n      \"explanation\": \"Elevated temperatures in high-influence machines near the anchor pose significant thermal propagation risk.\"\n    },\n    {\n      \"machines\": [\n        \"M-9\",\n        \"M-11\",\n        \"M-17\"\n      ],\n      \"correlation_type\": \"vibration\",\n      \"propagation_risk\": 0.48,\n      \"root_machine\": \"M-11\",\n      \"explanation\": \"Shared medium severity risk and decreasing remaining life indicate correlated mechanical vibration wear.\"\n    }\n  ],\n  \"highest_risk_cluster_index\": 0,\n  \"cascade_probability\": 0.65,\n  \"recommendation\": \"Prioritize cooling inspection on M-37 and vibration analysis on M-11 to mitigate cascade risks.\"\n}\n```"
+    },
+    "explainability": [
+      {
+        "machine_id": 9,
+        "xai_result": {
+          "raw": "```json\n{\n  \"feature_attribution\": {\n    \"temperature\": {\n      \"contribution_pct\": 0.0,\n      \"direction\": \"neutral\"\n    },\n    \"vibration\": {\n      \"contribution_pct\": 10.0,\n      \"direction\": \"increasing_risk\"\n    },\n    \"humidity\": {\n      \"contribution_pct\": 85.0,\n      \"direction\": \"increasing_risk\"\n    },\n    \"energy\": {\n      \"contribution_pct\": 0.0,\n      \"direction\": \"neutral\"\n    },\n    \"rul\": {\n      \"contribution_pct\": 5.0,\n      \"direction\": \"decreasing_risk\"\n    }\n  },\n  \"counterfactual\": {\n    \"current_severity\": \"MEDIUM\",\n    \"nearest_boundary\": \"LOW\",\n    \"distance_to_boundary\": 2.13,\n    \"what_if_scenarios\": [\n      {\n        \"change\": \"Decrease humidity from 68.84 to 66.70\",\n        \"new_severity\": \"LOW\",\n        \"delta_risk\": -0.35\n      },\n      {\n        \"change\": \"Decrease vibration from 54.91 to 40.00\",\n        \"new_severity\": \"MEDIUM\",\n        \"delta_risk\": -0.05\n      }\n    ]\n  },\n  \"natural_language_explanation\": \"High humidity is the primary driver of the current medium risk, exceeding its critical threshold. Lowering humidity below 66.71 resolves the risk. Vibration is also slightly elevated near its warning limit.\",\n  \"confidence_in_explanation\": 0.95\n}\n```"
+        }
+      },
+      {
+        "machine_id": 11,
+        "xai_result": {
+          "raw": "```json\n{\n  \"feature_attribution\": {\n    \"temperature\": {\n      \"contribution_pct\": 15.0,\n      \"direction\": \"decreasing_risk\"\n    },\n    \"vibration\": {\n      \"contribution_pct\": 30.0,\n      \"direction\": \"increasing_risk\"\n    },\n    \"humidity\": {\n      \"contribution_pct\": 35.0,\n      \"direction\": \"increasing_risk\"\n    },\n    \"energy\": {\n      \"contribution_pct\": 10.0,\n      \"direction\": \"decreasing_risk\"\n    },\n    \"rul\": {\n      \"contribution_pct\": 10.0,\n      \"direction\": \"decreasing_risk\"\n    }\n  },\n  \"counterfactual\": {\n    \"current_severity\": \"MEDIUM\",\n    \"nearest_boundary\": \"HIGH\",\n    \"distance_to_boundary\": 0.25,\n    \"what_if_scenarios\": [\n      {\n        \"change\": \"humidity reaches warn threshold (63.88)\",\n        \"new_severity\": \"HIGH\",\n        \"delta_risk\": 0.15\n      },\n      {\n        \"change\": \"vibration reaches warn threshold (57.22)\",\n        \"new_severity\": \"HIGH\",\n        \"delta_risk\": 0.2\n      }\n    ]\n  },\n  \"natural_language_explanation\": \"Machine 11 has MEDIUM risk primarily driven by critical pressure (3.63). High humidity and vibration exacerbate risk, while safe temperature, energy, and RUL mitigate it. Reducing pressure below 3.56 lowers severity.\",\n  \"confidence_in_explanation\": 0.88\n}\n```"
+        }
+      },
+      {
+        "machine_id": 17,
+        "xai_result": {
+          "raw": "```json\n{\n  \"feature_attribution\": {\n    \"temperature\": {\n      \"contribution_pct\": 5.0,\n      \"direction\": \"neutral\"\n    },\n    \"vibration\": {\n      \"contribution_pct\": 5.0,\n      \"direction\": \"decreasing_risk\"\n    },\n    \"humidity\": {\n      \"contribution_pct\": 5.0,\n      \"direction\": \"decreasing_risk\"\n    },\n    \"energy\": {\n      \"contribution_pct\": 5.0,\n      \"direction\": \"decreasing_risk\"\n    },\n    \"rul\": {\n      \"contribution_pct\": 5.0,\n      \"direction\": \"decreasing_risk\"\n    },\n    \"pressure\": {\n      \"contribution_pct\": 75.0,\n      \"direction\": \"increasing_risk\"\n    }\n  },\n  \"counterfactual\": {\n    \"current_severity\": \"MEDIUM\",\n    \"nearest_boundary\": \"HIGH\",\n    \"distance_to_boundary\": 0.15,\n    \"what_if_scenarios\": [\n      {\n        \"change\": \"Reduce pressure from 3.7148 to 3.56\",\n        \"new_severity\": \"LOW\",\n        \"delta_risk\": -0.2\n      },\n      {\n        \"change\": \"Reduce pressure from 3.7148 to 3.49\",\n        \"new_severity\": \"LOW\",\n        \"delta_risk\": -0.3\n      }\n    ]\n  },\n  \"natural_language_explanation\": \"MEDIUM risk is heavily driven by critical pressure (3.71 > 3.56). All other sensors are normal. Lowering pressure below 3.56 clears the critical flag and reduces risk.\",\n  \"confidence_in_explanation\": 0.95\n}\n```"
+        }
+      },
+      {
+        "machine_id": 33,
+        "xai_result": {
+          "raw": "```json\n{\n  \"feature_attribution\": {\n    \"temperature\": {\n      \"contribution_pct\": 15.0,\n      \"direction\": \"increasing_risk\"\n    },\n    \"vibration\": {\n      \"contribution_pct\": 0.0,\n      \"direction\": \"neutral\"\n    },\n    \"humidity\": {\n      \"contribution_pct\": 0.0,\n      \"direction\": \"neutral\"\n    },\n    \"energy\": {\n      \"contribution_pct\": 0.0,\n      \"direction\": \"neutral\"\n    },\n    \"pressure\": {\n      \"contribution_pct\": 75.0,\n      \"direction\": \"increasing_risk\"\n    },\n    \"rul\": {\n      \"contribution_pct\": 10.0,\n      \"direction\": \"decreasing_risk\"\n    }\n  },\n  \"counterfactual\": {\n    \"current_severity\": \"MEDIUM\",\n    \"nearest_boundary\": \"LOW\",\n    \"distance_to_boundary\": 0.1048,\n    \"what_if_scenarios\": [\n      {\n        \"change\": \"Decrease pressure to 3.49\",\n        \"new_severity\": \"LOW\",\n        \"delta_risk\": -0.35\n      },\n      {\n        \"change\": \"Increase temperature to 84.101\",\n        \"new_severity\": \"HIGH\",\n        \"delta_risk\": 0.65\n      }\n    ]\n  },\n  \"natural_language_explanation\": \"Critical pressure is the primary risk driver. Reducing pressure by 0.11 would lower severity to LOW. Temperature is nearing warn levels, but high RUL mitigates some risk.\",\n  \"confidence_in_explanation\": 0.92\n}\n```"
+        }
+      },
+      {
+        "machine_id": 21,
+        "xai_result": {
+          "raw": "```json\n{\n  \"feature_attribution\": {\n    \"temperature\": {\"contribution_pct\": 5.0, \"direction\": \"decreasing_risk\"},\n    \"vibration\": {\"contribution_pct\": 80.0, \"direction\": \"increasing_risk\"},\n    \"humidity\": {\"contribution_pct\": 5.0, \"direction\": \"decreasing_risk\"},\n    \"energy\": {\"contribution_pct\": 5.0, \"direction\": \"decreasing_risk\"},\n    \"rul\": {\"contribution_pct\": 5.0, \"direction\": \"decreasing_risk\"}\n  },\n  \"counterfactual\": {\n    \"current_severity\": \"LOW\",\n    \"nearest_boundary\": \"MEDIUM\",\n    \"distance_to_boundary\": 0.35,\n    \"what_if_scenarios\": [\n      {\"change\": \"vibration increased to 75.0\", \"new_severity\": \"MEDIUM\", \"delta_risk\": 0.35},\n      {\"change\": \"temperature increased to 82.0\", \"new_severity\": \"MEDIUM\", \"delta_risk\": 0.30}\n    ]\n  },\n  \"natural_language_explanation\": \"Risk is LOW primarily driven by slightly elevated vibration (58.4 > 57.2). All other sensors and remaining useful life (255h) are well within safe limits. Reducing vibration below 57.2 minimizes risk.\",\n  \"confidence_in_explanation\": 0.92\n}\n```"
+        }
+      }
+    ],
+    "self_reflection": [
+      {
+        "machine_id": 9,
+        "self_reflection": {
+          "raw": "```json\n{\n  \"self_consistent\": false,\n  \"inconsistencies\": [\n    \"Monitoring flags a CRITICAL risk level, but Planning assigns a relatively low P2 priority instead of P1 or an immediate action.\",\n    \"Monitoring detects a 'combined' anomaly type, but Diagnosis only identifies a single probable cause (lubrication).\"\n  ],\n  \"recommended_resolution\": \"inspect\",\n  \"confidence_in_review\": 0.9\n}\n```"
+        }
+      },
+      {
+        "machine_id": 11,
+        "self_reflection": {
+          "raw": "```json\n{\n  \"self_consistent\": false,\n  \"inconsistencies\": [\n    \"Monitoring flags CRITICAL energy anomaly with 0.99 confidence, but Planning assigns a low P3 priority and suggests only 'inspect'.\",\n    \"Planning assumes 'sufficient RUL' to justify a low-priority inspection, but Diagnosis failed entirely (server disconnected) and provided no RUL data.\",\n    \"Planning bases its reasoning on the Diagnosis server disconnection error rather than the actual critical energy anomaly detected by Monitoring.\"\n  ],\n  \"recommended_resolution\": \"immediate_shutdown\",\n  \"confidence_in_review\": 0.95\n}\n```"
+        }
+      },
+      {
+        "machine_id": 17,
+        "self_reflection": {
+          "raw": "```json\n{\n  \"self_consistent\": false,\n  \"inconsistencies\": [\n    \"Monitoring reports CRITICAL risk with 1.0 confidence, but Planning only assigns P2 priority and schedules maintenance rather than taking immediate action.\",\n    \"Diagnosis lists an unknown cause for a combined anomaly, which paired with a CRITICAL risk should trigger immediate inspection or shutdown, not a routine scheduled maintenance.\"\n  ],\n  \"recommended_resolution\": \"immediate_shutdown\",\n  \"confidence_in_review\": 0.95\n}\n```"
+        }
+      },
+      {
+        "machine_id": 33,
+        "self_reflection": {
+          "raw": "```json\n{\n  \"self_consistent\": true,\n  \"inconsistencies\": [],\n  \"recommended_resolution\": \"schedule_maintenance\",\n  \"confidence_in_review\": 0.95\n}\n```"
+        }
+      },
+      {
+        "machine_id": 21,
+        "self_reflection": {
+          "raw": "```json\n{\n  \"self_consistent\": false,\n  \"inconsistencies\": [\n    \"Planning states 'low risk and high RUL' while Monitoring flagged 'MEDIUM' risk and Diagnosis assigned a 48-hour urgency window.\",\n    \"Planning schedules replacement for 'next downtime' at P3 priority, which contradicts Diagnosis's 48-hour urgency requirement.\",\n    \"Planning sets notify_supervisor to false despite a 48-hour urgency window and MEDIUM risk level.\"\n  ],\n  \"recommended_resolution\": \"inspect\",\n  \"confidence_in_review\": 0.95\n}\n```"
+        }
+      }
+    ],
+    "scheduling": {
+      "raw": "```json\n{\n  \"schedule\": [\n    {\n      \"machine_id\": \"M-11\",\n      \"maintenance_type\": \"corrective\",\n      \"scheduled_window\": \"2026-05-03 08:00 - 10:00\",\n      \"priority\": \"P1\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 251.18\n    },\n    {\n      \"machine_id\": \"M-37\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 08:00 - 10:00\",\n      \"priority\": \"P1\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 251.93\n    },\n    {\n      \"machine_id\": \"M-39\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 08:00 - 10:00\",\n      \"priority\": \"P1\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 251.93\n    },\n    {\n      \"machine_id\": \"M-49\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 08:00 - 10:00\",\n      \"priority\": \"P2\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 252.2\n    },\n    {\n      \"machine_id\": \"M-9\",\n      \"maintenance_type\": \"corrective\",\n      \"scheduled_window\": \"2026-05-03 08:00 - 10:00\",\n      \"priority\": \"P2\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 252.34\n    },\n    {\n      \"machine_id\": \"M-13\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 10:00 - 12:00\",\n      \"priority\": \"P2\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 252.96\n    },\n    {\n      \"machine_id\": \"M-1\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 10:00 - 12:00\",\n      \"priority\": \"P2\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 253.24\n    },\n    {\n      \"machine_id\": \"M-27\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 10:00 - 12:00\",\n      \"priority\": \"P2\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 253.72\n    },\n    {\n      \"machine_id\": \"M-25\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 10:00 - 12:00\",\n      \"priority\": \"P2\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 253.85\n    },\n    {\n      \"machine_id\": \"M-15\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 10:00 - 12:00\",\n      \"priority\": \"P3\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 253.98\n    },\n    {\n      \"machine_id\": \"M-23\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 12:00 - 14:00\",\n      \"priority\": \"P3\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 254.33\n    },\n    {\n      \"machine_id\": \"M-29\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 12:00 - 14:00\",\n      \"priority\": \"P3\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 254.58\n    },\n    {\n      \"machine_id\": \"M-43\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 12:00 - 14:00\",\n      \"priority\": \"P3\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 255.12\n    },\n    {\n      \"machine_id\": \"M-31\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 12:00 - 14:00\",\n      \"priority\": \"P3\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 255.32\n    },\n    {\n      \"machine_id\": \"M-45\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 12:00 - 14:00\",\n      \"priority\": \"P3\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 255.35\n    },\n    {\n      \"machine_id\": \"M-21\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 14:00 - 16:00\",\n      \"priority\": \"P3\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 255.43\n    },\n    {\n      \"machine_id\": \"M-17\",\n      \"maintenance_type\": \"corrective\",\n      \"scheduled_window\": \"2026-05-03 14:00 - 16:00\",\n      \"priority\": \"P3\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 255.61\n    },\n    {\n      \"machine_id\": \"M-5\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 14:00 - 16:00\",\n      \"priority\": \"P3\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 255.99\n    },\n    {\n      \"machine_id\": \"M-35\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 14:00 - 16:00\",\n      \"priority\": \"P4\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 256.08\n    },\n    {\n      \"machine_id\": \"M-33\",\n      \"maintenance_type\": \"corrective\",\n      \"scheduled_window\": \"2026-05-03 14:00 - 16:00\",\n      \"priority\": \"P4\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 256.1\n    },\n    {\n      \"machine_id\": \"M-47\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 16:00 - 18:00\",\n      \"priority\": \"P4\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 256.13\n    },\n    {\n      \"machine_id\": \"M-19\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 16:00 - 18:00\",\n      \"priority\": \"P4\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 256.18\n    },\n    {\n      \"machine_id\": \"M-7\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 16:00 - 18:00\",\n      \"priority\": \"P4\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 256.66\n    },\n    {\n      \"machine_id\": \"M-41\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 16:00 - 18:00\",\n      \"priority\": \"P4\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 256.67\n    },\n    {\n      \"machine_id\": \"M-3\",\n      \"maintenance_type\": \"preventive\",\n      \"scheduled_window\": \"2026-05-03 16:00 - 18:00\",\n      \"priority\": \"P4\",\n      \"estimated_downtime_hours\": 2.0,\n      \"rul_at_schedule\": 257.8\n    }\n  ],\n  \"schedule_summary\": {\n    \"total_downtime_hours\": 50.0,\n    \"machines_covered\": 25,\n    \"method\": \"constraint_satisfaction\"\n  }\n}\n```"
+    },
+    "pattern_learning": {
+      "raw": "```json\n{\n  \"detected_patterns\": [\n    {\n      \"pattern_id\": \"PAT-001\",\n      \"pattern_type\": \"spike\",\n      \"affected_machines\": [\n        \"M-33\",\n        \"M-37\",\n        \"M-39\"\n      ],\n      \"affected_features\": [\n        \"temperature\"\n      ],\n      \"confidence\": 0.88,\n      \"description\": \"Significant temperature spikes exceeding 80\u00b0C detected across three machines, indicating potential thermal overload.\",\n      \"trend_direction\": \"worsening\",\n      \"estimated_time_to_failure_hours\": 252.0\n    },\n    {\n      \"pattern_id\": \"PAT-002\",\n      \"pattern_type\": \"cross_feature\",\n      \"affected_machines\": [\n        \"M-11\",\n        \"M-37\",\n        \"M-39\",\n        \"M-49\"\n      ],\n      \"affected_features\": [\n        \"temperature\",\n        \"predicted_remaining_life\"\n      ],\n      \"confidence\": 0.82,\n      \"description\": \"Machines with highest temperatures correlate strongly with the lowest predicted remaining life below 252.5 hours.\",\n      \"trend_direction\": \"worsening\",\n      \"estimated_time_to_failure_hours\": 251.8\n    },\n    {\n      \"pattern_id\": \"PAT-003\",\n      \"pattern_type\": \"spike\",\n      \"affected_machines\": [\n        \"M-1\",\n        \"M-21\",\n        \"M-41\"\n      ],\n      \"affected_features\": [\n        \"vibration\"\n      ],\n      \"confidence\": 0.75,\n      \"description\": \"Elevated vibration levels above 56 detected, suggesting possible mechanical imbalance or bearing wear.\",\n      \"trend_direction\": \"stable\",\n      \"estimated_time_to_failure_hours\": 255.4\n    }\n  ],\n  \"summary\": {\n    \"total_patterns_detected\": 3,\n    \"novel_patterns\": 1\n  }\n}\n```"
+    }
+  },
+  "classical_heuristics": {
+    "schedule": {
+      "algorithm": "random_constrained_search",
+      "n_samples": 200,
+      "max_simultaneous": 5,
+      "best_objective_score": 1.6347,
+      "machines_to_schedule": [
+        {
+          "machine_id": 11,
+          "risk_score": 0.35,
+          "urgency": 0.026,
+          "predicted_rul": 251.18
+        },
+        {
+          "machine_id": 37,
+          "risk_score": 0.15,
+          "urgency": 0.023,
+          "predicted_rul": 251.93
+        },
+        {
+          "machine_id": 9,
+          "risk_score": 0.35,
+          "urgency": 0.021,
+          "predicted_rul": 252.34
+        },
+        {
+          "machine_id": 17,
+          "risk_score": 0.35,
+          "urgency": 0.008,
+          "predicted_rul": 255.61
+        },
+        {
+          "machine_id": 33,
+          "risk_score": 0.35,
+          "urgency": 0.007,
+          "predicted_rul": 256.1
+        }
+      ],
+      "total_scheduled": 5,
+      "_disclosure": "Greedy seed + random 1-bit-flip local search. NOT a quantum algorithm. Deterministic given RANDOM_SEED."
+    },
+    "anomaly": {
+      "algorithm": "energy_distance_anomaly_score",
+      "n_machines": 25,
+      "machine_results": [
+        {
+          "machine_id": 1,
+          "anomaly_score": 0.3666,
+          "classification_at_0_5": "NORMAL",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 3,
+          "anomaly_score": 0.5945,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 5,
+          "anomaly_score": 0.4498,
+          "classification_at_0_5": "NORMAL",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 7,
+          "anomaly_score": 0.6805,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 9,
+          "anomaly_score": 0.7543,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 11,
+          "anomaly_score": 0.5543,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 13,
+          "anomaly_score": 0.5074,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 15,
+          "anomaly_score": 0.6322,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 17,
+          "anomaly_score": 0.5902,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 19,
+          "anomaly_score": 0.6084,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 21,
+          "anomaly_score": 0.5885,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 23,
+          "anomaly_score": 0.2531,
+          "classification_at_0_5": "NORMAL",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 25,
+          "anomaly_score": 0.5881,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 27,
+          "anomaly_score": 0.6171,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 29,
+          "anomaly_score": 0.4083,
+          "classification_at_0_5": "NORMAL",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 31,
+          "anomaly_score": 0.4824,
+          "classification_at_0_5": "NORMAL",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 33,
+          "anomaly_score": 0.7257,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 35,
+          "anomaly_score": 0.5213,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 37,
+          "anomaly_score": 0.6626,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 39,
+          "anomaly_score": 0.6317,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 41,
+          "anomaly_score": 0.5035,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 43,
+          "anomaly_score": 0.622,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 45,
+          "anomaly_score": 0.2495,
+          "classification_at_0_5": "NORMAL",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 47,
+          "anomaly_score": 0.6538,
+          "classification_at_0_5": "ANOMALY",
+          "n_features_used": 5
+        },
+        {
+          "machine_id": 49,
+          "anomaly_score": 0.4763,
+          "classification_at_0_5": "NORMAL",
+          "n_features_used": 5
+        }
+      ],
+      "anomaly_count_at_0_5": 18,
+      "_disclosure": "Normalized L2 distance from training-set median per feature, passed through 1 - exp(-3d). Sensor inputs only. NOT a quantum algorithm."
+    },
+    "graph": {
+      "algorithm": "graph_message_passing_score",
+      "n_nodes": 25,
+      "n_edges": 300,
+      "n_rounds": 3,
+      "ranked_nodes_top10": [
+        {
+          "machine_id": 9,
+          "graph_influence_score": 0.2731,
+          "n_neighbors": 24
+        },
+        {
+          "machine_id": 33,
+          "graph_influence_score": 0.2624,
+          "n_neighbors": 24
+        },
+        {
+          "machine_id": 27,
+          "graph_influence_score": 0.224,
+          "n_neighbors": 24
+        },
+        {
+          "machine_id": 7,
+          "graph_influence_score": 0.1983,
+          "n_neighbors": 24
+        },
+        {
+          "machine_id": 39,
+          "graph_influence_score": 0.1837,
+          "n_neighbors": 24
+        },
+        {
+          "machine_id": 37,
+          "graph_influence_score": 0.1752,
+          "n_neighbors": 24
+        },
+        {
+          "machine_id": 17,
+          "graph_influence_score": 0.1737,
+          "n_neighbors": 24
+        },
+        {
+          "machine_id": 11,
+          "graph_influence_score": 0.1695,
+          "n_neighbors": 24
+        },
+        {
+          "machine_id": 35,
+          "graph_influence_score": 0.1665,
+          "n_neighbors": 24
+        },
+        {
+          "machine_id": 15,
+          "graph_influence_score": 0.1648,
+          "n_neighbors": 24
+        }
+      ],
+      "_disclosure": "Weighted neighbor averaging on the existing T-GCN adjacency. NOT a quantum algorithm."
+    }
+  },
+  "detection_metrics_on_test_split": {
+    "TP": 0,
+    "FP": 4,
+    "FN": 14,
+    "TN": 7,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "accuracy": 0.28,
+    "n": 25
+  }
+}

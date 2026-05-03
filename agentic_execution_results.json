@@ -1,0 +1,109 @@
+{
+  "timestamp": "2026-05-04 00:20:04.068577",
+  "n_machines": 7,
+  "overrides": 0,
+  "actions": {
+    "monitor": 5,
+    "immediate_shutdown": 1,
+    "schedule_maintenance": 1
+  },
+  "qubo": {
+    "selected": [
+      "15",
+      "23",
+      "39",
+      "43"
+    ],
+    "energy": -0.42206963013980037,
+    "ranking": [
+      "23",
+      "15",
+      "39",
+      "43",
+      "21",
+      "19",
+      "29"
+    ]
+  },
+  "per_machine": [
+    {
+      "machine_id": "39",
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.8509264351524325,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "agent_reasoning": []
+    },
+    {
+      "machine_id": "29",
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.5359363170928044,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "agent_reasoning": []
+    },
+    {
+      "machine_id": "15",
+      "classical_risk": 0.7999999999999999,
+      "risk_class": "CRITICAL",
+      "heuristic_score": 0.8907076307590881,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "immediate_shutdown",
+      "priority": "P1",
+      "override": false,
+      "agent_reasoning": [
+        "monitoring: HIGH risk detected"
+      ]
+    },
+    {
+      "machine_id": "43",
+      "classical_risk": 0.25,
+      "risk_class": "LOW",
+      "heuristic_score": 0.7801700386014521,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "agent_reasoning": []
+    },
+    {
+      "machine_id": "21",
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.6987978165275113,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "agent_reasoning": []
+    },
+    {
+      "machine_id": "19",
+      "classical_risk": 0.35,
+      "risk_class": "MEDIUM",
+      "heuristic_score": 0.5814793110693157,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "schedule_maintenance",
+      "priority": "P3",
+      "override": false,
+      "agent_reasoning": []
+    },
+    {
+      "machine_id": "23",
+      "classical_risk": 0.15,
+      "risk_class": "LOW",
+      "heuristic_score": 0.9002655256268273,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "agent_reasoning": []
+    }
+  ]
+}

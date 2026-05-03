@@ -1,0 +1,350 @@
+[OK] Qiskit available - Quantum computing enabled
+
+==========================================================================================
+ QUANTUM AGENTIC AI — KAFKA STREAM INTEGRATION
+==========================================================================================
+
+Usage:
+  python quantum_agenticai_kafka.py              # Real-time mode (all machines)
+  python quantum_agenticai_kafka.py --machine 40 # Single machine
+  python quantum_agenticai_kafka.py --classical  # Classical-only mode
+==========================================================================================
+
+[MODE] Real-time monitoring for ALL machines
+
+==========================================================================================
+ QUANTUM AGENTIC AI PIPELINE — REAL-TIME KAFKA STREAM + QAOA OPTIMIZATION
+==========================================================================================
+ MongoDB: mongodb://superUser:superUpsil!@10.247.166.188:27019/server_db?authSource=admin
+ Collection: simulated_smart_manufactured_data
+ Poll Interval: 60 seconds
+ Monitoring Machines: ALL (50 machines)
+ Quantum Weight: 0.4 (classical: 0.6)
+ Qiskit Available: True
+==========================================================================================
+
+[CONNECTED] MongoDB: mongodb://superUser:superUpsil!@10.247.166.188:27019/server_db?authSource=admin
+[CONNECTED] Collection: simulated_smart_manufactured_data
+
+[INGEST] 2026-05-02 15:22:24 — M-1 | Status: Normal
+  Temp: 75.4°C | Vib: 56.8 | Humi: 56.5% | Energy: 3.1 kWh | RUL: 252.7h
+  [QUANTUM] <Z>=-0.0128 | q_risk=0.494 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.494 | Hybrid: 0.197 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-2 | Status: Normal
+  Temp: 79.1°C | Vib: 44.5 | Humi: 59.9% | Energy: 3.1 kWh | RUL: 253.0h
+  [QUANTUM] <Z>=-0.0444 | q_risk=0.478 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.478 | Hybrid: 0.191 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-3 | Status: Warning
+  Temp: 68.8°C | Vib: 47.4 | Humi: 58.9% | Energy: 2.4 kWh | RUL: 256.7h
+  [QUANTUM] <Z>=-0.2185 | q_risk=0.391 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.391 | Hybrid: 0.246 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-4 | Status: Normal
+  Temp: 68.2°C | Vib: 51.9 | Humi: 56.9% | Energy: 2.7 kWh | RUL: 255.0h
+  [QUANTUM] <Z>=-0.2310 | q_risk=0.385 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.384 | Hybrid: 0.154 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-5 | Status: Fault
+  Temp: 75.4°C | Vib: 44.0 | Humi: 57.4% | Energy: 2.7 kWh | RUL: 255.7h
+  [QUANTUM] <Z>=-0.1314 | q_risk=0.434 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.434 | Hybrid: 0.264 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-6 | Status: Normal
+  Temp: 81.6°C | Vib: 51.4 | Humi: 60.3% | Energy: 2.7 kWh | RUL: 253.8h
+  [QUANTUM] <Z>=+0.0427 | q_risk=0.521 | label=MODERATE_RISK
+  [RISK] Classical: 0.000 | Quantum: 0.521 | Hybrid: 0.209 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-7 | Status: Fault
+  Temp: 69.8°C | Vib: 49.9 | Humi: 47.8% | Energy: 2.9 kWh | RUL: 255.2h
+  [QUANTUM] <Z>=-0.2616 | q_risk=0.369 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.369 | Hybrid: 0.238 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-8 | Status: Fault
+  Temp: 70.6°C | Vib: 51.3 | Humi: 63.9% | Energy: 3.0 kWh | RUL: 256.2h
+  [QUANTUM] <Z>=-0.1306 | q_risk=0.435 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.435 | Hybrid: 0.264 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-9 | Status: Fault
+  Temp: 69.7°C | Vib: 54.9 | Humi: 68.8% | Energy: 1.8 kWh | RUL: 252.5h
+  [QUANTUM] <Z>=-0.1898 | q_risk=0.405 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.405 | Hybrid: 0.252 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-10 | Status: Normal
+  Temp: 80.4°C | Vib: 44.4 | Humi: 51.5% | Energy: 3.3 kWh | RUL: 257.0h
+  [QUANTUM] <Z>=-0.0910 | q_risk=0.455 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.454 | Hybrid: 0.182 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-11 | Status: Normal
+  Temp: 70.6°C | Vib: 51.7 | Humi: 60.2% | Energy: 3.0 kWh | RUL: 250.8h
+  [QUANTUM] <Z>=-0.0709 | q_risk=0.465 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.464 | Hybrid: 0.186 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:24 — M-12 | Status: Fault
+  Temp: 71.5°C | Vib: 48.8 | Humi: 61.6% | Energy: 2.3 kWh | RUL: 257.0h
+  [QUANTUM] <Z>=-0.1638 | q_risk=0.418 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.418 | Hybrid: 0.257 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-13 | Status: Normal
+  Temp: 79.6°C | Vib: 53.9 | Humi: 52.5% | Energy: 2.6 kWh | RUL: 251.7h
+  [QUANTUM] <Z>=-0.0144 | q_risk=0.493 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.493 | Hybrid: 0.197 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-14 | Status: Normal
+  Temp: 75.1°C | Vib: 53.4 | Humi: 50.5% | Energy: 3.2 kWh | RUL: 255.3h
+  [QUANTUM] <Z>=-0.0282 | q_risk=0.486 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.486 | Hybrid: 0.194 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-15 | Status: Warning
+  Temp: 77.9°C | Vib: 55.8 | Humi: 48.1% | Energy: 2.2 kWh | RUL: 253.9h
+  [QUANTUM] <Z>=-0.0845 | q_risk=0.458 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.458 | Hybrid: 0.273 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-16 | Status: Warning
+  Temp: 75.9°C | Vib: 59.7 | Humi: 53.3% | Energy: 2.6 kWh | RUL: 254.0h
+  [QUANTUM] <Z>=-0.0761 | q_risk=0.462 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.462 | Hybrid: 0.275 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-17 | Status: Normal
+  Temp: 73.0°C | Vib: 45.0 | Humi: 57.3% | Energy: 3.0 kWh | RUL: 254.8h
+  [QUANTUM] <Z>=-0.0870 | q_risk=0.457 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.456 | Hybrid: 0.183 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-18 | Status: Warning
+  Temp: 84.1°C | Vib: 55.3 | Humi: 54.6% | Energy: 2.2 kWh | RUL: 255.5h
+  [QUANTUM] <Z>=+0.0469 | q_risk=0.523 | label=MODERATE_RISK
+  [RISK] Classical: 0.000 | Quantum: 0.523 | Hybrid: 0.209 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-19 | Status: Warning
+  Temp: 71.9°C | Vib: 48.1 | Humi: 52.7% | Energy: 2.1 kWh | RUL: 255.5h
+  [QUANTUM] <Z>=-0.2371 | q_risk=0.382 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.382 | Hybrid: 0.153 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-20 | Status: Normal
+  Temp: 75.6°C | Vib: 41.8 | Humi: 50.8% | Energy: 2.8 kWh | RUL: 254.6h
+  [QUANTUM] <Z>=-0.1526 | q_risk=0.424 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.424 | Hybrid: 0.169 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-21 | Status: Normal
+  Temp: 73.5°C | Vib: 58.4 | Humi: 50.3% | Energy: 2.7 kWh | RUL: 255.4h
+  [QUANTUM] <Z>=-0.0753 | q_risk=0.462 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.462 | Hybrid: 0.185 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-22 | Status: Normal
+  Temp: 68.5°C | Vib: 57.2 | Humi: 51.1% | Energy: 1.8 kWh | RUL: 253.3h
+  [QUANTUM] <Z>=-0.2149 | q_risk=0.393 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.393 | Hybrid: 0.157 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-23 | Status: Warning
+  Temp: 77.3°C | Vib: 51.7 | Humi: 61.1% | Energy: 2.8 kWh | RUL: 253.3h
+  [QUANTUM] <Z>=-0.0198 | q_risk=0.490 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.490 | Hybrid: 0.286 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-24 | Status: Normal
+  Temp: 72.2°C | Vib: 53.5 | Humi: 50.9% | Energy: 3.0 kWh | RUL: 254.9h
+  [QUANTUM] <Z>=-0.1237 | q_risk=0.438 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.438 | Hybrid: 0.175 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-25 | Status: Warning
+  Temp: 74.6°C | Vib: 50.8 | Humi: 46.1% | Energy: 2.5 kWh | RUL: 254.3h
+  [QUANTUM] <Z>=-0.1820 | q_risk=0.409 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.409 | Hybrid: 0.254 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-26 | Status: Fault
+  Temp: 73.1°C | Vib: 52.7 | Humi: 62.5% | Energy: 2.9 kWh | RUL: 256.2h
+  [QUANTUM] <Z>=-0.1321 | q_risk=0.434 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.434 | Hybrid: 0.264 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-27 | Status: Normal
+  Temp: 67.5°C | Vib: 54.9 | Humi: 63.7% | Energy: 3.1 kWh | RUL: 254.6h
+  [QUANTUM] <Z>=-0.1333 | q_risk=0.433 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.433 | Hybrid: 0.173 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-28 | Status: Normal
+  Temp: 72.4°C | Vib: 42.2 | Humi: 65.0% | Energy: 3.8 kWh | RUL: 255.6h
+  [QUANTUM] <Z>=-0.0296 | q_risk=0.485 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.485 | Hybrid: 0.194 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-29 | Status: Fault
+  Temp: 75.4°C | Vib: 47.7 | Humi: 59.0% | Energy: 2.4 kWh | RUL: 254.1h
+  [QUANTUM] <Z>=-0.1226 | q_risk=0.439 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.439 | Hybrid: 0.265 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-30 | Status: Normal
+  Temp: 79.8°C | Vib: 48.0 | Humi: 62.5% | Energy: 3.2 kWh | RUL: 252.9h
+  [QUANTUM] <Z>=+0.0097 | q_risk=0.505 | label=MODERATE_RISK
+  [RISK] Classical: 0.000 | Quantum: 0.505 | Hybrid: 0.202 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-31 | Status: Normal
+  Temp: 76.3°C | Vib: 55.3 | Humi: 53.1% | Energy: 2.6 kWh | RUL: 254.4h
+  [QUANTUM] <Z>=-0.0480 | q_risk=0.476 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.476 | Hybrid: 0.190 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-32 | Status: Warning
+  Temp: 73.7°C | Vib: 56.3 | Humi: 60.6% | Energy: 1.3 kWh | RUL: 253.5h
+  [QUANTUM] <Z>=-0.1758 | q_risk=0.412 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.412 | Hybrid: 0.255 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-33 | Status: Normal
+  Temp: 80.5°C | Vib: 41.5 | Humi: 46.7% | Energy: 2.9 kWh | RUL: 255.5h
+  [QUANTUM] <Z>=-0.0608 | q_risk=0.470 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.470 | Hybrid: 0.188 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-34 | Status: Warning
+  Temp: 75.6°C | Vib: 58.2 | Humi: 59.1% | Energy: 3.5 kWh | RUL: 255.1h
+  [QUANTUM] <Z>=+0.0406 | q_risk=0.520 | label=MODERATE_RISK
+  [RISK] Classical: 0.150 | Quantum: 0.520 | Hybrid: 0.298 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-35 | Status: Warning
+  Temp: 76.8°C | Vib: 44.0 | Humi: 56.9% | Energy: 3.0 kWh | RUL: 257.4h
+  [QUANTUM] <Z>=-0.1177 | q_risk=0.441 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.441 | Hybrid: 0.266 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-36 | Status: Normal
+  Temp: 74.9°C | Vib: 51.3 | Humi: 59.1% | Energy: 3.2 kWh | RUL: 253.5h
+  [QUANTUM] <Z>=-0.0005 | q_risk=0.500 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.500 | Hybrid: 0.200 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-37 | Status: Fault
+  Temp: 83.4°C | Vib: 46.6 | Humi: 57.2% | Energy: 2.1 kWh | RUL: 251.8h
+  [QUANTUM] <Z>=-0.0372 | q_risk=0.481 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.481 | Hybrid: 0.283 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-38 | Status: Warning
+  Temp: 80.6°C | Vib: 50.1 | Humi: 53.9% | Energy: 3.4 kWh | RUL: 254.2h
+  [QUANTUM] <Z>=-0.0271 | q_risk=0.486 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.486 | Hybrid: 0.285 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-39 | Status: Warning
+  Temp: 80.9°C | Vib: 49.8 | Humi: 45.0% | Energy: 3.2 kWh | RUL: 252.0h
+  [QUANTUM] <Z>=-0.0267 | q_risk=0.487 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.487 | Hybrid: 0.285 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-40 | Status: Normal
+  Temp: 64.7°C | Vib: 49.1 | Humi: 78.5% | Energy: 3.3 kWh | RUL: 254.1h
+  [QUANTUM] <Z>=-0.0891 | q_risk=0.455 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.350 | Quantum: 0.455 | Hybrid: 0.392 (MEDIUM)
+  [AGENT] Activating quantum-enhanced multi-agent orchestration...
+  [MONITOR] {'raw': '```json\n{\n  "risk_level": "MEDIUM",\n  "anomaly_detected": true,\n  "anomaly_type": "combined",\n  "confidence": 0.45,\n  "quantum_state_concern": true\n}\n```'}
+  [DIAGNOSIS] {'raw': '```json\n{\n  "probable_cause": "lubrication",\n  "affected_component": "bearing",\n  "urgency_hours": 24,\n  "quantum_correlation": "The slightly negative <Z> (-0.0891) combined with quantum risk 0.4554 suggests moisture-induced state perturbation not yet visible in classical vibration/temperature readings. Critical humidity (78.5%) likely causing lubrication contamination and early bearing degradation, detected in quantum coherence patterns before classical thresholds are breached."\n}\n```'}
+  [PLANNING] {'raw': '```json\n{\n  "action": "schedule_maintenance",\n  "priority": "P2",\n  "reason": "Quantum-detected early bearing degradation; lubrication needed within 24h window",\n  "notify_supervisor": true,\n  "qaoa_aligned": true\n}\n```'}
+  [REPORT] {'raw': 'Peringatan P2 untuk Mesin M-40 membutuhkan pelumasan bearing dalam 24 jam. Analisis kuantum menunjukkan nilai <Z>=-0.0891 dan risiko 0.4554 yang mendeteksi kontaminasi pelumas akibat kelembaban kritis (78.5%) sebelum anomali ini muncul di sensor klasik. Segera jadwalkan pemeliharaan untuk mencegah degradasi bearing lebih lanjut.'}
+
+======================================================================
+[ACTION] 2026-05-02 15:25:38 — Machine M-40
+  Action     : monitor
+  Priority   : P4
+  Quantum    : No
+  Report     : Peringatan P2 untuk Mesin M-40 membutuhkan pelumasan bearing dalam 24 jam. Analisis kuantum menunjukkan nilai <Z>=-0.0891 dan risiko 0.4554 yang mendeteksi kontaminasi pelumas akibat kelembaban kritis (78.5%) sebelum anomali ini muncul di sensor klasik. Segera jadwalkan pemeliharaan untuk mencegah degradasi bearing lebih lanjut.
+======================================================================
+  >> [MONITOR] Enhanced monitoring activated for M-40
+
+[INGEST] 2026-05-02 15:22:25 — M-41 | Status: Warning
+  Temp: 70.3°C | Vib: 57.0 | Humi: 58.9% | Energy: 2.9 kWh | RUL: 256.2h
+  [QUANTUM] <Z>=-0.0955 | q_risk=0.452 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.452 | Hybrid: 0.181 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-42 | Status: Warning
+  Temp: 74.1°C | Vib: 42.7 | Humi: 58.0% | Energy: 3.0 kWh | RUL: 254.4h
+  [QUANTUM] <Z>=-0.1391 | q_risk=0.430 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.430 | Hybrid: 0.262 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-43 | Status: Warning
+  Temp: 78.8°C | Vib: 51.9 | Humi: 56.1% | Energy: 2.1 kWh | RUL: 254.9h
+  [QUANTUM] <Z>=-0.1209 | q_risk=0.440 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.440 | Hybrid: 0.266 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-44 | Status: Normal
+  Temp: 75.9°C | Vib: 50.5 | Humi: 61.3% | Energy: 2.3 kWh | RUL: 253.2h
+  [QUANTUM] <Z>=-0.0923 | q_risk=0.454 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.454 | Hybrid: 0.182 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-45 | Status: Normal
+  Temp: 75.6°C | Vib: 52.5 | Humi: 56.2% | Energy: 3.3 kWh | RUL: 254.8h
+  [QUANTUM] <Z>=-0.0403 | q_risk=0.480 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.480 | Hybrid: 0.192 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-46 | Status: Warning
+  Temp: 81.4°C | Vib: 46.1 | Humi: 66.7% | Energy: 2.4 kWh | RUL: 253.6h
+  [QUANTUM] <Z>=+0.0100 | q_risk=0.505 | label=MODERATE_RISK
+  [RISK] Classical: 0.150 | Quantum: 0.505 | Hybrid: 0.292 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-47 | Status: Normal
+  Temp: 74.7°C | Vib: 51.2 | Humi: 55.6% | Energy: 1.7 kWh | RUL: 256.6h
+  [QUANTUM] <Z>=-0.1841 | q_risk=0.408 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.408 | Hybrid: 0.163 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-48 | Status: Normal
+  Temp: 76.5°C | Vib: 50.2 | Humi: 55.6% | Energy: 3.1 kWh | RUL: 255.4h
+  [QUANTUM] <Z>=-0.0756 | q_risk=0.462 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.000 | Quantum: 0.462 | Hybrid: 0.185 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-49 | Status: Warning
+  Temp: 70.8°C | Vib: 53.1 | Humi: 54.8% | Energy: 2.5 kWh | RUL: 252.1h
+  [QUANTUM] <Z>=-0.1698 | q_risk=0.415 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.415 | Hybrid: 0.256 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+
+[INGEST] 2026-05-02 15:22:25 — M-50 | Status: Fault
+  Temp: 76.7°C | Vib: 56.1 | Humi: 43.8% | Energy: 2.4 kWh | RUL: 254.4h
+  [QUANTUM] <Z>=-0.0773 | q_risk=0.461 | label=SLIGHT_DEVIATION
+  [RISK] Classical: 0.150 | Quantum: 0.461 | Hybrid: 0.275 (LOW)
+  [SKIP] LOW risk + no quantum signal → passive monitoring
+[LEARN] 50 feedback records sent to quantum-classical retraining pipeline
+[DISCONNECTED] MongoDB connection closed
+
+==========================================================================================
+[SUMMARY]
+  Events Processed: 50
+  QAOA Cycles: 0
+  Feedback Records: 50
+  Final Quantum Weight: 0.40
+==========================================================================================

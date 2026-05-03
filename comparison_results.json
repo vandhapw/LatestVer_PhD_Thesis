@@ -1,0 +1,124 @@
+{
+  "_audit_disclosure": "All approaches evaluated on held-out test split (machine_id odd). Bounds derived from training split. No ground-truth fields passed to LLM agents or any feature pipeline. Approach C and D decision thresholds derived from train fleet (no peeking). Single-snapshot results, not cross-validated.",
+  "timestamp": "2026-05-03 06:32:22.266479",
+  "n_machines": 25,
+  "skip_agentic": false,
+  "comparison": {
+    "metrics_rule_based": {
+      "TP": 0,
+      "FP": 4,
+      "FN": 10,
+      "TN": 11,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "accuracy": 0.44,
+      "n": 25
+    },
+    "metrics_agentic_ai": {
+      "TP": 0,
+      "FP": 4,
+      "FN": 10,
+      "TN": 11,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "accuracy": 0.44,
+      "n": 25
+    },
+    "metrics_fleet_relative": {
+      "TP": 3,
+      "FP": 7,
+      "FN": 7,
+      "TN": 8,
+      "precision": 0.3,
+      "recall": 0.3,
+      "f1_score": 0.3,
+      "accuracy": 0.44,
+      "n": 25
+    },
+    "metrics_sliding_window": {
+      "TP": 5,
+      "FP": 6,
+      "FN": 5,
+      "TN": 9,
+      "precision": 0.4545,
+      "recall": 0.5,
+      "f1_score": 0.4762,
+      "accuracy": 0.56,
+      "n": 25
+    }
+  },
+  "raw_events": [
+    {
+      "machine_id": 1,
+      "timestamp": "2026-05-03 05:06:50.013000",
+      "temperature": 75.2797,
+      "vibration": 57.3694,
+      "humidity": 57.1645,
+      "pressure": 3.0371,
+      "energy_consumption": 3.1459,
+      "energy": 3.1459,
+      "predicted_remaining_life": 252.91,
+      "anchor_machine": 40,
+      "graph_distance": 39,
+      "influence_score": 0.000405
+    },
+    {
+      "machine_id": 3,
+      "timestamp": "2026-05-03 05:06:50.035000",
+      "temperature": 68.7339,
+      "vibration": 48.3403,
+      "humidity": 58.5305,
+      "pressure": 3.0582,
+      "energy_consumption": 2.3657,
+      "energy": 2.3657,
+      "predicted_remaining_life": 257.74,
+      "anchor_machine": 40,
+      "graph_distance": 37,
+      "influence_score": 0.000494
+    },
+    {
+      "machine_id": 5,
+      "timestamp": "2026-05-03 05:06:50.057000",
+      "temperature": 75.8623,
+      "vibration": 43.9921,
+      "humidity": 57.5199,
+      "pressure": 2.8212,
+      "energy_consumption": 2.7769,
+      "energy": 2.7769,
+      "predicted_remaining_life": 256.06,
+      "anchor_machine": 40,
+      "graph_distance": 35,
+      "influence_score": 0.000604
+    },
+    {
+      "machine_id": 7,
+      "timestamp": "2026-05-03 05:06:50.080000",
+      "temperature": 71.0503,
+      "vibration": 50.4992,
+      "humidity": 48.7001,
+      "pressure": 2.0949,
+      "energy_consumption": 2.8268,
+      "energy": 2.8268,
+      "predicted_remaining_life": 256.0,
+      "anchor_machine": 40,
+      "graph_distance": 33,
+      "influence_score": 0.000738
+    },
+    {
+      "machine_id": 9,
+      "timestamp": "2026-05-03 05:06:50.102000",
+      "temperature": 69.4889,
+      "vibration": 54.8335,
+      "humidity": 68.3935,
+      "pressure": 2.5431,
+      "energy_consumption": 1.7263,
+      "energy": 1.7263,
+      "predicted_remaining_life": 252.14,
+      "anchor_machine": 40,
+      "graph_distance": 31,
+      "influence_score": 0.000901
+    }
+  ]
+}

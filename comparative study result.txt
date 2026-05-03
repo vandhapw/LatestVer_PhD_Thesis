@@ -1,0 +1,243 @@
+python .\comparative_study.py
+
+================================================================================
+ LOADING REAL DATA FROM MONGODB (Kafka Stream)
+================================================================================
+[DATA] Connected to MongoDB: mongodb://superUser:superUpsil!@10.247.166.188:27019/server_db?authSource=admin
+[DATA] Loaded 50 machines
+
+================================================================================
+ RUNNING APPROACH A: Non-Agentic (Rule-based Threshold)
+================================================================================
+  Completed: 50 machines analyzed
+
+================================================================================
+ RUNNING APPROACH B: Agentic AI (9 Agents + Quantum)
+================================================================================
+  [AGENTIC] 34/50 machines selected for LLM analysis
+    [1/34] 1 — agents complete
+    [2/34] 2 — agents complete
+    [3/34] 3 — agents complete
+    [4/34] 6 — agents complete
+    [5/34] 7 — agents complete
+    [6/34] 8 — agents complete
+    [7/34] 9 — agents complete
+    [8/34] 10 — agents complete
+    [9/34] 13 — agents complete
+    [10/34] 15 — agents complete
+    [11/34] 16 — agents complete
+    [12/34] 18 — agents complete
+    [13/34] 19 — agents complete
+    [14/34] 20 — agents complete
+    [15/34] 23 — agents complete
+    [16/34] 24 — agents complete
+    [17/34] 26 — agents complete
+    [18/34] 28 — agents complete
+    [19/34] 30 — agents complete
+    [20/34] 31 — agents complete
+    [21/34] 32 — agents complete
+    [22/34] 33 — agents complete
+    [23/34] 34 — agents complete
+    [24/34] 35 — agents complete
+    [25/34] 37 — agents complete
+    [26/34] 38 — agents complete
+    [27/34] 39 — agents complete
+    [28/34] 42 — agents complete
+    [29/34] 43 — agents complete
+    [30/34] 46 — agents complete
+    [31/34] 47 — agents complete
+    [32/34] 48 — agents complete
+    [33/34] 49 — agents complete
+    [34/34] 50 — agents complete
+  [AGENTIC] Running Correlation Agent on 50 machines...
+  [AGENTIC] Running Consensus Agent...
+  Completed: 50 machines analyzed
+
+
+================================================================================
+ COMPARATIVE STUDY: Non-Agentic vs Agentic AI
+ Predictive Maintenance — Smart Manufacturing
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+ DATA SUMMARY
+────────────────────────────────────────────────────────────────────────────────
+  Total machines         : 50
+  Ground truth attention : 30 (60.0%)
+  Ground truth normal    : 20 (40.0%)
+  Status distribution    : {'Fault': 13, 'Normal': 20, 'Warning': 17}
+  Failure types          : {'Overheating': 14, 'Pressure Drop': 5, 'Electrical Fault': 2, 'Vibration Issue': 7}
+
+────────────────────────────────────────────────────────────────────────────────
+ DETECTION PERFORMANCE (vs Digital Twin ground truth)
+────────────────────────────────────────────────────────────────────────────────
+  Metric                      Non-Agentic     Agentic AI      Delta
+  ──────────────────────────────────────────────────────────────
+  TP                                    0              3         +3
+  FP                                    0              0         +0
+  FN                                   30             27         -3
+  TN                                   20             20         +0
+  precision                             0            1.0       +1.0
+  recall                           0.0000         0.1000    +0.1000
+  f1_score                              0         0.1818    +0.1818
+  accuracy                         0.4000         0.4600    +0.0600
+
+────────────────────────────────────────────────────────────────────────────────
+ NEAR-MISS ANALYSIS (False Negatives — missed detections)
+────────────────────────────────────────────────────────────────────────────────
+  Non-Agentic missed : 30 machines
+  Agentic AI missed  : 27 machines
+
+  Machines missed by Non-Agentic (but flagged by Digital Twin):
+    1        status=Fault    failure=Overheating        closest: ?=0% of threshold (Δ?)
+    3        status=Fault    failure=Overheating        closest: ?=0% of threshold (Δ?)
+    6        status=Fault    failure=Pressure Drop      closest: ?=0% of threshold (Δ?)
+    7        status=Fault    failure=Pressure Drop      closest: ?=0% of threshold (Δ?)
+    8        status=Fault    failure=Electrical Fault   closest: ?=0% of threshold (Δ?)
+    9        status=Fault    failure=Overheating        closest: ?=0% of threshold (Δ?)
+    10       status=Warning  failure=Overheating        closest: ?=0% of threshold (Δ?)
+    13       status=Fault    failure=Overheating        closest: ?=0% of threshold (Δ?)
+    15       status=Warning  failure=Normal             closest: ?=0% of threshold (Δ?)
+    16       status=Warning  failure=Overheating        closest: ?=0% of threshold (Δ?)
+
+  Machines missed by Agentic AI:
+    1        status=Fault    failure=Overheating
+    3        status=Fault    failure=Overheating
+    6        status=Fault    failure=Pressure Drop
+    7        status=Fault    failure=Pressure Drop
+    8        status=Fault    failure=Electrical Fault
+    9        status=Fault    failure=Overheating
+    10       status=Warning  failure=Overheating
+    15       status=Warning  failure=Normal
+    16       status=Warning  failure=Overheating
+    18       status=Warning  failure=Vibration Issue
+
+────────────────────────────────────────────────────────────────────────────────
+ CAPABILITY COVERAGE (% of machines with this analysis)
+────────────────────────────────────────────────────────────────────────────────
+  Capability                        Non-Agentic     Agentic AI
+  ──────────────────────────────────────────────────────────
+  root_cause_analysis                      0.0%          68.0%
+  explainability                           0.0%           2.0%
+  cross_machine_correlation                0.0%         100.0%
+  consensus_validation                     0.0%          68.0%
+  scheduling_optimization                  0.0%         100.0%
+  pattern_detection                        0.0%         100.0%
+
+  Decision dimensions covered : Non-Agentic=0/6, Agentic=6/6
+
+────────────────────────────────────────────────────────────────────────────────
+ INFORMATION RICHNESS (actionable fields per machine)
+────────────────────────────────────────────────────────────────────────────────
+  Metric                      Non-Agentic     Agentic AI
+  ────────────────────────────────────────────────────
+  mean_fields                           2           4.86
+  median_fields                       2.0            5.0
+  min_fields                            2              4
+  max_fields                            2              8
+
+────────────────────────────────────────────────────────────────────────────────
+ PER-MACHINE DETAIL — Top cases where approaches diverge
+────────────────────────────────────────────────────────────────────────────────
+
+  1 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Fault, Failure: Overheating, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  3 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Fault, Failure: Overheating, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  6 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Fault, Failure: Pressure Drop, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  7 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Fault, Failure: Pressure Drop, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  8 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Fault, Failure: Electrical Fault, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  9 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Fault, Failure: Overheating, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: overheating → motor
+    Correlated with: 49 other machines
+
+  10 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Warning, Failure: Overheating, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  13 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: DETECTED
+    Status: Fault, Failure: Overheating, Risk: 0.0
+    Agentic severity: MEDIUM, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  15 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Warning, Failure: Normal, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  16 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Warning, Failure: Overheating, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: overheating → motor
+    Correlated with: 49 other machines
+
+  18 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Warning, Failure: Vibration Issue, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  19 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Warning, Failure: Vibration Issue, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  20 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Warning, Failure: Overheating, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  23 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Warning, Failure: Overheating, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+  24 | GT: NEEDS ATTN | Rule-based: MISSED | Agentic: MISSED
+    Status: Fault, Failure: Pressure Drop, Risk: 0.0
+    Agentic severity: LOW, Diagnosis: unknown → unknown
+    Correlated with: 49 other machines
+
+================================================================================
+ QUANTITATIVE CONCLUSION
+================================================================================
+
+  1. DETECTION:
+     Recall improvement  : +0.1000 (Non-Agentic=0.0000, Agentic=0.1000)
+     F1-score improvement: +0.1818 (Non-Agentic=0.0000, Agentic=0.1818)
+     False negatives reduced by: 3 machines
+
+  2. CAPABILITY:
+     Decision dimensions : Non-Agentic=0/6, Agentic=6/6
+     Non-Agentic lacks   : root-cause, explainability, correlation, consensus, scheduling, pattern detection
+
+  3. INFORMATION RICHNESS:
+     Mean fields/machine : Non-Agentic=2, Agentic=4.86 (Δ+2.9)
+
+  4. NEAR-MISS AWARENESS:
+     Non-Agentic missed  : 30 machines with real issues
+     Agentic AI missed   : 27 machines with real issues
+
+  FINDING: Agentic AI provides measurable improvements across
+  detection, capability breadth, and information richness.
+  The 3 additional near-miss detections are critical for
+  preventing undetected failures in industrial settings.
+
+================================================================================

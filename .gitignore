@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+sensor_bounds_derived.json
+ollama_keys.py

@@ -1,0 +1,3945 @@
+{
+  "timestamp": "2026-05-01 07:43:53.491395",
+  "models": [
+    "glm-5.1:cloud",
+    "qwen3.5:397b-cloud",
+    "deepseek-v4-pro:cloud"
+  ],
+  "test_machines": [
+    1,
+    5,
+    9,
+    37,
+    50
+  ],
+  "n_runs_per_call": 3,
+  "aggregate_metrics": {
+    "GLM-5.1": {
+      "m1_json_rate": 0.6667,
+      "m2_schema_rate": 0.6667,
+      "m3_reasoning_avg": 0.7167,
+      "m4_latency_avg": 27.737,
+      "m4_latency_p95": 81.573,
+      "m6_consistency": 0.5056,
+      "m7_cost_total": 0.0252,
+      "m7_quality_per_dollar": 28.44,
+      "total_calls": 90,
+      "per_agent": {
+        "monitoring": {
+          "m1": 1.0,
+          "m2": 1.0,
+          "m3": 0.98,
+          "m4": 53.171,
+          "m6": 0.8,
+          "n_calls": 15
+        },
+        "diagnosis": {
+          "m1": 1.0,
+          "m2": 1.0,
+          "m3": 0.78,
+          "m4": 11.374,
+          "m6": 0.7167,
+          "n_calls": 15
+        },
+        "planning": {
+          "m1": 1.0,
+          "m2": 1.0,
+          "m3": 0.9,
+          "m4": 12.448,
+          "m6": 0.7167,
+          "n_calls": 15
+        },
+        "reporting": {
+          "m1": 0.0,
+          "m2": 0.0,
+          "m3": 0.8,
+          "m4": 19.674,
+          "m6": 0.0,
+          "n_calls": 15
+        },
+        "explainability": {
+          "m1": 0.4667,
+          "m2": 0.4667,
+          "m3": 0.4667,
+          "m4": 50.28,
+          "m6": 0.2,
+          "n_calls": 15
+        },
+        "correlation": {
+          "m1": 0.5333,
+          "m2": 0.5333,
+          "m3": 0.3733,
+          "m4": 19.476,
+          "m6": 0.6,
+          "n_calls": 15
+        }
+      }
+    },
+    "Qwen3.5": {
+      "m1_json_rate": 0.8222,
+      "m2_schema_rate": 0.8222,
+      "m3_reasoning_avg": 0.8478,
+      "m4_latency_avg": 70.822,
+      "m4_latency_p95": 248.717,
+      "m6_consistency": 0.6634,
+      "m7_cost_total": 0.0378,
+      "m7_quality_per_dollar": 22.43,
+      "total_calls": 90,
+      "per_agent": {
+        "monitoring": {
+          "m1": 1.0,
+          "m2": 1.0,
+          "m3": 0.8133,
+          "m4": 58.604,
+          "m6": 0.9167,
+          "n_calls": 15
+        },
+        "diagnosis": {
+          "m1": 0.9333,
+          "m2": 0.9333,
+          "m3": 0.76,
+          "m4": 63.0,
+          "m6": 0.8083,
+          "n_calls": 15
+        },
+        "planning": {
+          "m1": 1.0,
+          "m2": 1.0,
+          "m3": 0.8333,
+          "m4": 32.294,
+          "m6": 0.7667,
+          "n_calls": 15
+        },
+        "reporting": {
+          "m1": 0.0,
+          "m2": 0.0,
+          "m3": 0.8,
+          "m4": 44.504,
+          "m6": 0.0,
+          "n_calls": 15
+        },
+        "explainability": {
+          "m1": 1.0,
+          "m2": 1.0,
+          "m3": 1.0,
+          "m4": 99.908,
+          "m6": 0.7333,
+          "n_calls": 15
+        },
+        "correlation": {
+          "m1": 1.0,
+          "m2": 1.0,
+          "m3": 0.88,
+          "m4": 126.621,
+          "m6": 0.7556,
+          "n_calls": 15
+        }
+      }
+    },
+    "DeepSeek-V4": {
+      "m1_json_rate": 0.7556,
+      "m2_schema_rate": 0.7556,
+      "m3_reasoning_avg": 0.7311,
+      "m4_latency_avg": 20.769,
+      "m4_latency_p95": 76.391,
+      "m6_consistency": 0.6223,
+      "m7_cost_total": 0.0315,
+      "m7_quality_per_dollar": 23.21,
+      "total_calls": 90,
+      "per_agent": {
+        "monitoring": {
+          "m1": 0.8667,
+          "m2": 0.8667,
+          "m3": 0.6333,
+          "m4": 36.583,
+          "m6": 0.6833,
+          "n_calls": 15
+        },
+        "diagnosis": {
+          "m1": 0.8,
+          "m2": 0.8,
+          "m3": 0.5533,
+          "m4": 21.947,
+          "m6": 0.525,
+          "n_calls": 15
+        },
+        "planning": {
+          "m1": 0.8667,
+          "m2": 0.8667,
+          "m3": 0.7,
+          "m4": 7.631,
+          "m6": 0.7833,
+          "n_calls": 15
+        },
+        "reporting": {
+          "m1": 0.0,
+          "m2": 0.0,
+          "m3": 0.8,
+          "m4": 2.56,
+          "m6": 0.0,
+          "n_calls": 15
+        },
+        "explainability": {
+          "m1": 1.0,
+          "m2": 1.0,
+          "m3": 1.0,
+          "m4": 51.514,
+          "m6": 0.7867,
+          "n_calls": 15
+        },
+        "correlation": {
+          "m1": 1.0,
+          "m2": 1.0,
+          "m3": 0.7,
+          "m4": 4.382,
+          "m6": 0.9556,
+          "n_calls": 15
+        }
+      }
+    }
+  },
+  "detailed_results": {
+    "GLM-5.1": {
+      "monitoring": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 156.826,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 1.0
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 54.079,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.98
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 29.191,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 31.902,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 1.0
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 17.531,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 1.0
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 8.156,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 36.297,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "combined",
+              "confidence": 0.65
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 131.265,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": true,
+              "anomaly_type": "energy",
+              "confidence": 0.7
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 93.937,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "none",
+              "confidence": 0.7
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 39.875,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.9
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 32.016,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "HIGH",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 80.265,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "HIGH",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.85
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 60.078,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 21.672,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.78
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 4.469,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "HIGH",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.82
+            },
+            "error": null
+          }
+        ]
+      },
+      "diagnosis": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 2.313,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.8,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 24,
+              "evidence": "All indicators normal, no anomaly or maintenance required"
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 2.781,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.8,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 24,
+              "evidence": "All parameters normal, no anomaly detected, RUL 252h"
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 10.549,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 240,
+              "evidence": "All sensor readings normal, no anomaly or risk detected"
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 7.419,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 720,
+              "evidence": "All readings normal, anomaly flag zero, no maintenance required."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 6.186,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 720,
+              "evidence": "All readings normal, no anomaly detected, high remaining life"
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 6.328,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 0,
+              "evidence": "All sensor readings normal, no anomaly detected"
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 15.781,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "probable_cause": "bearing_wear",
+              "affected_component": "pump",
+              "urgency_hours": 24,
+              "evidence": "Low pressure 2.53 with high vibration 54.9 indicates pump bearing degradation"
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 12.125,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "probable_cause": "bearing_wear",
+              "affected_component": "pump",
+              "urgency_hours": 72,
+              "evidence": "High vibration with pressure drop indicates pump bearing degradation"
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 13.768,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "probable_cause": "bearing_wear",
+              "affected_component": "pump",
+              "urgency_hours": 120,
+              "evidence": "High vibration and pressure drop suggest pump bearing or impeller wear."
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 5.326,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "High temperature 83.4C and explicit failure type indicates overheating."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 21.859,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 48,
+              "evidence": "Elevated temperature 83.39 and thermal anomaly detected"
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 14.61,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "High temperature 83.4C and thermal anomaly detected, confidence 0.9"
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 15.157,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 72,
+              "evidence": "High temperature 76.68 and elevated vibration 56.12 indicate motor overheating."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 7.702,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "High temperature and thermal anomaly indicate overheating issue."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 28.703,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 48,
+              "evidence": "High temperature and thermal anomaly; failure type is overheating."
+            },
+            "error": null
+          }
+        ]
+      },
+      "planning": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 2.089,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk and severity, high RUL",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 6.316,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "All indicators normal, no maintenance required.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 4.391,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "All indicators normal, no anomaly detected",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 5.202,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk and high RUL",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 5.79,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "All readings normal, no anomaly detected",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 8.813,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "All readings normal, no maintenance required",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 6.031,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk score, high RUL, no issues detected",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 19.82,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Bearing wear confirmed, schedule replacement within 24h",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 12.547,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P2",
+              "reason": "Bearing wear detected, 24hr urgency window, schedule within shift",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 11.859,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk score and long RUL, no action needed",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 22.742,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Low risk overheating with 24h urgency window, schedule maintenance within timeframe",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 32.148,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Low severity overheating, schedule maintenance within 24h window",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 5.188,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk, long RUL, no specific faults detected",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 27.812,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Motor overheating detected, schedule maintenance within 72 hours",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 15.969,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Motor overheating low severity, 72hr window available",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ]
+      },
+      "reporting": {
+        "1": [
+          {
+            "json_valid": false,
+            "elapsed": 13.14,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 27.312,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 48.346,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "5": [
+          {
+            "json_valid": false,
+            "elapsed": 23.124,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 16.139,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 6.803,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "9": [
+          {
+            "json_valid": false,
+            "elapsed": 9.806,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 66.849,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 15.51,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "37": [
+          {
+            "json_valid": false,
+            "elapsed": 18.484,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 6.855,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 20.895,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "50": [
+          {
+            "json_valid": false,
+            "elapsed": 7.406,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 4.206,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 10.231,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ]
+      },
+      "explainability": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 530.372,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 42.0,
+              "distance_to_next_severity": 9.59,
+              "what_if": "If temperature increases by 9.59, it will breach the warning threshold and escalate severity",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 35.592,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "vibration",
+              "contribution_pct": 42.5,
+              "distance_to_next_severity": 8.1882,
+              "what_if": "Increasing vibration by 8.19 triggers warning severity",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 22.824,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "vibration",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 8.2,
+              "what_if": "If vibration increased by 8.2, severity would escalate to warning",
+              "confidence": 0.8
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 16.46,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 48.5,
+              "distance_to_next_severity": 9.63,
+              "what_if": "Increase temperature by 9.63 to escalate to warning",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 81.573,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 1.27,
+              "what_if": "increase energy_consumption by 1.27 to reach warning threshold",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 8.812,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 88.7,
+              "distance_to_next_severity": 9.63,
+              "what_if": "increase temperature by 9.63 to escalate to warning",
+              "confidence": 0.95
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 56.828,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "humidity",
+              "contribution_pct": 65.0,
+              "distance_to_next_severity": 3.16,
+              "what_if": "humidity rising to 72",
+              "confidence": 0.75
+            },
+            "error": null
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.234,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.219,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          }
+        ],
+        "37": [
+          {
+            "json_valid": false,
+            "elapsed": 0.234,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.219,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.203,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          }
+        ],
+        "50": [
+          {
+            "json_valid": false,
+            "elapsed": 0.219,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.203,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.203,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          }
+        ]
+      },
+      "correlation": {
+        "1": [
+          {
+            "json_valid": false,
+            "elapsed": 0.218,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.219,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.203,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          }
+        ],
+        "5": [
+          {
+            "json_valid": false,
+            "elapsed": 0.219,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.21,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.197,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>500 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n (status code: 500)"
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 16.016,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.219,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "Rate exceeded. (status code: 429)"
+          },
+          {
+            "json_valid": true,
+            "elapsed": 43.36,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 56.468,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 33.562,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 43.265,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 36.765,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 28.0,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 33.219,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ]
+      }
+    },
+    "Qwen3.5": {
+      "monitoring": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 10.576,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 39.752,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 30.891,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 9.593,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 7.516,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 6.219,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 96.53,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.3,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 143.839,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.3,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 22.222,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.3,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 26.813,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 37.874,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 179.142,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.3,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 158.715,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.75
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 67.742,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 41.632,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.8
+            },
+            "error": null
+          }
+        ]
+      },
+      "diagnosis": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 8.723,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.8,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 24,
+              "evidence": "Failure type normal, anomaly flag 0, maintenance not required, high remaining life."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 12.157,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.8,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 24,
+              "evidence": "Temperature and vibration stable, no anomaly flag, failure type normal, low downtime risk."
+            },
+            "error": null
+          },
+          {
+            "json_valid": false,
+            "elapsed": 18.967,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "Server disconnected without sending a response."
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 33.99,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.8,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 24,
+              "evidence": "Failure type normal, anomaly flag 0, maintenance not required, high predicted remaining life."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 19.946,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.8,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 24,
+              "evidence": "Sensor data normal, no anomalies, low risk, high remaining life, maintenance not required."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 16.172,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.8,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 24,
+              "evidence": "No anomalies detected, low risk level, normal failure type, maintenance not required."
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 549.996,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "pump",
+              "urgency_hours": 24,
+              "evidence": "Anomaly flag zero, maintenance not required, and low downtime risk indicate normal operating conditions currently."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 61.388,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.2,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 720,
+              "evidence": "Low risk, no anomaly detected, maintenance not required. Pressure drop noted but non-critical."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 18.427,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 24,
+              "evidence": "Low risk, no anomaly detected, maintenance not required. Pressure drop label present but sensors nominal."
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 36.274,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "Temperature 83.4C is elevated; failure_type field explicitly identifies overheating as the current issue."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 42.394,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "Temperature 83.38\u00b0C elevated. Monitoring indicates thermal anomaly. Medium risk level confirmed."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 21.579,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "Temperature 83.3C, thermal anomaly detected with 0.85 confidence, explicit failure type overheating."
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 50.361,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "Temperature 76.68C is elevated; failure type explicitly indicates overheating."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 40.872,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "Temperature 76.68, failure type overheating, thermal anomaly detected, medium risk level."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 13.75,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "Temperature 76.68, failure type Overheating, thermal anomaly detected with medium risk level."
+            },
+            "error": null
+          }
+        ]
+      },
+      "planning": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 93.968,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk and severity with high RUL suggest normal operation. Continue standard monitoring without intervention.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 10.1,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "System operating normally with low risk and high remaining useful life. No immediate maintenance required.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 16.666,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Normal operation confirmed. Low risk score and high RUL indicate no immediate action required. Continue monitoring.",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 33.843,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk score and high RUL allow continued monitoring without immediate intervention.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 6.313,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "System operating normally with high remaining life and low risk. No immediate maintenance required. Continue standard monitoring.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 27.625,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "System operating normally. Low risk and high remaining useful life indicate no maintenance required. Continue standard monitoring.",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 28.437,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk score and high remaining useful life indicate no immediate intervention required.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 7.94,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Normal operating conditions, low risk, and high RUL indicate no immediate maintenance required. Continue monitoring.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 29.826,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "System operating normally with low risk. No maintenance needed. Continue routine monitoring.",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 47.781,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk score, high RUL, and low severity indicate healthy status requiring routine monitoring.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 16.187,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Motor overheating detected with 24h urgency; low severity permits scheduled repair.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 44.719,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Motor overheating confirmed; low risk permits scheduled maintenance within the 24-hour urgency window.",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 25.797,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk and high RUL indicate normal operation. Continue standard monitoring protocols.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 60.296,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Overheating detected with 24h urgency; low severity and risk allow scheduled maintenance.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 34.906,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Motor overheating detected. 24h urgency window. Low severity permits scheduled maintenance instead of immediate shutdown.",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ]
+      },
+      "reporting": {
+        "1": [
+          {
+            "json_valid": false,
+            "elapsed": 34.536,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 36.053,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 33.473,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "5": [
+          {
+            "json_valid": false,
+            "elapsed": 248.717,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 15.469,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 31.242,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "9": [
+          {
+            "json_valid": false,
+            "elapsed": 14.773,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 14.696,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 15.21,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "37": [
+          {
+            "json_valid": false,
+            "elapsed": 59.078,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 18.687,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 50.125,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "50": [
+          {
+            "json_valid": false,
+            "elapsed": 18.265,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 8.266,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 68.968,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ]
+      },
+      "explainability": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 384.013,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 0.87,
+              "what_if": "Increase energy_consumption by 0.87 units to reach Warning threshold",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 86.453,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 0.9,
+              "what_if": "Increase energy_consumption by 0.9 units to reach warning threshold",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 49.28,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 9.59,
+              "what_if": "Increase temperature by 9.59 units to trigger warning",
+              "confidence": 0.8
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 78.499,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 1.27,
+              "what_if": "Increase energy_consumption by 1.27 units to reach warning threshold",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 161.702,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 9.63,
+              "what_if": "Increase temperature by 9.63 units to reach warning threshold",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 71.781,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 9.6,
+              "what_if": "Increase temperature by 9.63 units to reach warning threshold",
+              "confidence": 0.85
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 130.64,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "humidity",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 3.16,
+              "what_if": "Increase humidity by 3.2 units",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 35.781,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "humidity",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 3.16,
+              "what_if": "Increase humidity by 3.16 units to reach warning threshold",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 131.244,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "humidity",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 3.16,
+              "what_if": "Increase humidity by 3.16 units to trigger warning",
+              "confidence": 0.8
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 27.497,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 1.6,
+              "what_if": "Increase temperature by 1.62 units to reach warning threshold",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 100.867,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 1.6,
+              "what_if": "Increase temperature by 1.61 units",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 31.819,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 1.6,
+              "what_if": "Increase temperature by 1.6 degrees",
+              "confidence": 0.8
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 75.226,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 8.3,
+              "what_if": "Increase temperature by 8.32 units to reach warning threshold",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 79.594,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 8.32,
+              "what_if": "Increase temperature by 8.32 units to trigger warning",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 54.218,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 55.0,
+              "distance_to_next_severity": 8.32,
+              "what_if": "Increase temperature by 8.32 units to trigger warning",
+              "confidence": 0.85
+            },
+            "error": null
+          }
+        ]
+      },
+      "correlation": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 78.366,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "clusters": [
+                {
+                  "machines": [
+                    "M-1"
+                  ],
+                  "type": "thermal",
+                  "propagation_risk": 0.0,
+                  "root_machine": "M-1"
+                }
+              ],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 76.124,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "clusters": [
+                {
+                  "machines": [
+                    "M-1"
+                  ],
+                  "type": "thermal",
+                  "propagation_risk": 0.0,
+                  "root_machine": "M-1"
+                }
+              ],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 44.906,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 237.844,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 164.292,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 134.638,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 299.082,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0.1,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 69.709,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "clusters": [
+                {
+                  "machines": [
+                    "M-9"
+                  ],
+                  "type": "vibration",
+                  "propagation_risk": 0.0,
+                  "root_machine": "M-9"
+                }
+              ],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 59.318,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 359.856,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "clusters": [
+                {
+                  "machines": [
+                    "M-37"
+                  ],
+                  "type": "thermal",
+                  "propagation_risk": 0.5,
+                  "root_machine": "M-37"
+                }
+              ],
+              "max_propagation_risk": 0.5,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 32.735,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "clusters": [
+                {
+                  "machines": [
+                    "M-37"
+                  ],
+                  "type": "thermal",
+                  "propagation_risk": 0.1,
+                  "root_machine": "M-37"
+                }
+              ],
+              "max_propagation_risk": 0.1,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 70.264,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "clusters": [
+                {
+                  "machines": [
+                    "M-37"
+                  ],
+                  "type": "thermal",
+                  "propagation_risk": 0.0,
+                  "root_machine": "M-37"
+                }
+              ],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 38.797,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "clusters": [
+                {
+                  "machines": [
+                    "M-50"
+                  ],
+                  "type": "thermal",
+                  "propagation_risk": 0.1,
+                  "root_machine": "M-50"
+                }
+              ],
+              "max_propagation_risk": 0.1,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 146.624,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "clusters": [
+                {
+                  "machines": [
+                    "M-50"
+                  ],
+                  "type": "thermal",
+                  "propagation_risk": 0.0,
+                  "root_machine": "M-50"
+                }
+              ],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 86.765,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "clusters": [
+                {
+                  "machines": [
+                    "M-50"
+                  ],
+                  "type": "thermal",
+                  "propagation_risk": 0.4,
+                  "root_machine": "M-50"
+                }
+              ],
+              "max_propagation_risk": 0.4,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ]
+      }
+    },
+    "DeepSeek-V4": {
+      "monitoring": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 54.24,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 3.642,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 23.154,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 1.0
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 4.321,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 206.226,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.3,
+            "parsed": {
+              "risk_level": "CRITICAL",
+              "anomaly_detected": true,
+              "anomaly_type": "combined",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.789,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "Server overloaded, please retry shortly (ref: 52f7e6e2-ea5f-46c9-af0c-a0853927f1ff) (status code: 503)"
+          }
+        ],
+        "9": [
+          {
+            "json_valid": false,
+            "elapsed": 0.789,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "Server overloaded, please retry shortly (ref: 77eab02d-5ce0-4edb-8630-4629218c0d4a) (status code: 503)"
+          },
+          {
+            "json_valid": true,
+            "elapsed": 89.531,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.3,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 5.213,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.3,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 27.631,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "HIGH",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.9
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 5.893,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.3,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.95
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 75.7,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.8
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 28.712,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "HIGH",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.85
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 14.148,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.3,
+            "parsed": {
+              "risk_level": "LOW",
+              "anomaly_detected": false,
+              "anomaly_type": "none",
+              "confidence": 0.9
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 8.75,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "risk_level": "MEDIUM",
+              "anomaly_detected": true,
+              "anomaly_type": "thermal",
+              "confidence": 0.7
+            },
+            "error": null
+          }
+        ]
+      },
+      "diagnosis": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 3.406,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 720,
+              "evidence": "All sensor readings within normal ranges, no anomalies detected."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 72.707,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 0,
+              "evidence": "No anomalies detected, all sensors normal, machine status normal."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 30.838,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.8,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 24,
+              "evidence": "All sensor readings within normal range, no anomalies detected, low risk."
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 7.859,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 720,
+              "evidence": "Sensor readings normal, no anomaly detected."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 9.047,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "probable_cause": "normal",
+              "affected_component": "unknown",
+              "urgency_hours": 720,
+              "evidence": "All sensor values normal, no anomaly detected."
+            },
+            "error": null
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.797,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "Server overloaded, please retry shortly (ref: c6d2796f-5b1b-4d2b-86a8-088efc4379d6) (status code: 503)"
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 23.956,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "probable_cause": "bearing_wear",
+              "affected_component": "pump",
+              "urgency_hours": 24,
+              "evidence": "Pressure drop and high vibration suggest bearing wear in pump."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 15.711,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "probable_cause": "bearing_wear",
+              "affected_component": "bearing",
+              "urgency_hours": 48,
+              "evidence": "High vibration (54.9 mm/s) and temperature (69.7\u00b0C) with pressure drop indicate bearing wear."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 47.243,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "probable_cause": "bearing_wear",
+              "affected_component": "bearing",
+              "urgency_hours": 72,
+              "evidence": "High vibration (54.9) and elevated temperature (69.7\u00b0C) indicate bearing wear causing pressure drop."
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 5.154,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "Temperature 83.4\u00b0C and failure_type Overheating indicate overheating."
+            },
+            "error": null
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.779,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "Server overloaded, please retry shortly (ref: 083a4b1a-6a13-40f0-ba71-1652ccfe452c) (status code: 503)"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 0.735,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "Server overloaded, please retry shortly (ref: dfdd38bd-835d-4136-bb18-a4695ccde950) (status code: 503)"
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 76.391,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "probable_cause": "bearing_wear",
+              "affected_component": "bearing",
+              "urgency_hours": 72,
+              "evidence": "High temp (76.68) and vibration (56.12) suggest bearing wear causing overheating."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 11.796,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "probable_cause": "bearing_wear",
+              "affected_component": "bearing",
+              "urgency_hours": 48,
+              "evidence": "High temperature (76.7C) and vibration (56.1) suggest bearing friction causing overheating."
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 22.781,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "probable_cause": "overheating",
+              "affected_component": "motor",
+              "urgency_hours": 24,
+              "evidence": "Temperature 76.68 and thermal anomaly detected, overheating risk."
+            },
+            "error": null
+          }
+        ]
+      },
+      "planning": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 2.625,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "No anomalies, low risk, high RUL",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 9.777,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "All systems normal, no anomalies detected.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": false,
+            "elapsed": 12.628,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "Server overloaded, please retry shortly (ref: 9da2ab0a-c280-44d3-a290-ed196e0445ab) (status code: 503)"
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 2.687,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "No faults detected, low risk, high RUL.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": false,
+            "elapsed": 11.485,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.0,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": true,
+            "elapsed": 10.484,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Normal operation with high RUL; only routine monitoring needed.",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 30.453,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk and high RUL, no issues detected.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 3.72,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P4",
+              "reason": "Bearing wear detected, schedule maintenance within 24 hours to prevent escalation.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 5.202,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Pump bearing wear detected. Schedule maintenance within 24h.",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 2.297,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk and severity, monitoring is sufficient.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 4.703,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Temperature 83.4\u00b0C, but high RUL 252h; low risk, monitor.",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 6.359,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low severity overheating; monitor temperature trend, schedule inspection if worsens.",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 2.531,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.5,
+            "parsed": {
+              "action": "monitor",
+              "priority": "P4",
+              "reason": "Low risk and high RUL, continue monitoring",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 4.859,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Bearing wear detected, schedule maintenance within 72 hours",
+              "notify_supervisor": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 4.656,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "action": "schedule_maintenance",
+              "priority": "P3",
+              "reason": "Bearing wear detected, low severity, schedule maintenance within 72 hours",
+              "notify_supervisor": false
+            },
+            "error": null
+          }
+        ]
+      },
+      "reporting": {
+        "1": [
+          {
+            "json_valid": false,
+            "elapsed": 3.235,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 1.687,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 3.172,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "5": [
+          {
+            "json_valid": false,
+            "elapsed": 2.891,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 2.503,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 2.606,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "9": [
+          {
+            "json_valid": false,
+            "elapsed": 1.656,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 3.922,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 2.212,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "37": [
+          {
+            "json_valid": false,
+            "elapsed": 3.132,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 2.734,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 2.172,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ],
+        "50": [
+          {
+            "json_valid": false,
+            "elapsed": 2.641,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 1.759,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          },
+          {
+            "json_valid": false,
+            "elapsed": 2.084,
+            "m1": 0.0,
+            "m2": 0.0,
+            "m3": 0.8,
+            "parsed": null,
+            "error": "json_parse_failed"
+          }
+        ]
+      },
+      "explainability": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 15.844,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 80.0,
+              "distance_to_next_severity": 0.87,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.9
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 27.735,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 0.87,
+              "what_if": "If energy_consumption increases by 0.87, warning triggered.",
+              "confidence": 0.9
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 173.016,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 79.8,
+              "distance_to_next_severity": 0.8716,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.8
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 26.25,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 46.4,
+              "distance_to_next_severity": 1.27,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 55.547,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 22.5,
+              "distance_to_next_severity": 1.27,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 46.344,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 1.27,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.8
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 18.875,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 48.1,
+              "distance_to_next_severity": 2.24,
+              "what_if": "Increase energy_consumption by 2.24 to reach warning threshold.",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 38.783,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 2.24,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 63.989,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 43.9,
+              "distance_to_next_severity": 2.2,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.8
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 11.509,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 48.4,
+              "distance_to_next_severity": 1.6,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 37.531,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 1.6,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.9
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 18.452,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "temperature",
+              "contribution_pct": 85.0,
+              "distance_to_next_severity": 1.6,
+              "what_if": "Increase temperature by 1.6 to reach warning threshold",
+              "confidence": 0.9
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 7.641,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 1.6,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 176.05,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 20.5,
+              "distance_to_next_severity": 1.6,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.8
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 55.137,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 1.0,
+            "parsed": {
+              "top_feature": "energy_consumption",
+              "contribution_pct": 45.0,
+              "distance_to_next_severity": 1.6,
+              "what_if": "smallest change to escalate severity",
+              "confidence": 0.8
+            },
+            "error": null
+          }
+        ]
+      },
+      "correlation": {
+        "1": [
+          {
+            "json_valid": true,
+            "elapsed": 2.813,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 6.766,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 6.078,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ],
+        "5": [
+          {
+            "json_valid": true,
+            "elapsed": 4.656,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 4.142,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 5.625,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ],
+        "9": [
+          {
+            "json_valid": true,
+            "elapsed": 5.129,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 4.214,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 2.791,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ],
+        "37": [
+          {
+            "json_valid": true,
+            "elapsed": 4.342,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 5.477,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 3.281,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ],
+        "50": [
+          {
+            "json_valid": true,
+            "elapsed": 2.484,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 4.734,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          },
+          {
+            "json_valid": true,
+            "elapsed": 3.191,
+            "m1": 1.0,
+            "m2": 1.0,
+            "m3": 0.7,
+            "parsed": {
+              "clusters": [],
+              "max_propagation_risk": 0.0,
+              "cascade_warning": false
+            },
+            "error": null
+          }
+        ]
+      }
+    }
+  }
+}

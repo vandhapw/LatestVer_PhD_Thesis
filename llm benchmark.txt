@@ -1,0 +1,438 @@
+python .\llm_benchmark.py
+
+================================================================================
+  LLM MODEL BENCHMARK FOR AGENTIC AI PIPELINE
+  Testing 3 models × 6 agents × 5 machines × 3 runs
+================================================================================
+[DATA] Loading from MongoDB...
+[DATA] Loaded 5 machines: [1, 5, 9, 37, 50]
+  M-1   temp=75.4 vib=56.8 status=0 fail=Normal
+  M-5   temp=75.4 vib=44.0 status=2 fail=Normal
+  M-9   temp=69.7 vib=54.9 status=2 fail=Pressure Drop
+  M-37  temp=83.4 vib=46.6 status=2 fail=Overheating
+  M-50  temp=76.7 vib=56.1 status=2 fail=Overheating
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  MODEL: glm-5.1:cloud
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Agent ① Monitoring Agent:
+    [1/270] M-1   run1 ✓ 156.8s json=1 schema=1.00 reasoning=1.00
+    [2/270] M-1   run2 ✓ 54.1s json=1 schema=1.00 reasoning=1.00
+    [3/270] M-1   run3 ✓ 29.2s json=1 schema=1.00 reasoning=1.00
+    [4/270] M-5   run1 ✓ 31.9s json=1 schema=1.00 reasoning=1.00
+    [5/270] M-5   run2 ✓ 17.5s json=1 schema=1.00 reasoning=1.00
+    [6/270] M-5   run3 ✓ 8.2s json=1 schema=1.00 reasoning=1.00
+    [7/270] M-9   run1 ✓ 36.3s json=1 schema=1.00 reasoning=1.00
+    [8/270] M-9   run2 ✓ 131.3s json=1 schema=1.00 reasoning=0.70
+    [9/270] M-9   run3 ✓ 93.9s json=1 schema=1.00 reasoning=1.00
+    [10/270] M-37  run1 ✓ 39.9s json=1 schema=1.00 reasoning=1.00
+    [11/270] M-37  run2 ✓ 32.0s json=1 schema=1.00 reasoning=1.00
+    [12/270] M-37  run3 ✓ 80.3s json=1 schema=1.00 reasoning=1.00
+    [13/270] M-50  run1 ✓ 60.1s json=1 schema=1.00 reasoning=1.00
+    [14/270] M-50  run2 ✓ 21.7s json=1 schema=1.00 reasoning=1.00
+    [15/270] M-50  run3 ✓ 4.5s json=1 schema=1.00 reasoning=1.00
+
+  Agent ② Diagnosis Agent:
+    [16/270] M-1   run1 ✓ 2.3s json=1 schema=1.00 reasoning=0.80
+    [17/270] M-1   run2 ✓ 2.8s json=1 schema=1.00 reasoning=0.80
+    [18/270] M-1   run3 ✓ 10.5s json=1 schema=1.00 reasoning=0.50
+    [19/270] M-5   run1 ✓ 7.4s json=1 schema=1.00 reasoning=0.50
+    [20/270] M-5   run2 ✓ 6.2s json=1 schema=1.00 reasoning=0.50
+    [21/270] M-5   run3 ✓ 6.3s json=1 schema=1.00 reasoning=0.50
+    [22/270] M-9   run1 ✓ 15.8s json=1 schema=1.00 reasoning=0.70
+    [23/270] M-9   run2 ✓ 12.1s json=1 schema=1.00 reasoning=0.70
+    [24/270] M-9   run3 ✓ 13.8s json=1 schema=1.00 reasoning=0.70
+    [25/270] M-37  run1 ✓ 5.3s json=1 schema=1.00 reasoning=1.00
+    [26/270] M-37  run2 ✓ 21.9s json=1 schema=1.00 reasoning=1.00
+    [27/270] M-37  run3 ✓ 14.6s json=1 schema=1.00 reasoning=1.00
+    [28/270] M-50  run1 ✓ 15.2s json=1 schema=1.00 reasoning=1.00
+    [29/270] M-50  run2 ✓ 7.7s json=1 schema=1.00 reasoning=1.00
+    [30/270] M-50  run3 ✓ 28.7s json=1 schema=1.00 reasoning=1.00
+
+  Agent ③ Planning Agent:
+    [31/270] M-1   run1 ✓ 2.1s json=1 schema=1.00 reasoning=1.00
+    [32/270] M-1   run2 ✓ 6.3s json=1 schema=1.00 reasoning=1.00
+    [33/270] M-1   run3 ✓ 4.4s json=1 schema=1.00 reasoning=1.00
+    [34/270] M-5   run1 ✓ 5.2s json=1 schema=1.00 reasoning=1.00
+    [35/270] M-5   run2 ✓ 5.8s json=1 schema=1.00 reasoning=1.00
+    [36/270] M-5   run3 ✓ 8.8s json=1 schema=1.00 reasoning=1.00
+    [37/270] M-9   run1 ✓ 6.0s json=1 schema=1.00 reasoning=0.50
+    [38/270] M-9   run2 ✓ 19.8s json=1 schema=1.00 reasoning=1.00
+    [39/270] M-9   run3 ✓ 12.5s json=1 schema=1.00 reasoning=1.00
+    [40/270] M-37  run1 ✓ 11.9s json=1 schema=1.00 reasoning=0.50
+    [41/270] M-37  run2 ✓ 22.7s json=1 schema=1.00 reasoning=1.00
+    [42/270] M-37  run3 ✓ 32.1s json=1 schema=1.00 reasoning=1.00
+    [43/270] M-50  run1 ✓ 5.2s json=1 schema=1.00 reasoning=0.50
+    [44/270] M-50  run2 ✓ 27.8s json=1 schema=1.00 reasoning=1.00
+    [45/270] M-50  run3 ✓ 16.0s json=1 schema=1.00 reasoning=1.00
+
+  Agent ④ Reporting Agent:
+    [46/270] M-1   run1 ✗ 13.1s json=0 schema=0.00 reasoning=0.80
+    [47/270] M-1   run2 ✗ 27.3s json=0 schema=0.00 reasoning=0.80
+    [48/270] M-1   run3 ✗ 48.3s json=0 schema=0.00 reasoning=0.80
+    [49/270] M-5   run1 ✗ 23.1s json=0 schema=0.00 reasoning=0.80
+    [50/270] M-5   run2 ✗ 16.1s json=0 schema=0.00 reasoning=0.80
+    [51/270] M-5   run3 ✗ 6.8s json=0 schema=0.00 reasoning=0.80
+    [52/270] M-9   run1 ✗ 9.8s json=0 schema=0.00 reasoning=0.80
+    [53/270] M-9   run2 ✗ 66.8s json=0 schema=0.00 reasoning=0.80
+    [54/270] M-9   run3 ✗ 15.5s json=0 schema=0.00 reasoning=0.80
+    [55/270] M-37  run1 ✗ 18.5s json=0 schema=0.00 reasoning=0.80
+    [56/270] M-37  run2 ✗ 6.9s json=0 schema=0.00 reasoning=0.80
+    [57/270] M-37  run3 ✗ 20.9s json=0 schema=0.00 reasoning=0.80
+    [58/270] M-50  run1 ✗ 7.4s json=0 schema=0.00 reasoning=0.80
+    [59/270] M-50  run2 ✗ 4.2s json=0 schema=0.00 reasoning=0.80
+    [60/270] M-50  run3 ✗ 10.2s json=0 schema=0.00 reasoning=0.80
+
+  Agent ⑥ Explainability Agent:
+    [61/270] M-1   run1 ✓ 530.4s json=1 schema=1.00 reasoning=1.00
+    [62/270] M-1   run2 ✓ 35.6s json=1 schema=1.00 reasoning=1.00
+    [63/270] M-1   run3 ✓ 22.8s json=1 schema=1.00 reasoning=1.00
+    [64/270] M-5   run1 ✓ 16.5s json=1 schema=1.00 reasoning=1.00
+    [65/270] M-5   run2 ✓ 81.6s json=1 schema=1.00 reasoning=1.00
+    [66/270] M-5   run3 ✓ 8.8s json=1 schema=1.00 reasoning=1.00
+    [67/270] M-9   run1 ✓ 56.8s json=1 schema=1.00 reasoning=1.00
+    [68/270] M-9   run2 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [69/270] M-9   run3 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [70/270] M-37  run1 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [71/270] M-37  run2 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [72/270] M-37  run3 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [73/270] M-50  run1 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [74/270] M-50  run2 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [75/270] M-50  run3 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+
+  Agent ⑤ Correlation Agent:
+    [76/270] M-1   run1 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [77/270] M-1   run2 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [78/270] M-1   run3 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [79/270] M-5   run1 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [80/270] M-5   run2 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [81/270] M-5   run3 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [82/270] M-9   run1 ✓ 16.0s json=1 schema=1.00 reasoning=0.70
+    [83/270] M-9   run2 ✗ 0.2s json=0 schema=0.00 reasoning=0.00
+    [84/270] M-9   run3 ✓ 43.4s json=1 schema=1.00 reasoning=0.70
+    [85/270] M-37  run1 ✓ 56.5s json=1 schema=1.00 reasoning=0.70
+    [86/270] M-37  run2 ✓ 33.6s json=1 schema=1.00 reasoning=0.70
+    [87/270] M-37  run3 ✓ 43.3s json=1 schema=1.00 reasoning=0.70
+    [88/270] M-50  run1 ✓ 36.8s json=1 schema=1.00 reasoning=0.70
+    [89/270] M-50  run2 ✓ 28.0s json=1 schema=1.00 reasoning=0.70
+    [90/270] M-50  run3 ✓ 33.2s json=1 schema=1.00 reasoning=0.70
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  MODEL: qwen3.5:397b-cloud
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Agent ① Monitoring Agent:
+    [91/270] M-1   run1 ✓ 10.6s json=1 schema=1.00 reasoning=1.00
+    [92/270] M-1   run2 ✓ 39.8s json=1 schema=1.00 reasoning=1.00
+    [93/270] M-1   run3 ✓ 30.9s json=1 schema=1.00 reasoning=1.00
+    [94/270] M-5   run1 ✓ 9.6s json=1 schema=1.00 reasoning=1.00
+    [95/270] M-5   run2 ✓ 7.5s json=1 schema=1.00 reasoning=1.00
+    [96/270] M-5   run3 ✓ 6.2s json=1 schema=1.00 reasoning=1.00
+    [97/270] M-9   run1 ✓ 96.5s json=1 schema=1.00 reasoning=0.30
+    [98/270] M-9   run2 ✓ 143.8s json=1 schema=1.00 reasoning=0.30
+    [99/270] M-9   run3 ✓ 22.2s json=1 schema=1.00 reasoning=0.30
+    [100/270] M-37  run1 ✓ 26.8s json=1 schema=1.00 reasoning=1.00
+    [101/270] M-37  run2 ✓ 37.9s json=1 schema=1.00 reasoning=1.00
+    [102/270] M-37  run3 ✓ 179.1s json=1 schema=1.00 reasoning=0.30
+    [103/270] M-50  run1 ✓ 158.7s json=1 schema=1.00 reasoning=1.00
+    [104/270] M-50  run2 ✓ 67.7s json=1 schema=1.00 reasoning=1.00
+    [105/270] M-50  run3 ✓ 41.6s json=1 schema=1.00 reasoning=1.00
+
+  Agent ② Diagnosis Agent:
+    [106/270] M-1   run1 ✓ 8.7s json=1 schema=1.00 reasoning=0.80
+    [107/270] M-1   run2 ✓ 12.2s json=1 schema=1.00 reasoning=0.80
+    [108/270] M-1   run3 ✗ 19.0s json=0 schema=0.00 reasoning=0.00
+    [109/270] M-5   run1 ✓ 34.0s json=1 schema=1.00 reasoning=0.80
+    [110/270] M-5   run2 ✓ 19.9s json=1 schema=1.00 reasoning=0.80
+    [111/270] M-5   run3 ✓ 16.2s json=1 schema=1.00 reasoning=0.80
+    [112/270] M-9   run1 ✓ 550.0s json=1 schema=1.00 reasoning=0.70
+    [113/270] M-9   run2 ✓ 61.4s json=1 schema=1.00 reasoning=0.20
+    [114/270] M-9   run3 ✓ 18.4s json=1 schema=1.00 reasoning=0.50
+    [115/270] M-37  run1 ✓ 36.3s json=1 schema=1.00 reasoning=1.00
+    [116/270] M-37  run2 ✓ 42.4s json=1 schema=1.00 reasoning=1.00
+    [117/270] M-37  run3 ✓ 21.6s json=1 schema=1.00 reasoning=1.00
+    [118/270] M-50  run1 ✓ 50.4s json=1 schema=1.00 reasoning=1.00
+    [119/270] M-50  run2 ✓ 40.9s json=1 schema=1.00 reasoning=1.00
+    [120/270] M-50  run3 ✓ 13.8s json=1 schema=1.00 reasoning=1.00
+
+  Agent ③ Planning Agent:
+    [121/270] M-1   run1 ✓ 94.0s json=1 schema=1.00 reasoning=1.00
+    [122/270] M-1   run2 ✓ 10.1s json=1 schema=1.00 reasoning=1.00
+    [123/270] M-1   run3 ✓ 16.7s json=1 schema=1.00 reasoning=1.00
+    [124/270] M-5   run1 ✓ 33.8s json=1 schema=1.00 reasoning=1.00
+    [125/270] M-5   run2 ✓ 6.3s json=1 schema=1.00 reasoning=1.00
+    [126/270] M-5   run3 ✓ 27.6s json=1 schema=1.00 reasoning=1.00
+    [127/270] M-9   run1 ✓ 28.4s json=1 schema=1.00 reasoning=0.50
+    [128/270] M-9   run2 ✓ 7.9s json=1 schema=1.00 reasoning=0.50
+    [129/270] M-9   run3 ✓ 29.8s json=1 schema=1.00 reasoning=0.50
+    [130/270] M-37  run1 ✓ 47.8s json=1 schema=1.00 reasoning=0.50
+    [131/270] M-37  run2 ✓ 16.2s json=1 schema=1.00 reasoning=1.00
+    [132/270] M-37  run3 ✓ 44.7s json=1 schema=1.00 reasoning=1.00
+    [133/270] M-50  run1 ✓ 25.8s json=1 schema=1.00 reasoning=0.50
+    [134/270] M-50  run2 ✓ 60.3s json=1 schema=1.00 reasoning=1.00
+    [135/270] M-50  run3 ✓ 34.9s json=1 schema=1.00 reasoning=1.00
+
+  Agent ④ Reporting Agent:
+    [136/270] M-1   run1 ✗ 34.5s json=0 schema=0.00 reasoning=0.80
+    [137/270] M-1   run2 ✗ 36.1s json=0 schema=0.00 reasoning=0.80
+    [138/270] M-1   run3 ✗ 33.5s json=0 schema=0.00 reasoning=0.80
+    [139/270] M-5   run1 ✗ 248.7s json=0 schema=0.00 reasoning=0.80
+    [140/270] M-5   run2 ✗ 15.5s json=0 schema=0.00 reasoning=0.80
+    [141/270] M-5   run3 ✗ 31.2s json=0 schema=0.00 reasoning=0.80
+    [142/270] M-9   run1 ✗ 14.8s json=0 schema=0.00 reasoning=0.80
+    [143/270] M-9   run2 ✗ 14.7s json=0 schema=0.00 reasoning=0.80
+    [144/270] M-9   run3 ✗ 15.2s json=0 schema=0.00 reasoning=0.80
+    [145/270] M-37  run1 ✗ 59.1s json=0 schema=0.00 reasoning=0.80
+    [146/270] M-37  run2 ✗ 18.7s json=0 schema=0.00 reasoning=0.80
+    [147/270] M-37  run3 ✗ 50.1s json=0 schema=0.00 reasoning=0.80
+    [148/270] M-50  run1 ✗ 18.3s json=0 schema=0.00 reasoning=0.80
+    [149/270] M-50  run2 ✗ 8.3s json=0 schema=0.00 reasoning=0.80
+    [150/270] M-50  run3 ✗ 69.0s json=0 schema=0.00 reasoning=0.80
+
+  Agent ⑥ Explainability Agent:
+    [151/270] M-1   run1 ✓ 384.0s json=1 schema=1.00 reasoning=1.00
+    [152/270] M-1   run2 ✓ 86.5s json=1 schema=1.00 reasoning=1.00
+    [153/270] M-1   run3 ✓ 49.3s json=1 schema=1.00 reasoning=1.00
+    [154/270] M-5   run1 ✓ 78.5s json=1 schema=1.00 reasoning=1.00
+    [155/270] M-5   run2 ✓ 161.7s json=1 schema=1.00 reasoning=1.00
+    [156/270] M-5   run3 ✓ 71.8s json=1 schema=1.00 reasoning=1.00
+    [157/270] M-9   run1 ✓ 130.6s json=1 schema=1.00 reasoning=1.00
+    [158/270] M-9   run2 ✓ 35.8s json=1 schema=1.00 reasoning=1.00
+    [159/270] M-9   run3 ✓ 131.2s json=1 schema=1.00 reasoning=1.00
+    [160/270] M-37  run1 ✓ 27.5s json=1 schema=1.00 reasoning=1.00
+    [161/270] M-37  run2 ✓ 100.9s json=1 schema=1.00 reasoning=1.00
+    [162/270] M-37  run3 ✓ 31.8s json=1 schema=1.00 reasoning=1.00
+    [163/270] M-50  run1 ✓ 75.2s json=1 schema=1.00 reasoning=1.00
+    [164/270] M-50  run2 ✓ 79.6s json=1 schema=1.00 reasoning=1.00
+    [165/270] M-50  run3 ✓ 54.2s json=1 schema=1.00 reasoning=1.00
+
+  Agent ⑤ Correlation Agent:
+    [166/270] M-1   run1 ✓ 78.4s json=1 schema=1.00 reasoning=1.00
+    [167/270] M-1   run2 ✓ 76.1s json=1 schema=1.00 reasoning=1.00
+    [168/270] M-1   run3 ✓ 44.9s json=1 schema=1.00 reasoning=0.70
+    [169/270] M-5   run1 ✓ 237.8s json=1 schema=1.00 reasoning=0.70
+    [170/270] M-5   run2 ✓ 164.3s json=1 schema=1.00 reasoning=0.70
+    [171/270] M-5   run3 ✓ 134.6s json=1 schema=1.00 reasoning=0.70
+    [172/270] M-9   run1 ✓ 299.1s json=1 schema=1.00 reasoning=0.70
+    [173/270] M-9   run2 ✓ 69.7s json=1 schema=1.00 reasoning=1.00
+    [174/270] M-9   run3 ✓ 59.3s json=1 schema=1.00 reasoning=0.70
+    [175/270] M-37  run1 ✓ 359.9s json=1 schema=1.00 reasoning=1.00
+    [176/270] M-37  run2 ✓ 32.7s json=1 schema=1.00 reasoning=1.00
+    [177/270] M-37  run3 ✓ 70.3s json=1 schema=1.00 reasoning=1.00
+    [178/270] M-50  run1 ✓ 38.8s json=1 schema=1.00 reasoning=1.00
+    [179/270] M-50  run2 ✓ 146.6s json=1 schema=1.00 reasoning=1.00
+    [180/270] M-50  run3 ✓ 86.8s json=1 schema=1.00 reasoning=1.00
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  MODEL: deepseek-v4-pro:cloud
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Agent ① Monitoring Agent:
+    [181/270] M-1   run1 ✓ 54.2s json=1 schema=1.00 reasoning=1.00
+    [182/270] M-1   run2 ✓ 3.6s json=1 schema=1.00 reasoning=1.00
+    [183/270] M-1   run3 ✓ 23.2s json=1 schema=1.00 reasoning=1.00
+    [184/270] M-5   run1 ✓ 4.3s json=1 schema=1.00 reasoning=1.00
+    [185/270] M-5   run2 ✓ 206.2s json=1 schema=1.00 reasoning=0.30
+    [186/270] M-5   run3 ✗ 0.8s json=0 schema=0.00 reasoning=0.00
+    [187/270] M-9   run1 ✗ 0.8s json=0 schema=0.00 reasoning=0.00
+    [188/270] M-9   run2 ✓ 89.5s json=1 schema=1.00 reasoning=0.30
+    [189/270] M-9   run3 ✓ 5.2s json=1 schema=1.00 reasoning=0.30
+    [190/270] M-37  run1 ✓ 27.6s json=1 schema=1.00 reasoning=1.00
+    [191/270] M-37  run2 ✓ 5.9s json=1 schema=1.00 reasoning=0.30
+    [192/270] M-37  run3 ✓ 75.7s json=1 schema=1.00 reasoning=1.00
+    [193/270] M-50  run1 ✓ 28.7s json=1 schema=1.00 reasoning=1.00
+    [194/270] M-50  run2 ✓ 14.1s json=1 schema=1.00 reasoning=0.30
+    [195/270] M-50  run3 ✓ 8.8s json=1 schema=1.00 reasoning=1.00
+
+  Agent ② Diagnosis Agent:
+    [196/270] M-1   run1 ✓ 3.4s json=1 schema=1.00 reasoning=0.50
+    [197/270] M-1   run2 ✓ 72.7s json=1 schema=1.00 reasoning=0.50
+    [198/270] M-1   run3 ✓ 30.8s json=1 schema=1.00 reasoning=0.80
+    [199/270] M-5   run1 ✓ 7.9s json=1 schema=1.00 reasoning=0.50
+    [200/270] M-5   run2 ✓ 9.0s json=1 schema=1.00 reasoning=0.50
+    [201/270] M-5   run3 ✗ 0.8s json=0 schema=0.00 reasoning=0.00
+    [202/270] M-9   run1 ✓ 24.0s json=1 schema=1.00 reasoning=0.70
+    [203/270] M-9   run2 ✓ 15.7s json=1 schema=1.00 reasoning=0.70
+    [204/270] M-9   run3 ✓ 47.2s json=1 schema=1.00 reasoning=0.70
+    [205/270] M-37  run1 ✓ 5.2s json=1 schema=1.00 reasoning=1.00
+    [206/270] M-37  run2 ✗ 0.8s json=0 schema=0.00 reasoning=0.00
+    [207/270] M-37  run3 ✗ 0.7s json=0 schema=0.00 reasoning=0.00
+    [208/270] M-50  run1 ✓ 76.4s json=1 schema=1.00 reasoning=0.70
+    [209/270] M-50  run2 ✓ 11.8s json=1 schema=1.00 reasoning=0.70
+    [210/270] M-50  run3 ✓ 22.8s json=1 schema=1.00 reasoning=1.00
+
+  Agent ③ Planning Agent:
+    [211/270] M-1   run1 ✓ 2.6s json=1 schema=1.00 reasoning=1.00
+    [212/270] M-1   run2 ✓ 9.8s json=1 schema=1.00 reasoning=1.00
+    [213/270] M-1   run3 ✗ 12.6s json=0 schema=0.00 reasoning=0.00
+    [214/270] M-5   run1 ✓ 2.7s json=1 schema=1.00 reasoning=1.00
+    [215/270] M-5   run2 ✗ 11.5s json=0 schema=0.00 reasoning=0.00
+    [216/270] M-5   run3 ✓ 10.5s json=1 schema=1.00 reasoning=1.00
+    [217/270] M-9   run1 ✓ 30.5s json=1 schema=1.00 reasoning=0.50
+    [218/270] M-9   run2 ✓ 3.7s json=1 schema=1.00 reasoning=1.00
+    [219/270] M-9   run3 ✓ 5.2s json=1 schema=1.00 reasoning=1.00
+    [220/270] M-37  run1 ✓ 2.3s json=1 schema=1.00 reasoning=0.50
+    [221/270] M-37  run2 ✓ 4.7s json=1 schema=1.00 reasoning=0.50
+    [222/270] M-37  run3 ✓ 6.4s json=1 schema=1.00 reasoning=0.50
+    [223/270] M-50  run1 ✓ 2.5s json=1 schema=1.00 reasoning=0.50
+    [224/270] M-50  run2 ✓ 4.9s json=1 schema=1.00 reasoning=1.00
+    [225/270] M-50  run3 ✓ 4.7s json=1 schema=1.00 reasoning=1.00
+
+  Agent ④ Reporting Agent:
+    [226/270] M-1   run1 ✗ 3.2s json=0 schema=0.00 reasoning=0.80
+    [227/270] M-1   run2 ✗ 1.7s json=0 schema=0.00 reasoning=0.80
+    [228/270] M-1   run3 ✗ 3.2s json=0 schema=0.00 reasoning=0.80
+    [229/270] M-5   run1 ✗ 2.9s json=0 schema=0.00 reasoning=0.80
+    [230/270] M-5   run2 ✗ 2.5s json=0 schema=0.00 reasoning=0.80
+    [231/270] M-5   run3 ✗ 2.6s json=0 schema=0.00 reasoning=0.80
+    [232/270] M-9   run1 ✗ 1.7s json=0 schema=0.00 reasoning=0.80
+    [233/270] M-9   run2 ✗ 3.9s json=0 schema=0.00 reasoning=0.80
+    [234/270] M-9   run3 ✗ 2.2s json=0 schema=0.00 reasoning=0.80
+    [235/270] M-37  run1 ✗ 3.1s json=0 schema=0.00 reasoning=0.80
+    [236/270] M-37  run2 ✗ 2.7s json=0 schema=0.00 reasoning=0.80
+    [237/270] M-37  run3 ✗ 2.2s json=0 schema=0.00 reasoning=0.80
+    [238/270] M-50  run1 ✗ 2.6s json=0 schema=0.00 reasoning=0.80
+    [239/270] M-50  run2 ✗ 1.8s json=0 schema=0.00 reasoning=0.80
+    [240/270] M-50  run3 ✗ 2.1s json=0 schema=0.00 reasoning=0.80
+
+  Agent ⑥ Explainability Agent:
+    [241/270] M-1   run1 ✓ 15.8s json=1 schema=1.00 reasoning=1.00
+    [242/270] M-1   run2 ✓ 27.7s json=1 schema=1.00 reasoning=1.00
+    [243/270] M-1   run3 ✓ 173.0s json=1 schema=1.00 reasoning=1.00
+    [244/270] M-5   run1 ✓ 26.2s json=1 schema=1.00 reasoning=1.00
+    [245/270] M-5   run2 ✓ 55.5s json=1 schema=1.00 reasoning=1.00
+    [246/270] M-5   run3 ✓ 46.3s json=1 schema=1.00 reasoning=1.00
+    [247/270] M-9   run1 ✓ 18.9s json=1 schema=1.00 reasoning=1.00
+    [248/270] M-9   run2 ✓ 38.8s json=1 schema=1.00 reasoning=1.00
+    [249/270] M-9   run3 ✓ 64.0s json=1 schema=1.00 reasoning=1.00
+    [250/270] M-37  run1 ✓ 11.5s json=1 schema=1.00 reasoning=1.00
+    [251/270] M-37  run2 ✓ 37.5s json=1 schema=1.00 reasoning=1.00
+    [252/270] M-37  run3 ✓ 18.5s json=1 schema=1.00 reasoning=1.00
+    [253/270] M-50  run1 ✓ 7.6s json=1 schema=1.00 reasoning=1.00
+    [254/270] M-50  run2 ✓ 176.1s json=1 schema=1.00 reasoning=1.00
+    [255/270] M-50  run3 ✓ 55.1s json=1 schema=1.00 reasoning=1.00
+
+  Agent ⑤ Correlation Agent:
+    [256/270] M-1   run1 ✓ 2.8s json=1 schema=1.00 reasoning=0.70
+    [257/270] M-1   run2 ✓ 6.8s json=1 schema=1.00 reasoning=0.70
+    [258/270] M-1   run3 ✓ 6.1s json=1 schema=1.00 reasoning=0.70
+    [259/270] M-5   run1 ✓ 4.7s json=1 schema=1.00 reasoning=0.70
+    [260/270] M-5   run2 ✓ 4.1s json=1 schema=1.00 reasoning=0.70
+    [261/270] M-5   run3 ✓ 5.6s json=1 schema=1.00 reasoning=0.70
+    [262/270] M-9   run1 ✓ 5.1s json=1 schema=1.00 reasoning=0.70
+    [263/270] M-9   run2 ✓ 4.2s json=1 schema=1.00 reasoning=0.70
+    [264/270] M-9   run3 ✓ 2.8s json=1 schema=1.00 reasoning=0.70
+    [265/270] M-37  run1 ✓ 4.3s json=1 schema=1.00 reasoning=0.70
+    [266/270] M-37  run2 ✓ 5.5s json=1 schema=1.00 reasoning=0.70
+    [267/270] M-37  run3 ✓ 3.3s json=1 schema=1.00 reasoning=0.70
+    [268/270] M-50  run1 ✓ 2.5s json=1 schema=1.00 reasoning=0.70
+    [269/270] M-50  run2 ✓ 4.7s json=1 schema=1.00 reasoning=0.70
+    [270/270] M-50  run3 ✓ 3.2s json=1 schema=1.00 reasoning=0.70
+
+
+================================================================================
+  BENCHMARK RESULTS
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+  TABLE 1: Overall Model Comparison
+────────────────────────────────────────────────────────────────────────────────
+  Metric                              GLM-5.1        Qwen3.5    DeepSeek-V4
+  ────────────────────────────────────────────────────────────────────────
+  M1 JSON parse rate                    66.7%          82.2%          75.6%
+  M2 Schema compliance                  66.7%          82.2%          75.6%
+  M3 Reasoning quality                  71.7%          84.8%          73.1%
+  M4 Latency avg (sec)                 27.74s         70.82s         20.77s
+  M4 Latency p95 (sec)                 81.57s        248.72s         76.39s
+  M6 Temporal consistency               50.6%          66.3%          62.2%
+  M7 Est. cost (benchmark)            $0.0252        $0.0378        $0.0315
+  M7 Quality per dollar                  28.4           22.4           23.2
+
+  Best model per metric:
+    M1 JSON parse rate           → Qwen3.5
+    M2 Schema compliance         → Qwen3.5
+    M3 Reasoning quality         → Qwen3.5
+    M4 Latency avg (sec)         → DeepSeek-V4
+    M4 Latency p95 (sec)         → DeepSeek-V4
+    M6 Temporal consistency      → Qwen3.5
+    M7 Est. cost (benchmark)     → GLM-5.1
+    M7 Quality per dollar        → GLM-5.1
+
+────────────────────────────────────────────────────────────────────────────────
+  TABLE 2: Per-Agent Performance Breakdown
+────────────────────────────────────────────────────────────────────────────────
+
+  ① Monitoring Agent:
+  Metric                      GLM-5.1        Qwen3.5    DeepSeek-V4
+  ────────────────────────────────────────────────────────────
+  JSON rate                    100.0%         100.0%          86.7%
+  Schema                       100.0%         100.0%          86.7%
+  Reasoning                     98.0%          81.3%          63.3%
+  Latency(s)                   53.17s         58.60s         36.58s
+  Consistency                   80.0%          91.7%          68.3%
+
+  ② Diagnosis Agent:
+  Metric                      GLM-5.1        Qwen3.5    DeepSeek-V4
+  ────────────────────────────────────────────────────────────
+  JSON rate                    100.0%          93.3%          80.0%
+  Schema                       100.0%          93.3%          80.0%
+  Reasoning                     78.0%          76.0%          55.3%
+  Latency(s)                   11.37s         63.00s         21.95s
+  Consistency                   71.7%          80.8%          52.5%
+
+  ③ Planning Agent:
+  Metric                      GLM-5.1        Qwen3.5    DeepSeek-V4
+  ────────────────────────────────────────────────────────────
+  JSON rate                    100.0%         100.0%          86.7%
+  Schema                       100.0%         100.0%          86.7%
+  Reasoning                     90.0%          83.3%          70.0%
+  Latency(s)                   12.45s         32.29s          7.63s
+  Consistency                   71.7%          76.7%          78.3%
+
+  ④ Reporting Agent:
+  Metric                      GLM-5.1        Qwen3.5    DeepSeek-V4
+  ────────────────────────────────────────────────────────────
+  JSON rate                      0.0%           0.0%           0.0%
+  Schema                         0.0%           0.0%           0.0%
+  Reasoning                     80.0%          80.0%          80.0%
+  Latency(s)                   19.67s         44.50s          2.56s
+  Consistency                    0.0%           0.0%           0.0%
+
+  ⑥ Explainability Agent:
+  Metric                      GLM-5.1        Qwen3.5    DeepSeek-V4
+  ────────────────────────────────────────────────────────────
+  JSON rate                     46.7%         100.0%         100.0%
+  Schema                        46.7%         100.0%         100.0%
+  Reasoning                     46.7%         100.0%         100.0%
+  Latency(s)                   50.28s         99.91s         51.51s
+  Consistency                   20.0%          73.3%          78.7%
+
+  ⑤ Correlation Agent:
+  Metric                      GLM-5.1        Qwen3.5    DeepSeek-V4
+  ────────────────────────────────────────────────────────────
+  JSON rate                     53.3%         100.0%         100.0%
+  Schema                        53.3%         100.0%         100.0%
+  Reasoning                     37.3%          88.0%          70.0%
+  Latency(s)                   19.48s        126.62s          4.38s
+  Consistency                   60.0%          75.6%          95.6%
+
+────────────────────────────────────────────────────────────────────────────────
+  TABLE 3: Cross-Agent Consistency (does diagnosis match planning?)
+────────────────────────────────────────────────────────────────────────────────
+  GLM-5.1            40.0% (2/5)
+  Qwen3.5            60.0% (3/5)
+  DeepSeek-V4        40.0% (2/5)
+
+[SAVED] llm_benchmark_results.json
+
+================================================================================
+  INSIGHTS SUMMARY
+================================================================================
+
+  Weighted ranking (reasoning 35%, JSON 25%, schema 15%, consistency 15%, speed 10%):
+    #1 Qwen3.5            composite=0.725 (reasoning=0.85 json=0.82 latency=70.8s)
+    #2 DeepSeek-V4        composite=0.682 (reasoning=0.73 json=0.76 latency=20.8s)
+    #3 GLM-5.1            composite=0.601 (reasoning=0.72 json=0.67 latency=27.7s)
+
+================================================================================

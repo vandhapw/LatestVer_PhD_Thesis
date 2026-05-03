@@ -1,0 +1,2733 @@
+{
+  "2": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Pressure Drop"
+      ],
+      "predicted_rul": 252.69
+    },
+    "trends": {
+      "temperature": {
+        "mean": 79.11,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 79.11,
+        "n": 16,
+        "pct_warn": 93.1
+      },
+      "vibration": {
+        "mean": 44.48,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 44.48,
+        "n": 16,
+        "pct_warn": 68.4
+      },
+      "humidity": {
+        "mean": 59.94,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 59.94,
+        "n": 16,
+        "pct_warn": 83.3
+      },
+      "pressure": {
+        "mean": 2.7,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.7,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.08,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.08,
+        "n": 16,
+        "pct_warn": 77.0
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": false,\n  \"anomaly_type\": \"none\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"overheating\",\n  \"affected_component\": \"pump\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Temp at 93% warn, pressure drop indicates thermal fluid viscosity loss\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P3\",\"reason\":\"Pump overheating at 93% warning, schedule within 240hr window\",\"notify_supervisor\":true}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 93.1,\n  \"distance_to_next_severity\": 5.8925,\n  \"what_if\": \"temperature reaches 85\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 0.67,\n  \"has_disagreement\": true,\n  \"reliability_score\": 0.75\n}\n```"
+    }
+  },
+  "3": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Vibration Issue"
+      ],
+      "predicted_rul": 256.02
+    },
+    "trends": {
+      "temperature": {
+        "mean": 68.77,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 68.77,
+        "n": 16,
+        "pct_warn": 80.9
+      },
+      "vibration": {
+        "mean": 47.38,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 47.38,
+        "n": 16,
+        "pct_warn": 72.9
+      },
+      "humidity": {
+        "mean": 58.92,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 58.92,
+        "n": 16,
+        "pct_warn": 81.8
+      },
+      "pressure": {
+        "mean": 3.03,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.03,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.35,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.35,
+        "n": 16,
+        "pct_warn": 58.8
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"vibration\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"bearing_wear\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Vibration issue flagged, elevated vibration 47.38, trends stable\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P3\",\"reason\":\"Low risk bearing wear, stable trends, schedule within 240 hours\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"vibration\",\n  \"contribution_pct\": 72.9,\n  \"distance_to_next_severity\": 17.62,\n  \"what_if\": \"increase vibration to 65\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.85\n}\n```"
+    }
+  },
+  "5": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Electrical Fault"
+      ],
+      "predicted_rul": 255.41
+    },
+    "trends": {
+      "temperature": {
+        "mean": 75.37,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 75.37,
+        "n": 16,
+        "pct_warn": 88.7
+      },
+      "vibration": {
+        "mean": 44.01,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 44.01,
+        "n": 16,
+        "pct_warn": 67.7
+      },
+      "humidity": {
+        "mean": 57.36,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 57.36,
+        "n": 16,
+        "pct_warn": 79.7
+      },
+      "pressure": {
+        "mean": 2.85,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.85,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.73,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.73,
+        "n": 16,
+        "pct_warn": 68.3
+      }
+    },
+    "monitoring": {
+      "risk_level": "LOW",
+      "anomaly_detected": true,
+      "anomaly_type": "energy",
+      "trend": "stable",
+      "confidence": 0.85
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"electrical\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Energy anomaly detected, electrical fault type, high temp and humidity warning percentages.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P4\",\n  \"reason\": \"Electrical motor fault, low severity. Schedule maintenance within 240 hours.\",\n  \"notify_supervisor\": false\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 88.7,\n  \"distance_to_next_severity\": 9.63,\n  \"what_if\": \"increase temperature to 85\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.90\n}\n```"
+    }
+  },
+  "6": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 253.31
+    },
+    "trends": {
+      "temperature": {
+        "mean": 81.63,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 81.63,
+        "n": 16,
+        "pct_warn": 96.0
+      },
+      "vibration": {
+        "mean": 51.41,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 51.41,
+        "n": 16,
+        "pct_warn": 79.1
+      },
+      "humidity": {
+        "mean": 60.29,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 60.29,
+        "n": 16,
+        "pct_warn": 83.7
+      },
+      "pressure": {
+        "mean": 3.23,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.23,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.66,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.66,
+        "n": 16,
+        "pct_warn": 66.6
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\"risk_level\":\"LOW\",\"anomaly_detected\":false,\"anomaly_type\":\"none\",\"trend\":\"stable\",\"confidence\":0.95}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"normal\",\n  \"affected_component\": \"unknown\",\n  \"urgency_hours\": 253,\n  \"evidence\": \"All metrics stable, anomaly flag zero, low risk, normal operation.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"monitor\",\n  \"priority\": \"P4\",\n  \"reason\": \"All metrics stable, normal operation, no issues detected.\",\n  \"notify_supervisor\": false\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 48.0,\n  \"distance_to_next_severity\": 3.37,\n  \"what_if\": \"temperature >= 85\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"monitor\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.95\n}\n```"
+    }
+  },
+  "7": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Pressure Drop"
+      ],
+      "predicted_rul": 255.37
+    },
+    "trends": {
+      "temperature": {
+        "mean": 69.85,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 69.85,
+        "n": 16,
+        "pct_warn": 82.2
+      },
+      "vibration": {
+        "mean": 49.89,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 49.89,
+        "n": 16,
+        "pct_warn": 76.8
+      },
+      "humidity": {
+        "mean": 47.78,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 47.78,
+        "n": 16,
+        "pct_warn": 66.4
+      },
+      "pressure": {
+        "mean": 2.11,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.11,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.85,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.85,
+        "n": 16,
+        "pct_warn": 71.3
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": false,\n  \"anomaly_type\": \"none\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"normal\",\n  \"affected_component\": \"pump\",\n  \"urgency_hours\": 255,\n  \"evidence\": \"All trends stable, no anomaly detected, low risk.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"monitor\",\"priority\":\"P4\",\"reason\":\"Normal operation, stable trends, low risk detected\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 82.2,\n  \"distance_to_next_severity\": 15.15,\n  \"what_if\": \"Increase energy_consumption to 4.0\",\n  \"confidence\": 0.75\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"monitor\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.85\n}\n```"
+    }
+  },
+  "8": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Electrical Fault"
+      ],
+      "predicted_rul": 256.07
+    },
+    "trends": {
+      "temperature": {
+        "mean": 70.65,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 70.65,
+        "n": 16,
+        "pct_warn": 83.1
+      },
+      "vibration": {
+        "mean": 51.34,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 51.34,
+        "n": 16,
+        "pct_warn": 79.0
+      },
+      "humidity": {
+        "mean": 63.88,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 63.88,
+        "n": 16,
+        "pct_warn": 88.7
+      },
+      "pressure": {
+        "mean": 2.43,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.43,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.05,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.05,
+        "n": 16,
+        "pct_warn": 76.2
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"energy\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"electrical\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 256,\n  \"evidence\": \"Electrical fault specified; energy anomaly flagged with high confidence.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P3\",\"reason\":\"Electrical motor fault; low risk with 256h RUL allows planned repair\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"humidity\",\n  \"contribution_pct\": 88.7,\n  \"distance_to_next_severity\": 8.12,\n  \"what_if\": \"increase humidity by 8.12 to reach warn threshold\",\n  \"confidence\": 0.80\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.85\n}\n```"
+    }
+  },
+  "9": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Vibration Issue"
+      ],
+      "predicted_rul": 251.7
+    },
+    "trends": {
+      "temperature": {
+        "mean": 69.68,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 69.68,
+        "n": 16,
+        "pct_warn": 82.0
+      },
+      "vibration": {
+        "mean": 54.91,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 54.91,
+        "n": 16,
+        "pct_warn": 84.5
+      },
+      "humidity": {
+        "mean": 68.84,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 68.84,
+        "n": 16,
+        "pct_warn": 95.6
+      },
+      "pressure": {
+        "mean": 2.53,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.53,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 1.76,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 1.76,
+        "n": 16,
+        "pct_warn": 43.9
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"vibration\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"bearing_wear\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 251,\n  \"evidence\": \"Vibration anomaly detected at 84.5% warning; failure type is vibration issue.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P3\",\"reason\":\"Bearing wear, 251h RUL, low severity; plan maintenance\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"vibration\",\n  \"contribution_pct\": 84.5,\n  \"distance_to_next_severity\": 10.09,\n  \"what_if\": \"increase vibration by 10.09\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"LOW\",\"agreed_action\":\"schedule_maintenance\",\"agreement_ratio\":1.0,\"has_disagreement\":false,\"reliability_score\":0.85}\n```"
+    }
+  },
+  "10": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 257.13
+    },
+    "trends": {
+      "temperature": {
+        "mean": 80.36,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 80.36,
+        "n": 16,
+        "pct_warn": 94.5
+      },
+      "vibration": {
+        "mean": 44.4,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 44.4,
+        "n": 16,
+        "pct_warn": 68.3
+      },
+      "humidity": {
+        "mean": 51.49,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 51.49,
+        "n": 16,
+        "pct_warn": 71.5
+      },
+      "pressure": {
+        "mean": 2.04,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.04,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.32,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.32,
+        "n": 16,
+        "pct_warn": 83.0
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": false,\n  \"anomaly_type\": \"none\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.99\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"normal\",\n  \"affected_component\": \"unknown\",\n  \"urgency_hours\": 257,\n  \"evidence\": \"No anomaly detected, stable trends, low risk, normal operation\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"monitor\",\n  \"priority\": \"P4\",\n  \"reason\": \"Normal operation, no anomaly detected\",\n  \"notify_supervisor\": false\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 94.5,\n  \"distance_to_next_severity\": 4.64,\n  \"what_if\": \"energy_consumption +0.68\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"LOW\",\"agreed_action\":\"monitor\",\"agreement_ratio\":1.0,\"has_disagreement\":false,\"reliability_score\":0.99}\n```"
+    }
+  },
+  "13": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Overheating"
+      ],
+      "predicted_rul": 251.75
+    },
+    "trends": {
+      "temperature": {
+        "mean": 79.64,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 79.64,
+        "n": 16,
+        "pct_warn": 93.7
+      },
+      "vibration": {
+        "mean": 53.94,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 53.94,
+        "n": 16,
+        "pct_warn": 83.0
+      },
+      "humidity": {
+        "mean": 52.49,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 52.49,
+        "n": 16,
+        "pct_warn": 72.9
+      },
+      "pressure": {
+        "mean": 3.22,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.22,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.58,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.58,
+        "n": 16,
+        "pct_warn": 64.4
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"thermal\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"overheating\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 251,\n  \"evidence\": \"Thermal anomaly detected; temperature at 93.7% warning threshold with explicit overheating failure type.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Motor overheating at 93.7% threshold; 251h RUL allows scheduled maintenance.\",\n  \"notify_supervisor\": true\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 93.7,\n  \"distance_to_next_severity\": 5.36,\n  \"what_if\": \"temperature +5.36\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.85\n}\n```"
+    }
+  },
+  "14": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Overheating"
+      ],
+      "predicted_rul": 255.02
+    },
+    "trends": {
+      "temperature": {
+        "mean": 75.13,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 75.13,
+        "n": 16,
+        "pct_warn": 88.4
+      },
+      "vibration": {
+        "mean": 53.43,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 53.43,
+        "n": 16,
+        "pct_warn": 82.2
+      },
+      "humidity": {
+        "mean": 50.52,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 50.52,
+        "n": 16,
+        "pct_warn": 70.2
+      },
+      "pressure": {
+        "mean": 3.54,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.54,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.18,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.18,
+        "n": 16,
+        "pct_warn": 79.5
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"thermal\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"overheating\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Thermal anomaly detected; high temperature and vibration near warning thresholds.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P3\",\"reason\":\"Motor overheating near warning thresholds; schedule within 240 hours\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 88.4,\n  \"distance_to_next_severity\": 9.87,\n  \"what_if\": \"temperature increase of 9.87 to reach warn threshold\",\n  \"confidence\": 0.92\n}\n```"
+    },
+    "consensus": {
+      "agreed_risk": "LOW",
+      "agreed_action": "schedule_maintenance",
+      "agreement_ratio": 1.0,
+      "has_disagreement": false,
+      "reliability_score": 0.85
+    }
+  },
+  "15": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Electrical Fault"
+      ],
+      "predicted_rul": 253.97
+    },
+    "trends": {
+      "temperature": {
+        "mean": 77.92,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 77.92,
+        "n": 16,
+        "pct_warn": 91.7
+      },
+      "vibration": {
+        "mean": 55.79,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 55.79,
+        "n": 16,
+        "pct_warn": 85.8
+      },
+      "humidity": {
+        "mean": 48.13,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 48.13,
+        "n": 16,
+        "pct_warn": 66.9
+      },
+      "pressure": {
+        "mean": 3.13,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.13,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.19,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.19,
+        "n": 16,
+        "pct_warn": 54.6
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.75\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"electrical\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 72,\n  \"evidence\": \"Electrical fault type; high temperature and vibration warning percentages.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P3\",\"reason\":\"Electrical motor fault; 72hr urgency, medium severity, adequate RUL\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 42.5,\n  \"distance_to_next_severity\": 7.08,\n  \"what_if\": \"temperature increasing by 7.08 to reach the warning threshold of 85\",\n  \"confidence\": 0.89\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.75\n}\n```"
+    }
+  },
+  "16": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Pressure Drop"
+      ],
+      "predicted_rul": 253.96
+    },
+    "trends": {
+      "temperature": {
+        "mean": 75.9,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 75.9,
+        "n": 16,
+        "pct_warn": 89.3
+      },
+      "vibration": {
+        "mean": 59.75,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 59.75,
+        "n": 16,
+        "pct_warn": 91.9
+      },
+      "humidity": {
+        "mean": 53.29,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 53.29,
+        "n": 16,
+        "pct_warn": 74.0
+      },
+      "pressure": {
+        "mean": 2.54,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.54,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.58,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.58,
+        "n": 16,
+        "pct_warn": 64.5
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\"probable_cause\":\"bearing_wear\",\"affected_component\":\"pump\",\"urgency_hours\":72,\"evidence\":\"Pressure drop with high vibration 91.9% and temperature 89.3% warning pct\"}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P2\",\"reason\":\"Bearing wear with high vibration and temperature, schedule within 72h\",\"notify_supervisor\":true}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"vibration\",\n  \"contribution_pct\": 28.7,\n  \"distance_to_next_severity\": 5.25,\n  \"what_if\": \"vibration increases by 5.25\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.85\n}\n```"
+    }
+  },
+  "18": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Vibration Issue"
+      ],
+      "predicted_rul": 255.28
+    },
+    "trends": {
+      "temperature": {
+        "mean": 84.1,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 84.1,
+        "n": 16,
+        "pct_warn": 98.9
+      },
+      "vibration": {
+        "mean": 55.3,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 55.3,
+        "n": 16,
+        "pct_warn": 85.1
+      },
+      "humidity": {
+        "mean": 54.64,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 54.64,
+        "n": 16,
+        "pct_warn": 75.9
+      },
+      "pressure": {
+        "mean": 3.29,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.29,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.2,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.2,
+        "n": 16,
+        "pct_warn": 55.0
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"vibration\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.90\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"bearing_wear\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Vibration issue flagged, high vibration 55.3 with 85.1% warn threshold, stable trend\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Bearing wear, 240h urgency, medium severity, schedule replacement\",\n  \"notify_supervisor\": true\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 65.0,\n  \"distance_to_next_severity\": 0.8987,\n  \"what_if\": \"Increase temperature by 0.9 to cross the warn threshold of 85\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.92\n}\n```"
+    }
+  },
+  "19": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Vibration Issue"
+      ],
+      "predicted_rul": 255.43
+    },
+    "trends": {
+      "temperature": {
+        "mean": 71.93,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 71.93,
+        "n": 16,
+        "pct_warn": 84.6
+      },
+      "vibration": {
+        "mean": 48.07,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 48.07,
+        "n": 16,
+        "pct_warn": 74.0
+      },
+      "humidity": {
+        "mean": 52.74,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 52.74,
+        "n": 16,
+        "pct_warn": 73.2
+      },
+      "pressure": {
+        "mean": 2.73,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.73,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.06,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.06,
+        "n": 16,
+        "pct_warn": 51.5
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"vibration\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.9\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"bearing_wear\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 120,\n  \"evidence\": \"Vibration anomaly, high temperature pct_warn 84.6%, stable trend, 255h remaining life.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Bearing wear detected, schedule replacement within 120h\",\n  \"notify_supervisor\": true\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"vibration\",\n  \"contribution_pct\": 74.0,\n  \"distance_to_next_severity\": 16.93,\n  \"what_if\": \"Increase vibration by 16.93 to reach the warning threshold (65) and escalate severity\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.9\n}\n```"
+    }
+  },
+  "23": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Overheating"
+      ],
+      "predicted_rul": 253.37
+    },
+    "trends": {
+      "temperature": {
+        "mean": 77.26,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 77.26,
+        "n": 16,
+        "pct_warn": 90.9
+      },
+      "vibration": {
+        "mean": 51.69,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 51.69,
+        "n": 16,
+        "pct_warn": 79.5
+      },
+      "humidity": {
+        "mean": 61.05,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 61.05,
+        "n": 16,
+        "pct_warn": 84.8
+      },
+      "pressure": {
+        "mean": 3.01,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.01,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.83,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.83,
+        "n": 16,
+        "pct_warn": 70.8
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"thermal\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.9\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"overheating\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 72,\n  \"evidence\": \"Thermal anomaly detected, failure type overheating, 90.9% temp warning.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P2\",\"reason\":\"Motor overheating, 72hr urgency window, medium severity risk\",\"notify_supervisor\":true}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 80.0,\n  \"distance_to_next_severity\": 7.74,\n  \"what_if\": \"temperature increasing by 7.74 to reach warn threshold (85)\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.9\n}\n```"
+    }
+  },
+  "24": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Pressure Drop"
+      ],
+      "predicted_rul": 254.65
+    },
+    "trends": {
+      "temperature": {
+        "mean": 72.24,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 72.24,
+        "n": 16,
+        "pct_warn": 85.0
+      },
+      "vibration": {
+        "mean": 53.52,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 53.52,
+        "n": 16,
+        "pct_warn": 82.3
+      },
+      "humidity": {
+        "mean": 50.92,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 50.92,
+        "n": 16,
+        "pct_warn": 70.7
+      },
+      "pressure": {
+        "mean": 2.93,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.93,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.99,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.99,
+        "n": 16,
+        "pct_warn": 74.7
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\"probable_cause\":\"bearing_wear\",\"affected_component\":\"pump\",\"urgency_hours\":96,\"evidence\":\"Pressure drop with high vibration and temperature warning percentages, combined anomaly\"}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P3\",\"reason\":\"Bearing wear on pump, 96hr window for planned repair\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 85.0,\n  \"distance_to_next_severity\": 12.76,\n  \"what_if\": \"Increase temperature to 85\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 0.95,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.85\n}\n```"
+    }
+  },
+  "25": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Vibration Issue"
+      ],
+      "predicted_rul": 254.18
+    },
+    "trends": {
+      "temperature": {
+        "mean": 74.57,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 74.57,
+        "n": 16,
+        "pct_warn": 87.7
+      },
+      "vibration": {
+        "mean": 50.84,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 50.84,
+        "n": 16,
+        "pct_warn": 78.2
+      },
+      "humidity": {
+        "mean": 46.13,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 46.13,
+        "n": 16,
+        "pct_warn": 64.1
+      },
+      "pressure": {
+        "mean": 2.69,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.69,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.47,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.47,
+        "n": 16,
+        "pct_warn": 61.9
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"vibration\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.9\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"bearing_wear\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 168,\n  \"evidence\": \"Vibration issue flagged, 78.2% vibration warning, stable trend.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Bearing wear detected, RUL 254h; schedule maintenance within 168h.\",\n  \"notify_supervisor\": true\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"vibration\",\n  \"contribution_pct\": 78.2,\n  \"distance_to_next_severity\": 14.16,\n  \"what_if\": \"Increase vibration by 14.16\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"MEDIUM\",\"agreed_action\":\"schedule_maintenance\",\"agreement_ratio\":1.0,\"has_disagreement\":false,\"reliability_score\":0.9}\n```"
+    }
+  },
+  "26": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Overheating"
+      ],
+      "predicted_rul": 256.32
+    },
+    "trends": {
+      "temperature": {
+        "mean": 73.13,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 73.13,
+        "n": 16,
+        "pct_warn": 86.0
+      },
+      "vibration": {
+        "mean": 52.66,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 52.66,
+        "n": 16,
+        "pct_warn": 81.0
+      },
+      "humidity": {
+        "mean": 62.51,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 62.51,
+        "n": 16,
+        "pct_warn": 86.8
+      },
+      "pressure": {
+        "mean": 1.98,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 1.98,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.9,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.9,
+        "n": 16,
+        "pct_warn": 72.6
+      }
+    },
+    "monitoring": {
+      "risk_level": "LOW",
+      "anomaly_detected": true,
+      "anomaly_type": "thermal",
+      "trend": "stable",
+      "confidence": 0.85
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"overheating\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Thermal anomaly detected, temperature near warning, failure type explicitly labeled as overheating.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Motor overheating detected; schedule maintenance within 240 hours.\",\n  \"notify_supervisor\": false\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 82.0,\n  \"distance_to_next_severity\": 11.87,\n  \"what_if\": \"increase temperature to 85\",\n  \"confidence\": 0.92\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.85\n}\n```"
+    }
+  },
+  "28": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 255.77
+    },
+    "trends": {
+      "temperature": {
+        "mean": 72.42,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 72.42,
+        "n": 16,
+        "pct_warn": 85.2
+      },
+      "vibration": {
+        "mean": 42.18,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 42.18,
+        "n": 16,
+        "pct_warn": 64.9
+      },
+      "humidity": {
+        "mean": 65.03,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 65.03,
+        "n": 16,
+        "pct_warn": 90.3
+      },
+      "pressure": {
+        "mean": 3.48,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.48,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.8,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.8,
+        "n": 16,
+        "pct_warn": 95.0
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": false,\n  \"anomaly_type\": \"none\",\n  \"trend\": \"stable\",\n  \"confidence\": 1.0\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"normal\",\n  \"affected_component\": \"unknown\",\n  \"urgency_hours\": 255,\n  \"evidence\": \"No anomaly, all trends stable, failure type normal, high remaining life.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"monitor\",\n  \"priority\": \"P4\",\n  \"reason\": \"No anomaly, stable trends, high RUL.\",\n  \"notify_supervisor\": false\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"energy_consumption\",\n  \"contribution_pct\": 95.0,\n  \"distance_to_next_severity\": 0.2018,\n  \"what_if\": \"+0.2018 in energy_consumption\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"monitor\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 1.0\n}\n```"
+    }
+  },
+  "30": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 252.69
+    },
+    "trends": {
+      "temperature": {
+        "mean": 79.83,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 79.83,
+        "n": 16,
+        "pct_warn": 93.9
+      },
+      "vibration": {
+        "mean": 47.96,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 47.96,
+        "n": 16,
+        "pct_warn": 73.8
+      },
+      "humidity": {
+        "mean": 62.5,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 62.5,
+        "n": 16,
+        "pct_warn": 86.8
+      },
+      "pressure": {
+        "mean": 2.7,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.7,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.2,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.2,
+        "n": 16,
+        "pct_warn": 80.1
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": false,\n  \"anomaly_type\": \"none\",\n  \"trend\": \"stable\",\n  \"confidence\": 1.0\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"normal\",\n  \"affected_component\": \"unknown\",\n  \"urgency_hours\": 252,\n  \"evidence\": \"Stable trends, no anomaly detected, low risk, normal operation status.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"monitor\",\"priority\":\"P4\",\"reason\":\"Normal operation; no anomaly detected. Continue monitoring.\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 93.9,\n  \"distance_to_next_severity\": 5.17,\n  \"what_if\": \"Increase temperature by 5.17 to reach warning threshold\",\n  \"confidence\": 0.92\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"monitor\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 1.0\n}\n```"
+    }
+  },
+  "31": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "STATUS=FAULT"
+      ],
+      "predicted_rul": 253.52
+    },
+    "trends": {
+      "temperature": {
+        "mean": 76.27,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 76.27,
+        "n": 16,
+        "pct_warn": 89.7
+      },
+      "vibration": {
+        "mean": 55.27,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 55.27,
+        "n": 16,
+        "pct_warn": 85.0
+      },
+      "humidity": {
+        "mean": 53.12,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 53.12,
+        "n": 16,
+        "pct_warn": 73.8
+      },
+      "pressure": {
+        "mean": 3.33,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.33,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.56,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.56,
+        "n": 16,
+        "pct_warn": 64.1
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"normal\",\n  \"affected_component\": \"unknown\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Stable trends, normal status, high temp and vibration warning percentages.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"monitor\",\"priority\":\"P4\",\"reason\":\"Normal operation; stable trends. Continue routine monitoring.\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 28.7,\n  \"distance_to_next_severity\": 8.73,\n  \"what_if\": \"temperature +8.73\",\n  \"confidence\": 0.92\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"monitor\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.85\n}\n```"
+    }
+  },
+  "32": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Overheating"
+      ],
+      "predicted_rul": 253.58
+    },
+    "trends": {
+      "temperature": {
+        "mean": 73.68,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 73.68,
+        "n": 16,
+        "pct_warn": 86.7
+      },
+      "vibration": {
+        "mean": 56.35,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 56.35,
+        "n": 16,
+        "pct_warn": 86.7
+      },
+      "humidity": {
+        "mean": 60.56,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 60.56,
+        "n": 16,
+        "pct_warn": 84.1
+      },
+      "pressure": {
+        "mean": 2.76,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.76,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 1.33,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 1.33,
+        "n": 16,
+        "pct_warn": 33.1
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"CRITICAL\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"thermal\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"overheating\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Critical thermal anomaly detected; high temperature and vibration warning percentages.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Overheating motor; schedule maintenance within 240 hours based on RUL.\",\n  \"notify_supervisor\": false\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 75.0,\n  \"distance_to_next_severity\": 11.32,\n  \"what_if\": \"temperature increase by 11.32\",\n  \"confidence\": 0.90\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"HIGH\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.95\n}\n```"
+    }
+  },
+  "33": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 255.66
+    },
+    "trends": {
+      "temperature": {
+        "mean": 80.46,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 80.46,
+        "n": 16,
+        "pct_warn": 94.7
+      },
+      "vibration": {
+        "mean": 41.47,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 41.47,
+        "n": 16,
+        "pct_warn": 63.8
+      },
+      "humidity": {
+        "mean": 46.71,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 46.71,
+        "n": 16,
+        "pct_warn": 64.9
+      },
+      "pressure": {
+        "mean": 3.59,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.59,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.86,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.86,
+        "n": 16,
+        "pct_warn": 71.5
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": false,\n  \"anomaly_type\": \"none\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"normal\",\n  \"affected_component\": \"unknown\",\n  \"urgency_hours\": 0,\n  \"evidence\": \"All metrics stable, no anomaly, failure type Normal.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"monitor\",\n  \"priority\": \"P4\",\n  \"reason\": \"All metrics stable, normal operation, no immediate action required.\",\n  \"notify_supervisor\": false\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 75.0,\n  \"distance_to_next_severity\": 4.542,\n  \"what_if\": \"Increase temperature by 4.542 to reach warning threshold\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"LOW\",\"agreed_action\":\"monitor\",\"agreement_ratio\":1.0,\"has_disagreement\":false,\"reliability_score\":0.95}\n```"
+    }
+  },
+  "34": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Electrical Fault"
+      ],
+      "predicted_rul": 255.0
+    },
+    "trends": {
+      "temperature": {
+        "mean": 75.6,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 75.6,
+        "n": 16,
+        "pct_warn": 88.9
+      },
+      "vibration": {
+        "mean": 58.18,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 58.18,
+        "n": 16,
+        "pct_warn": 89.5
+      },
+      "humidity": {
+        "mean": 59.05,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 59.05,
+        "n": 16,
+        "pct_warn": 82.0
+      },
+      "pressure": {
+        "mean": 3.11,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.11,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.47,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.47,
+        "n": 16,
+        "pct_warn": 86.6
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\"risk_level\":\"MEDIUM\",\"anomaly_detected\":true,\"anomaly_type\":\"energy\",\"trend\":\"stable\",\"confidence\":0.78}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"electrical\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 72,\n  \"evidence\": \"Electrical fault and energy anomaly detected with high warning percentages.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Electrical motor fault requires scheduled maintenance within 72 hours.\",\n  \"notify_supervisor\": true\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"vibration\",\n  \"contribution_pct\": 25.8,\n  \"distance_to_next_severity\": 6.82,\n  \"what_if\": \"increase vibration by 6.82 to reach warning threshold\",\n  \"confidence\": 0.82\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.78\n}\n```"
+    }
+  },
+  "35": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Overheating"
+      ],
+      "predicted_rul": 257.81
+    },
+    "trends": {
+      "temperature": {
+        "mean": 76.78,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 76.78,
+        "n": 16,
+        "pct_warn": 90.3
+      },
+      "vibration": {
+        "mean": 44.01,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 44.01,
+        "n": 16,
+        "pct_warn": 67.7
+      },
+      "humidity": {
+        "mean": 56.88,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 56.88,
+        "n": 16,
+        "pct_warn": 79.0
+      },
+      "pressure": {
+        "mean": 2.41,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.41,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.05,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.05,
+        "n": 16,
+        "pct_warn": 76.2
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"thermal\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"overheating\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 72,\n  \"evidence\": \"High temperature (90.3% warn), thermal anomaly detected, failure type overheating\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P2\",\"reason\":\"Motor overheating at 90.3% warn, 72hr urgency window\",\"notify_supervisor\":true}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 90.3,\n  \"distance_to_next_severity\": 8.2241,\n  \"what_if\": \"temperature +8.22\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"MEDIUM\",\"agreed_action\":\"schedule_maintenance\",\"agreement_ratio\":1.0,\"has_disagreement\":false,\"reliability_score\":0.95}\n```"
+    }
+  },
+  "37": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Overheating"
+      ],
+      "predicted_rul": 251.91
+    },
+    "trends": {
+      "temperature": {
+        "mean": 83.39,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 83.39,
+        "n": 16,
+        "pct_warn": 98.1
+      },
+      "vibration": {
+        "mean": 46.55,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 46.55,
+        "n": 16,
+        "pct_warn": 71.6
+      },
+      "humidity": {
+        "mean": 57.19,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 57.19,
+        "n": 16,
+        "pct_warn": 79.4
+      },
+      "pressure": {
+        "mean": 2.88,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.88,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.15,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.15,
+        "n": 16,
+        "pct_warn": 53.7
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"thermal\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\"probable_cause\":\"overheating\",\"affected_component\":\"motor\",\"urgency_hours\":72,\"evidence\":\"thermal anomaly detected, 98.1% temp warning, stable high temperature\"}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P3\",\"reason\":\"Motor overheating with thermal anomaly, schedule maintenance within 72h\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 98.1,\n  \"distance_to_next_severity\": 1.6132,\n  \"what_if\": \"temperature +1.6132\",\n  \"confidence\": 0.98\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"MEDIUM\",\"agreed_action\":\"schedule_maintenance\",\"agreement_ratio\":0.67,\"has_disagreement\":true,\"reliability_score\":0.85}\n```"
+    }
+  },
+  "38": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Electrical Fault"
+      ],
+      "predicted_rul": 254.29
+    },
+    "trends": {
+      "temperature": {
+        "mean": 80.58,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 80.58,
+        "n": 16,
+        "pct_warn": 94.8
+      },
+      "vibration": {
+        "mean": 50.13,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 50.13,
+        "n": 16,
+        "pct_warn": 77.1
+      },
+      "humidity": {
+        "mean": 53.92,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 53.92,
+        "n": 16,
+        "pct_warn": 74.9
+      },
+      "pressure": {
+        "mean": 2.12,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.12,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.43,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.43,
+        "n": 16,
+        "pct_warn": 85.7
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\"probable_cause\":\"electrical\",\"affected_component\":\"motor\",\"urgency_hours\":72,\"evidence\":\"electrical fault type, high energy consumption and temperature warnings, combined anomaly\"}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Electrical motor fault with temperature warnings; schedule within 72 hours.\",\n  \"notify_supervisor\": true\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 45.2,\n  \"distance_to_next_severity\": 4.42,\n  \"what_if\": \"temperature +4.42\",\n  \"confidence\": 0.91\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"MEDIUM\",\"agreed_action\":\"schedule_maintenance\",\"agreement_ratio\":1.0,\"has_disagreement\":false,\"reliability_score\":0.85}\n```"
+    }
+  },
+  "39": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Pressure Drop"
+      ],
+      "predicted_rul": 251.85
+    },
+    "trends": {
+      "temperature": {
+        "mean": 80.92,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 80.92,
+        "n": 16,
+        "pct_warn": 95.2
+      },
+      "vibration": {
+        "mean": 49.75,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 49.75,
+        "n": 16,
+        "pct_warn": 76.5
+      },
+      "humidity": {
+        "mean": 45.05,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 45.05,
+        "n": 16,
+        "pct_warn": 62.6
+      },
+      "pressure": {
+        "mean": 2.95,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.95,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.2,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.2,
+        "n": 16,
+        "pct_warn": 80.1
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\"probable_cause\":\"bearing_wear\",\"affected_component\":\"pump\",\"urgency_hours\":72,\"evidence\":\"Pressure drop with elevated temp, vibration, and energy indicates pump bearing wear\"}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Pump bearing wear requires maintenance within 72 hours\",\n  \"notify_supervisor\": true\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 95.2,\n  \"distance_to_next_severity\": 4.08,\n  \"what_if\": \"temperature increases by 4.09\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.85\n}\n```"
+    }
+  },
+  "41": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Vibration Issue"
+      ],
+      "predicted_rul": 256.25
+    },
+    "trends": {
+      "temperature": {
+        "mean": 70.29,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 70.29,
+        "n": 16,
+        "pct_warn": 82.7
+      },
+      "vibration": {
+        "mean": 56.95,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 56.95,
+        "n": 16,
+        "pct_warn": 87.6
+      },
+      "humidity": {
+        "mean": 58.86,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 58.86,
+        "n": 16,
+        "pct_warn": 81.8
+      },
+      "pressure": {
+        "mean": 3.06,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.06,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.87,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.87,
+        "n": 16,
+        "pct_warn": 71.7
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"vibration\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"bearing_wear\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Vibration issue flagged; vibration at 87.6% warning threshold.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"schedule_maintenance\",\"priority\":\"P3\",\"reason\":\"Bearing wear approaching threshold; schedule replacement within 240 hours\",\"notify_supervisor\":true}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"vibration\",\n  \"contribution_pct\": 75.0,\n  \"distance_to_next_severity\": 8.05,\n  \"what_if\": \"increase vibration by 8.05 to reach warning threshold (65)\",\n  \"confidence\": 0.9\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"MEDIUM\",\"agreed_action\":\"schedule_maintenance\",\"agreement_ratio\":1.0,\"has_disagreement\":false,\"reliability_score\":0.85}\n```"
+    }
+  },
+  "42": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Pressure Drop"
+      ],
+      "predicted_rul": 254.42
+    },
+    "trends": {
+      "temperature": {
+        "mean": 74.1,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 74.1,
+        "n": 16,
+        "pct_warn": 87.2
+      },
+      "vibration": {
+        "mean": 42.67,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 42.67,
+        "n": 16,
+        "pct_warn": 65.6
+      },
+      "humidity": {
+        "mean": 58.03,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 58.03,
+        "n": 16,
+        "pct_warn": 80.6
+      },
+      "pressure": {
+        "mean": 2.75,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.75,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.04,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.04,
+        "n": 16,
+        "pct_warn": 76.0
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.75\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"overheating\",\n  \"affected_component\": \"pump\",\n  \"urgency_hours\": 254,\n  \"evidence\": \"Pressure drop combined with high temperature and vibration warnings indicate overheating pump.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Pump overheating with 254h RUL; schedule maintenance to prevent further degradation.\",\n  \"notify_supervisor\": false\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 87.2,\n  \"distance_to_next_severity\": 0.4,\n  \"what_if\": \"temperature increases to 85\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"MEDIUM\",\"agreed_action\":\"schedule_maintenance\",\"agreement_ratio\":1.0,\"has_disagreement\":false,\"reliability_score\":0.75}\n```"
+    }
+  },
+  "43": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Pressure Drop"
+      ],
+      "predicted_rul": 255.08
+    },
+    "trends": {
+      "temperature": {
+        "mean": 78.81,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 78.81,
+        "n": 16,
+        "pct_warn": 92.7
+      },
+      "vibration": {
+        "mean": 51.85,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 51.85,
+        "n": 16,
+        "pct_warn": 79.8
+      },
+      "humidity": {
+        "mean": 56.13,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 56.13,
+        "n": 16,
+        "pct_warn": 78.0
+      },
+      "pressure": {
+        "mean": 2.34,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.34,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.05,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.05,
+        "n": 16,
+        "pct_warn": 51.4
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"bearing_wear\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 168,\n  \"evidence\": \"High temp and vibration warnings; combined anomaly causing pressure drop.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Bearing wear causing temp/vibration issues; schedule replacement within 168 hours.\",\n  \"notify_supervisor\": true\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 92.7,\n  \"distance_to_next_severity\": 6.187,\n  \"what_if\": \"temperature increases to 85\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"MEDIUM\",\"agreed_action\":\"schedule_maintenance\",\"agreement_ratio\":1.0,\"has_disagreement\":false,\"reliability_score\":0.85}\n```"
+    }
+  },
+  "46": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "STATUS=FAULT"
+      ],
+      "predicted_rul": 253.53
+    },
+    "trends": {
+      "temperature": {
+        "mean": 81.36,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 81.36,
+        "n": 16,
+        "pct_warn": 95.7
+      },
+      "vibration": {
+        "mean": 46.1,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 46.1,
+        "n": 16,
+        "pct_warn": 70.9
+      },
+      "humidity": {
+        "mean": 66.71,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 66.71,
+        "n": 16,
+        "pct_warn": 92.6
+      },
+      "pressure": {
+        "mean": 3.17,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.17,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.38,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.38,
+        "n": 16,
+        "pct_warn": 59.6
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"combined\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.75\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"bearing_wear\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Twin flags combined anomaly; high temp and vibration warning percentages despite stable trends.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Bearing wear detected; schedule replacement within 240 hours.\",\n  \"notify_supervisor\": false\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 45.0,\n  \"distance_to_next_severity\": 3.64,\n  \"what_if\": \"temperature +3.64\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.80\n}\n```"
+    }
+  },
+  "47": {
+    "reasoning": {
+      "risk_score": 0.15,
+      "severity": "LOW",
+      "flags": [
+        "FAIL=Overheating"
+      ],
+      "predicted_rul": 256.81
+    },
+    "trends": {
+      "temperature": {
+        "mean": 74.72,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 74.72,
+        "n": 16,
+        "pct_warn": 87.9
+      },
+      "vibration": {
+        "mean": 51.16,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 51.16,
+        "n": 16,
+        "pct_warn": 78.7
+      },
+      "humidity": {
+        "mean": 55.6,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 55.6,
+        "n": 16,
+        "pct_warn": 77.2
+      },
+      "pressure": {
+        "mean": 2.85,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.85,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 1.67,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 1.67,
+        "n": 16,
+        "pct_warn": 41.8
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": true,\n  \"anomaly_type\": \"thermal\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.85\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"overheating\",\n  \"affected_component\": \"motor\",\n  \"urgency_hours\": 240,\n  \"evidence\": \"Thermal anomaly detected; temperature at 87.9% warning with high vibration.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Motor overheating with adequate RUL; schedule maintenance within 240 hours.\",\n  \"notify_supervisor\": false\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 87.9,\n  \"distance_to_next_severity\": 10.28,\n  \"what_if\": \"increase temperature to 85\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.85\n}\n```"
+    }
+  },
+  "48": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 255.63
+    },
+    "trends": {
+      "temperature": {
+        "mean": 76.48,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 76.48,
+        "n": 16,
+        "pct_warn": 90.0
+      },
+      "vibration": {
+        "mean": 50.16,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 50.16,
+        "n": 16,
+        "pct_warn": 77.2
+      },
+      "humidity": {
+        "mean": 55.62,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 55.62,
+        "n": 16,
+        "pct_warn": 77.2
+      },
+      "pressure": {
+        "mean": 2.52,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.52,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 3.14,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.14,
+        "n": 16,
+        "pct_warn": 78.4
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": false,\n  \"anomaly_type\": \"none\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"normal\",\n  \"affected_component\": \"unknown\",\n  \"urgency_hours\": 999,\n  \"evidence\": \"All parameters stable, anomaly flag 0, risk LOW, failure type Normal.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"monitor\",\"priority\":\"P4\",\"reason\":\"All parameters stable, no anomaly detected\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 90.0,\n  \"distance_to_next_severity\": 8.52,\n  \"what_if\": \"energy_consumption increases by 0.86\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\"agreed_risk\":\"LOW\",\"agreed_action\":\"monitor\",\"agreement_ratio\":1.0,\"has_disagreement\":false,\"reliability_score\":0.95}\n```"
+    }
+  },
+  "49": {
+    "reasoning": {
+      "risk_score": 0.3,
+      "severity": "MEDIUM",
+      "flags": [
+        "STATUS=FAULT",
+        "FAIL=Vibration Issue"
+      ],
+      "predicted_rul": 251.94
+    },
+    "trends": {
+      "temperature": {
+        "mean": 70.83,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 70.83,
+        "n": 16,
+        "pct_warn": 83.3
+      },
+      "vibration": {
+        "mean": 53.06,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 53.06,
+        "n": 16,
+        "pct_warn": 81.6
+      },
+      "humidity": {
+        "mean": 54.85,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 54.85,
+        "n": 16,
+        "pct_warn": 76.2
+      },
+      "pressure": {
+        "mean": 2.84,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.84,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.53,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.53,
+        "n": 16,
+        "pct_warn": 63.4
+      }
+    },
+    "monitoring": {
+      "error": "Internal Server Error (ref: a077c200-5800-4d4d-8956-68c1d301e3c7) (status code: 500)"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"bearing_wear\",\n  \"affected_component\": \"bearing\",\n  \"urgency_hours\": 250,\n  \"evidence\": \"Vibration issue flagged; high temp and vibration pct_warn; 252h remaining life.\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\n  \"action\": \"schedule_maintenance\",\n  \"priority\": \"P3\",\n  \"reason\": \"Bearing wear detected; schedule replacement within 250h window\",\n  \"notify_supervisor\": true\n}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"vibration\",\n  \"contribution_pct\": 72.0,\n  \"distance_to_next_severity\": 11.94,\n  \"what_if\": \"increase vibration by 11.94 to reach warning threshold\",\n  \"confidence\": 0.9\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"MEDIUM\",\n  \"agreed_action\": \"schedule_maintenance\",\n  \"agreement_ratio\": 0.66,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.7\n}\n```"
+    }
+  },
+  "50": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 254.4
+    },
+    "trends": {
+      "temperature": {
+        "mean": 76.68,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 76.68,
+        "n": 16,
+        "pct_warn": 90.2
+      },
+      "vibration": {
+        "mean": 56.12,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 56.12,
+        "n": 16,
+        "pct_warn": 86.3
+      },
+      "humidity": {
+        "mean": 43.79,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 43.79,
+        "n": 16,
+        "pct_warn": 60.8
+      },
+      "pressure": {
+        "mean": 3.49,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 3.49,
+        "n": 16,
+        "pct_warn": 0
+      },
+      "energy_consumption": {
+        "mean": 2.45,
+        "stdev": 0.0,
+        "slope": 0.0,
+        "direction": "stable",
+        "latest": 2.45,
+        "n": 16,
+        "pct_warn": 61.1
+      }
+    },
+    "monitoring": {
+      "raw": "```json\n{\n  \"risk_level\": \"LOW\",\n  \"anomaly_detected\": false,\n  \"anomaly_type\": \"none\",\n  \"trend\": \"stable\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "diagnosis": {
+      "raw": "```json\n{\n  \"probable_cause\": \"normal\",\n  \"affected_component\": \"unknown\",\n  \"urgency_hours\": 254,\n  \"evidence\": \"all metrics stable, no anomaly detected, failure type normal\"\n}\n```"
+    },
+    "planning": {
+      "raw": "```json\n{\"action\":\"monitor\",\"priority\":\"P4\",\"reason\":\"All metrics stable, no anomaly detected. Continue monitoring.\",\"notify_supervisor\":false}\n```"
+    },
+    "xai": {
+      "raw": "```json\n{\n  \"top_feature\": \"temperature\",\n  \"contribution_pct\": 30.2,\n  \"distance_to_next_severity\": 8.32,\n  \"what_if\": \"temperature >= 85\",\n  \"confidence\": 0.95\n}\n```"
+    },
+    "consensus": {
+      "raw": "```json\n{\n  \"agreed_risk\": \"LOW\",\n  \"agreed_action\": \"monitor\",\n  \"agreement_ratio\": 1.0,\n  \"has_disagreement\": false,\n  \"reliability_score\": 0.95\n}\n```"
+    }
+  },
+  "1": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 252.22
+    },
+    "action": "monitor"
+  },
+  "11": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 250.58
+    },
+    "action": "monitor"
+  },
+  "17": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 254.39
+    },
+    "action": "monitor"
+  },
+  "21": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 254.54
+    },
+    "action": "monitor"
+  },
+  "22": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 253.04
+    },
+    "action": "monitor"
+  },
+  "27": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 254.4
+    },
+    "action": "monitor"
+  },
+  "44": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 253.12
+    },
+    "action": "monitor"
+  },
+  "45": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 254.79
+    },
+    "action": "monitor"
+  },
+  "4": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 254.87
+    },
+    "action": "monitor"
+  },
+  "12": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 256.77
+    },
+    "action": "monitor"
+  },
+  "20": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 254.55
+    },
+    "action": "monitor"
+  },
+  "29": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 254.11
+    },
+    "action": "monitor"
+  },
+  "36": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 253.7
+    },
+    "action": "monitor"
+  },
+  "40": {
+    "reasoning": {
+      "risk_score": 0.0,
+      "severity": "LOW",
+      "flags": [],
+      "predicted_rul": 253.85
+    },
+    "action": "monitor"
+  }
+}

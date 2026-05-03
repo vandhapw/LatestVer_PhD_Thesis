@@ -1,0 +1,40 @@
+
+==========================================================================================
+ ENHANCED AGENTIC AI PIPELINE (post-audit rewrite)
+ seed=42
+==========================================================================================
+[split] derived bounds use 26 train machines.
+[split] this pipeline runs over the 25 held-out test machines for honest evaluation. (Override with machine_ids=...)
+[CONNECTED] MongoDB: server_db.simulated_smart_manufactured_data
+
+[STEP 1] Loading latest snapshot from MongoDB (test machines only)...
+  → 25 mesin dimuat (test split).
+
+[STEP 2] Top-5 by reasoning risk → Monitoring/Diagnosis/Planning/Reporting agents
+  → M-9 | risk=0.35 done
+  → M-11 | risk=0.35 done
+  → M-17 | risk=0.35 done
+  → M-33 | risk=0.35 done
+  → M-21 | risk=0.15 done
+
+[STEP 3] Correlation Agent
+
+[STEP 4] Explainability Agent (top-5)
+
+[STEP 5] Self-Reflection Agent (top-5; same-model, NOT multi-model consensus)
+
+[STEP 6] Scheduling Agent (LLM-proposed)
+
+[STEP 7] Pattern Learning Agent (sliding window)
+
+[STEP 8] Classical heuristic suite (random_constrained_search, energy_distance_anomaly_score, graph_message_passing_score)
+  random_constrained_search: scheduled 5 machines, score=1.6347
+  energy_distance_anomaly_score: 18 machines above 0.5 / 25
+  graph_message_passing_score: top 3 = [(9, 0.2731), (33, 0.2624), (27, 0.224)]
+
+[STEP 9] Honest detection metrics on test machines
+  TP=0 FP=4 FN=14 TN=7  precision=0.0000  recall=0.0000  f1=0.0000  acc=0.2800
+[DISCONNECTED] MongoDB connection closed
+
+[SAVED] enhanced_pipeline_results.json
+[DONE] Pipeline complete.

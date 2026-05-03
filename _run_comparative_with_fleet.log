@@ -1,0 +1,62 @@
+
+================================================================================
+ LOADING TEST-SPLIT DATA FROM MONGODB
+================================================================================
+[DATA] Connected to server_db.simulated_smart_manufactured_data
+[DATA] Train: 25 machines
+[DATA] Test: 25 machines
+
+================================================================================
+ APPROACH A: Non-Agentic (rule-based, threshold from training split)
+================================================================================
+  Completed: 25 machines analyzed
+
+[SKIP] Approach B (Agentic AI) skipped per request.
+================================================================================
+ APPROACH C: Fleet-Relative (Mahalanobis + peer-z + isolation; no LLM, no labels)
+================================================================================
+  [Fleet-Relative] derived score_threshold from TRAIN fleet: 0.5015
+  Completed: 25 machines analyzed
+
+
+============================================================================================
+ COMPARATIVE STUDY (post-audit + fleet-relative): 3 approaches
+============================================================================================
+
+  AUDIT DISCLOSURE:
+  - Bounds derived from training split (machine_id even).
+  - This report computed on TEST split (machine_id odd) only.
+  - Ground-truth fields (failure_type, anomaly_flag, etc.) are
+    NEVER passed as features to any approach.
+  - Approach C (Fleet-Relative) decision threshold is derived from
+    train fleet at quantile=0.5 and applied to test (no peeking).
+  - Results are from a single snapshot; not cross-validated.
+
+  Test machines:        25
+  Need attention (GT):  8 (32.0%)
+  Status distribution:  {'Normal': 17, 'Warning': 8}
+
+  Metric            Rule-Based    Agentic AI  Fleet-Relative     Δ vs A
+  ────────────────────────────────────────────────────────────────────────
+  TP                         0             0               4         +4
+  FP                         4             4               9         +5
+  FN                         8             8               4         -4
+  TN                        13            13               8         -5
+  precision             0.0000        0.0000          0.3077    +0.3077
+  recall                0.0000        0.0000          0.5000    +0.5000
+  f1_score              0.0000        0.0000          0.3810    +0.3810
+  accuracy              0.5200        0.5200          0.4800    -0.0400
+
+  Capability coverage (% of test machines):
+  Capability                           Rule-Based     Agentic AI  Fleet-Relative
+  ──────────────────────────────────────────────────────────────────────────────
+  root_cause_analysis                        0.0%           0.0%            0.0%
+  explainability                             0.0%           0.0%            0.0%
+  cross_machine_correlation                  0.0%           0.0%          100.0%
+  self_reflection                            0.0%           0.0%            0.0%
+  scheduling_optimization                    0.0%           0.0%            0.0%
+  pattern_detection                          0.0%           0.0%            0.0%
+
+============================================================================================
+
+[SAVED] comparison_results.json

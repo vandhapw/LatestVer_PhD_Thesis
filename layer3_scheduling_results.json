@@ -1,0 +1,203 @@
+{
+  "layer": 3,
+  "n_jobs": 6,
+  "n_employees": 5,
+  "work_hours_per_day": 9,
+  "work_days": 5,
+  "results": {
+    "classical": {
+      "makespan": 240,
+      "assignments": [
+        {
+          "machine_id": 13,
+          "employee": 1,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 15,
+          "employee": 0,
+          "start": 120,
+          "end": 180,
+          "duration": 60
+        },
+        {
+          "machine_id": 17,
+          "employee": 2,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 19,
+          "employee": 3,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 31,
+          "employee": 4,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 33,
+          "employee": 0,
+          "start": 0,
+          "end": 120,
+          "duration": 120
+        }
+      ],
+      "status": "OPTIMAL",
+      "solve_time": 0.039
+    },
+    "quantum_qaoa_simulator": {
+      "makespan": 480,
+      "assignments": [
+        {
+          "machine_id": 13,
+          "employee": 1,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 17,
+          "employee": 0,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 19,
+          "employee": 0,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        }
+      ],
+      "status": "QAOA_SIMULATOR_REDUCED",
+      "energy": -24.0,
+      "reduced": true,
+      "n_jobs_reduced": 3,
+      "solve_time": 85.117
+    },
+    "quantum_inspired": {
+      "makespan": 240,
+      "assignments": [
+        {
+          "machine_id": 13,
+          "employee": 0,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 15,
+          "employee": 1,
+          "start": 0,
+          "end": 60,
+          "duration": 60
+        },
+        {
+          "machine_id": 17,
+          "employee": 4,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 19,
+          "employee": 2,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 31,
+          "employee": 3,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 33,
+          "employee": 1,
+          "start": 60,
+          "end": 180,
+          "duration": 120
+        }
+      ],
+      "status": "QUANTUM_INSPIRED_HEURISTIC",
+      "energy": 297.6,
+      "solve_time": 0.004
+    },
+    "classical_reduced": {
+      "makespan": 240,
+      "assignments": [
+        {
+          "machine_id": 13,
+          "employee": 2,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 17,
+          "employee": 1,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 19,
+          "employee": 0,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        }
+      ],
+      "status": "OPTIMAL",
+      "solve_time": 0.007
+    },
+    "quantum_inspired_reduced": {
+      "makespan": 240,
+      "assignments": [
+        {
+          "machine_id": 13,
+          "employee": 2,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 17,
+          "employee": 0,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        },
+        {
+          "machine_id": 19,
+          "employee": 1,
+          "start": 0,
+          "end": 240,
+          "duration": 240
+        }
+      ],
+      "status": "QUANTUM_INSPIRED_HEURISTIC",
+      "energy": 240.0,
+      "solve_time": 0.003
+    }
+  },
+  "makespan_comparison": {
+    "classical": 240,
+    "quantum_qaoa_simulator": 480,
+    "quantum_inspired": 240,
+    "classical_reduced": 240,
+    "quantum_inspired_reduced": 240
+  }
+}

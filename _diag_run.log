@@ -1,0 +1,165 @@
+﻿======================================================================
+  KAFKA DIAGNOSTIC TOOL
+  Brokers: ['10.247.166.188:9092', '10.247.166.188:29092']
+  Expected topic: simulated_digitaltwin_manufactured
+  Time: 2026-05-02 15:20:58.033194
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+  TEST 1 — Broker connectivity
+──────────────────────────────────────────────────────────────────────
+  ✓ 10.247.166.188:9092 — connected, 5 topics visible
+  ✓ 10.247.166.188:29092 — connected, 5 topics visible
+
+──────────────────────────────────────────────────────────────────────
+  TEST 2 — Available topics
+──────────────────────────────────────────────────────────────────────
+  Found 5 topics:
+
+    • plalion_sensor_data
+    • sensor-data
+    • simulated_digitaltwin_manufactured  ← THIS IS YOUR TOPIC
+    • smart-manufacturing-topic
+    • weather-data
+
+  ✓ Target topic 'simulated_digitaltwin_manufactured' EXISTS
+
+──────────────────────────────────────────────────────────────────────
+  TEST 3 — Topic partitions and offsets
+──────────────────────────────────────────────────────────────────────
+
+  Topic: simulated_digitaltwin_manufactured
+  Partitions: 3
+    Partition 0: offset 0..253855 (253855 messages)
+    Partition 1: offset 0..196161 (196161 messages)
+    Partition 2: offset 0..126927 (126927 messages)
+
+  ✓ Topic 'simulated_digitaltwin_manufactured' has 576943 total messages
+
+──────────────────────────────────────────────────────────────────────
+  TEST 4 — Read sample messages
+──────────────────────────────────────────────────────────────────────
+
+  Trying topic: simulated_digitaltwin_manufactured
+
+  Message #1 (partition=0, offset=0, ts=2026-04-24 15:20:05.295000):
+  Format: JSON
+  Keys: ['machine_id', 'timestamp', 'temperature', 'vibration', 'humidity', 'pressure', 'energy_consumption', 'machine_status', 'anomaly_flag', 'predicted_remaining_life', 'failure_type', 'downtime_risk', 'maintenance_required', 'source', 'sensor_input']
+  machine_id: 1
+  temperature: 75.64421860218047
+  timestamp: 2026-04-24 15:20:05
+
+  Full message content:
+  {
+    "machine_id": 1,
+    "timestamp": "2026-04-24 15:20:05",
+    "temperature": 75.64421860218047,
+    "vibration": 56.92929440927505,
+    "humidity": 56.487148820400236,
+    "pressure": 3.0328682739734645,
+    "energy_consumption": 3.116892240971327,
+    "machine_status": 0,
+    "anomaly_flag": 0,
+    "predicted_remaining_life": 251.52057823382398,
+    "failure_type": "Overheating",
+    "downtime_risk": 0,
+    "maintenance_required": 0,
+    "source": "PROPAGATED",
+    "sensor_input": {
+        "raw_temperature": 22.0,
+        "raw_humidity": 23.0,
+        "mapped_temperature": 75.01,
+        "mapped_humidity": 54.995
+    },
+    "processed_at": "2026-04-24 15:20:05.295241"
+}
+
+  Message #2 (partition=0, offset=1, ts=2026-04-24 15:20:05.344000):
+  Format: JSON
+  Keys: ['machine_id', 'timestamp', 'temperature', 'vibration', 'humidity', 'pressure', 'energy_consumption', 'machine_status', 'anomaly_flag', 'predicted_remaining_life', 'failure_type', 'downtime_risk', 'maintenance_required', 'source', 'sensor_input']
+  machine_id: 5
+  temperature: 75.34168308591843
+  timestamp: 2026-04-24 15:20:05
+
+  Message #3 (partition=0, offset=2, ts=2026-04-24 15:20:05.369000):
+  Format: JSON
+  Keys: ['machine_id', 'timestamp', 'temperature', 'vibration', 'humidity', 'pressure', 'energy_consumption', 'machine_status', 'anomaly_flag', 'predicted_remaining_life', 'failure_type', 'downtime_risk', 'maintenance_required', 'source', 'sensor_input']
+  machine_id: 7
+  temperature: 70.4530543794036
+  timestamp: 2026-04-24 15:20:05
+
+  (showing first 3 messages only)
+
+  Trying topic: plalion_sensor_data
+
+  Message #1 (partition=0, offset=0, ts=2026-04-27 11:32:43.649000):
+  Format: JSON
+  Keys: ['serial_number', 'temp', 'hum', 'ozone', 'dust', 'co2', 'voc', 'active', 'm_enable', 's_enable', 'last_time', 'fetched_at']
+
+  Full message content:
+  {
+    "serial_number": "8545852",
+    "temp": 22,
+    "hum": 23,
+    "ozone": 0,
+    "dust": 4,
+    "co2": 400,
+    "voc": 5,
+    "active": 1,
+    "m_enable": 0,
+    "s_enable": 0,
+    "last_time": "2025-12-23 13:30:44",
+    "fetched_at": "2026-04-27T02:32:43.564975+00:00"
+}
+
+  Message #2 (partition=0, offset=1, ts=2026-04-27 11:32:53.684000):
+  Format: JSON
+  Keys: ['serial_number', 'temp', 'hum', 'ozone', 'dust', 'co2', 'voc', 'active', 'm_enable', 's_enable', 'last_time', 'fetched_at']
+
+  Message #3 (partition=0, offset=2, ts=2026-04-27 11:33:03.716000):
+  Format: JSON
+  Keys: ['serial_number', 'temp', 'hum', 'ozone', 'dust', 'co2', 'voc', 'active', 'm_enable', 's_enable', 'last_time', 'fetched_at']
+
+  (showing first 3 messages only)
+
+  Trying topic: smart-manufacturing-topic
+  ✗ No messages received within 15 seconds
+  → Producer might be inactive
+  → Or topic is empty
+
+──────────────────────────────────────────────────────────────────────
+  TEST 5 — Consumer group status
+──────────────────────────────────────────────────────────────────────
+  ✗ Failed: NodeNotReadyError: Connection failed to 1
+
+──────────────────────────────────────────────────────────────────────
+  TEST 6 — Read with 'earliest' offset (all history)
+──────────────────────────────────────────────────────────────────────
+  Topic 'plalion_sensor_data':
+    Messages read: 0
+    Unique machine IDs: 0
+
+  Topic 'sensor-data':
+    Messages read: 0
+    Unique machine IDs: 0
+
+  Topic 'simulated_digitaltwin_manufactured':
+    Messages read: 0
+    Unique machine IDs: 0
+
+  Topic 'smart-manufacturing-topic':
+    Messages read: 0
+    Unique machine IDs: 0
+
+
+======================================================================
+  DIAGNOSTIC COMPLETE
+======================================================================
+
+  Kemungkinan penyebab 'Machines: 0':
+  1. Topic name salah — periksa daftar topic di Test 2
+  2. Topic kosong — producer tidak aktif (Test 3)
+  3. auto_offset_reset='latest' tapi tidak ada data baru (Test 6)
+  4. Format message bukan JSON atau field name berbeda (Test 4)
+  5. Consumer group sudah commit offset di akhir (Test 5)
+======================================================================

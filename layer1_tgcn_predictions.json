@@ -1,0 +1,706 @@
+{
+  "layer": 1,
+  "records": 50,
+  "stream": [
+    {
+      "timestamp": "2025-01-01 01:37:00",
+      "machine_id": 1,
+      "sensors": {
+        "temperature": 62.59,
+        "vibration": 48.08,
+        "humidity": 60.13,
+        "pressure": 1.62,
+        "energy_consumption": 4.16
+      },
+      "rul": 363,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 00:17:00",
+      "machine_id": 2,
+      "sensors": {
+        "temperature": 78.32,
+        "vibration": 84.93,
+        "humidity": 51.55,
+        "pressure": 2.59,
+        "energy_consumption": 2.09
+      },
+      "rul": 43,
+      "anomaly": 1,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 00:15:00",
+      "machine_id": 3,
+      "sensors": {
+        "temperature": 88.68,
+        "vibration": 87.77,
+        "humidity": 49.77,
+        "pressure": 1.25,
+        "energy_consumption": 4.45
+      },
+      "rul": 38,
+      "anomaly": 1,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 00:44:00",
+      "machine_id": 4,
+      "sensors": {
+        "temperature": 74.74,
+        "vibration": 67.02,
+        "humidity": 62.18,
+        "pressure": 1.47,
+        "energy_consumption": 3.16
+      },
+      "rul": 182,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 01:52:00",
+      "machine_id": 5,
+      "sensors": {
+        "temperature": 90.24,
+        "vibration": 48.67,
+        "humidity": 40.65,
+        "pressure": 1.23,
+        "energy_consumption": 4.39
+      },
+      "rul": 23,
+      "anomaly": 1,
+      "failure_type": "Overheating"
+    },
+    {
+      "timestamp": "2025-01-01 01:42:00",
+      "machine_id": 1,
+      "sensors": {
+        "temperature": 70.88,
+        "vibration": 68.67,
+        "humidity": 50.57,
+        "pressure": 1.05,
+        "energy_consumption": 2.36
+      },
+      "rul": 111,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 00:22:00",
+      "machine_id": 2,
+      "sensors": {
+        "temperature": 72.63,
+        "vibration": 54.66,
+        "humidity": 32.72,
+        "pressure": 3.07,
+        "energy_consumption": 2.97
+      },
+      "rul": 462,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 00:37:00",
+      "machine_id": 3,
+      "sensors": {
+        "temperature": 77.59,
+        "vibration": 58.72,
+        "humidity": 62.55,
+        "pressure": 3.4,
+        "energy_consumption": 0.88
+      },
+      "rul": 138,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 01:04:00",
+      "machine_id": 4,
+      "sensors": {
+        "temperature": 76.28,
+        "vibration": 24.34,
+        "humidity": 34.01,
+        "pressure": 4.27,
+        "energy_consumption": 1.05
+      },
+      "rul": 28,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 02:20:00",
+      "machine_id": 5,
+      "sensors": {
+        "temperature": 62.92,
+        "vibration": 58.11,
+        "humidity": 30.04,
+        "pressure": 4.41,
+        "energy_consumption": 4.55
+      },
+      "rul": 394,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 02:13:00",
+      "machine_id": 1,
+      "sensors": {
+        "temperature": 62.34,
+        "vibration": 72.68,
+        "humidity": 60.47,
+        "pressure": 2.24,
+        "energy_consumption": 4.95
+      },
+      "rul": 192,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 00:50:00",
+      "machine_id": 2,
+      "sensors": {
+        "temperature": 77.9,
+        "vibration": 25.44,
+        "humidity": 75.39,
+        "pressure": 4.32,
+        "energy_consumption": 2.15
+      },
+      "rul": 215,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 02:18:00",
+      "machine_id": 3,
+      "sensors": {
+        "temperature": 77.39,
+        "vibration": 34.9,
+        "humidity": 68.81,
+        "pressure": 3.64,
+        "energy_consumption": 2.51
+      },
+      "rul": 180,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 01:08:00",
+      "machine_id": 4,
+      "sensors": {
+        "temperature": 68.67,
+        "vibration": 31.55,
+        "humidity": 52.29,
+        "pressure": 3.34,
+        "energy_consumption": 2.71
+      },
+      "rul": 227,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 03:56:00",
+      "machine_id": 5,
+      "sensors": {
+        "temperature": 69.55,
+        "vibration": 61.36,
+        "humidity": 74.71,
+        "pressure": 3.35,
+        "energy_consumption": 1.08
+      },
+      "rul": 112,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 02:19:00",
+      "machine_id": 1,
+      "sensors": {
+        "temperature": 88.03,
+        "vibration": 53.36,
+        "humidity": 50.79,
+        "pressure": 3.08,
+        "energy_consumption": 2.25
+      },
+      "rul": 301,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 01:05:00",
+      "machine_id": 2,
+      "sensors": {
+        "temperature": 80.91,
+        "vibration": 39.63,
+        "humidity": 45.18,
+        "pressure": 3.38,
+        "energy_consumption": 1.84
+      },
+      "rul": 100,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 03:09:00",
+      "machine_id": 3,
+      "sensors": {
+        "temperature": 69.73,
+        "vibration": 51.63,
+        "humidity": 42.46,
+        "pressure": 1.34,
+        "energy_consumption": 1.39
+      },
+      "rul": 185,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 02:35:00",
+      "machine_id": 4,
+      "sensors": {
+        "temperature": 83.58,
+        "vibration": 52.44,
+        "humidity": 69.14,
+        "pressure": 4.15,
+        "energy_consumption": 1.6
+      },
+      "rul": 254,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 04:43:00",
+      "machine_id": 5,
+      "sensors": {
+        "temperature": 73.43,
+        "vibration": 82.62,
+        "humidity": 43.0,
+        "pressure": 1.38,
+        "energy_consumption": 2.86
+      },
+      "rul": 45,
+      "anomaly": 1,
+      "failure_type": "Pressure Drop"
+    },
+    {
+      "timestamp": "2025-01-01 03:05:00",
+      "machine_id": 1,
+      "sensors": {
+        "temperature": 79.39,
+        "vibration": 49.44,
+        "humidity": 56.99,
+        "pressure": 2.54,
+        "energy_consumption": 2.76
+      },
+      "rul": 127,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 02:50:00",
+      "machine_id": 2,
+      "sensors": {
+        "temperature": 73.01,
+        "vibration": 51.05,
+        "humidity": 63.77,
+        "pressure": 3.95,
+        "energy_consumption": 4.14
+      },
+      "rul": 140,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 03:30:00",
+      "machine_id": 3,
+      "sensors": {
+        "temperature": 75.86,
+        "vibration": 49.74,
+        "humidity": 64.57,
+        "pressure": 1.03,
+        "energy_consumption": 2.86
+      },
+      "rul": 430,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 03:51:00",
+      "machine_id": 4,
+      "sensors": {
+        "temperature": 79.56,
+        "vibration": 63.17,
+        "humidity": 72.35,
+        "pressure": 1.02,
+        "energy_consumption": 1.44
+      },
+      "rul": 194,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 05:49:00",
+      "machine_id": 5,
+      "sensors": {
+        "temperature": 69.13,
+        "vibration": 38.57,
+        "humidity": 58.72,
+        "pressure": 1.93,
+        "energy_consumption": 3.93
+      },
+      "rul": 129,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 03:43:00",
+      "machine_id": 1,
+      "sensors": {
+        "temperature": 93.62,
+        "vibration": 47.52,
+        "humidity": 58.38,
+        "pressure": 2.63,
+        "energy_consumption": 1.12
+      },
+      "rul": 2,
+      "anomaly": 1,
+      "failure_type": "Vibration Issue"
+    },
+    {
+      "timestamp": "2025-01-01 03:29:00",
+      "machine_id": 2,
+      "sensors": {
+        "temperature": 79.08,
+        "vibration": 61.27,
+        "humidity": 77.85,
+        "pressure": 4.26,
+        "energy_consumption": 0.92
+      },
+      "rul": 146,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 04:08:00",
+      "machine_id": 3,
+      "sensors": {
+        "temperature": 68.51,
+        "vibration": 64.33,
+        "humidity": 69.28,
+        "pressure": 2.98,
+        "energy_consumption": 3.59
+      },
+      "rul": 124,
+      "anomaly": 0,
+      "failure_type": "Vibration Issue"
+    },
+    {
+      "timestamp": "2025-01-01 05:19:00",
+      "machine_id": 4,
+      "sensors": {
+        "temperature": 76.91,
+        "vibration": 54.76,
+        "humidity": 69.41,
+        "pressure": 2.11,
+        "energy_consumption": 4.43
+      },
+      "rul": 428,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 07:21:00",
+      "machine_id": 5,
+      "sensors": {
+        "temperature": 85.16,
+        "vibration": 43.84,
+        "humidity": 74.15,
+        "pressure": 4.05,
+        "energy_consumption": 5.0
+      },
+      "rul": 224,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 04:24:00",
+      "machine_id": 1,
+      "sensors": {
+        "temperature": 57.21,
+        "vibration": 48.56,
+        "humidity": 40.03,
+        "pressure": 2.47,
+        "energy_consumption": 1.98
+      },
+      "rul": 368,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 03:36:00",
+      "machine_id": 2,
+      "sensors": {
+        "temperature": 72.23,
+        "vibration": 30.16,
+        "humidity": 56.98,
+        "pressure": 1.69,
+        "energy_consumption": 2.98
+      },
+      "rul": 346,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 04:13:00",
+      "machine_id": 3,
+      "sensors": {
+        "temperature": 86.03,
+        "vibration": 53.26,
+        "humidity": 43.09,
+        "pressure": 1.76,
+        "energy_consumption": 4.35
+      },
+      "rul": 91,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 05:52:00",
+      "machine_id": 4,
+      "sensors": {
+        "temperature": 80.73,
+        "vibration": 73.55,
+        "humidity": 38.67,
+        "pressure": 3.13,
+        "energy_consumption": 2.73
+      },
+      "rul": 386,
+      "anomaly": 0,
+      "failure_type": "Pressure Drop"
+    },
+    {
+      "timestamp": "2025-01-01 07:58:00",
+      "machine_id": 5,
+      "sensors": {
+        "temperature": 96.63,
+        "vibration": 70.04,
+        "humidity": 76.57,
+        "pressure": 4.33,
+        "energy_consumption": 2.59
+      },
+      "rul": 45,
+      "anomaly": 1,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 04:40:00",
+      "machine_id": 1,
+      "sensors": {
+        "temperature": 68.82,
+        "vibration": 48.57,
+        "humidity": 36.07,
+        "pressure": 4.81,
+        "energy_consumption": 2.64
+      },
+      "rul": 393,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 03:37:00",
+      "machine_id": 2,
+      "sensors": {
+        "temperature": 71.38,
+        "vibration": 43.02,
+        "humidity": 72.78,
+        "pressure": 1.24,
+        "energy_consumption": 4.08
+      },
+      "rul": 186,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 04:52:00",
+      "machine_id": 3,
+      "sensors": {
+        "temperature": 65.75,
+        "vibration": 50.57,
+        "humidity": 67.73,
+        "pressure": 1.62,
+        "energy_consumption": 3.48
+      },
+      "rul": 132,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 07:23:00",
+      "machine_id": 4,
+      "sensors": {
+        "temperature": 81.77,
+        "vibration": 67.69,
+        "humidity": 66.33,
+        "pressure": 3.2,
+        "energy_consumption": 3.55
+      },
+      "rul": 151,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 08:10:00",
+      "machine_id": 5,
+      "sensors": {
+        "temperature": 71.26,
+        "vibration": 70.15,
+        "humidity": 49.15,
+        "pressure": 4.42,
+        "energy_consumption": 4.56
+      },
+      "rul": 339,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 06:54:00",
+      "machine_id": 1,
+      "sensors": {
+        "temperature": 62.79,
+        "vibration": 46.85,
+        "humidity": 68.21,
+        "pressure": 3.03,
+        "energy_consumption": 2.31
+      },
+      "rul": 198,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 03:45:00",
+      "machine_id": 2,
+      "sensors": {
+        "temperature": 62.45,
+        "vibration": 64.62,
+        "humidity": 43.98,
+        "pressure": 1.0,
+        "energy_consumption": 2.88
+      },
+      "rul": 325,
+      "anomaly": 0,
+      "failure_type": "Pressure Drop"
+    },
+    {
+      "timestamp": "2025-01-01 05:27:00",
+      "machine_id": 3,
+      "sensors": {
+        "temperature": 67.39,
+        "vibration": 27.79,
+        "humidity": 31.58,
+        "pressure": 2.2,
+        "energy_consumption": 3.92
+      },
+      "rul": 142,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 08:39:00",
+      "machine_id": 4,
+      "sensors": {
+        "temperature": 79.34,
+        "vibration": 40.65,
+        "humidity": 72.48,
+        "pressure": 2.37,
+        "energy_consumption": 3.54
+      },
+      "rul": 100,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 08:15:00",
+      "machine_id": 5,
+      "sensors": {
+        "temperature": 69.59,
+        "vibration": 43.21,
+        "humidity": 51.63,
+        "pressure": 3.22,
+        "energy_consumption": 1.45
+      },
+      "rul": 140,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 07:46:00",
+      "machine_id": 1,
+      "sensors": {
+        "temperature": 74.96,
+        "vibration": 49.28,
+        "humidity": 71.68,
+        "pressure": 2.92,
+        "energy_consumption": 4.06
+      },
+      "rul": 40,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 04:39:00",
+      "machine_id": 2,
+      "sensors": {
+        "temperature": 67.66,
+        "vibration": 47.88,
+        "humidity": 30.16,
+        "pressure": 3.14,
+        "energy_consumption": 3.87
+      },
+      "rul": 47,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 06:16:00",
+      "machine_id": 3,
+      "sensors": {
+        "temperature": 84.19,
+        "vibration": 30.34,
+        "humidity": 72.83,
+        "pressure": 3.18,
+        "energy_consumption": 2.84
+      },
+      "rul": 122,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 09:24:00",
+      "machine_id": 4,
+      "sensors": {
+        "temperature": 81.14,
+        "vibration": 68.33,
+        "humidity": 51.59,
+        "pressure": 1.23,
+        "energy_consumption": 3.62
+      },
+      "rul": 88,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    },
+    {
+      "timestamp": "2025-01-01 08:29:00",
+      "machine_id": 5,
+      "sensors": {
+        "temperature": 67.55,
+        "vibration": 41.32,
+        "humidity": 46.12,
+        "pressure": 4.27,
+        "energy_consumption": 2.84
+      },
+      "rul": 283,
+      "anomaly": 0,
+      "failure_type": "Normal"
+    }
+  ]
+}

@@ -1,0 +1,444 @@
+{
+  "layer": 2,
+  "n_machines": 25,
+  "overrides": 0,
+  "actions": {
+    "monitor": 19,
+    "schedule_maintenance": 4,
+    "immediate_shutdown": 1,
+    "inspect": 1
+  },
+  "priorities": {
+    "P4": 19,
+    "P3": 4,
+    "P1": 1,
+    "P2": 1
+  },
+  "machines": [
+    {
+      "machine_id": 1,
+      "classical_risk": 0.1,
+      "risk_class": "LOW",
+      "heuristic_score": 0.8173,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.4816,
+        "vibration": 0.6798,
+        "humidity": 0.3586,
+        "pressure": 0.5147,
+        "energy_consumption": 0.8723
+      }
+    },
+    {
+      "machine_id": 3,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.5691,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.3477,
+        "vibration": 0.0235,
+        "humidity": 0.3943,
+        "pressure": 0.6693,
+        "energy_consumption": 0.0969
+      }
+    },
+    {
+      "machine_id": 5,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.5939,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.0801,
+        "vibration": 0.1172,
+        "humidity": 0.6884,
+        "pressure": 0.76,
+        "energy_consumption": 0.2388
+      }
+    },
+    {
+      "machine_id": 7,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.761,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.6794,
+        "vibration": 0.1443,
+        "humidity": 0.05,
+        "pressure": 0.984,
+        "energy_consumption": 0.7494
+      }
+    },
+    {
+      "machine_id": 9,
+      "classical_risk": 0.15,
+      "risk_class": "LOW",
+      "heuristic_score": 0.7924,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.5351,
+        "vibration": 0.3268,
+        "humidity": 0.6821,
+        "pressure": 0.6853,
+        "energy_consumption": 0.6028
+      }
+    },
+    {
+      "machine_id": 11,
+      "classical_risk": 0.15,
+      "risk_class": "LOW",
+      "heuristic_score": 0.7985,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.8404,
+        "vibration": 0.1608,
+        "humidity": 0.9353,
+        "pressure": 0.1733,
+        "energy_consumption": 0.6738
+      }
+    },
+    {
+      "machine_id": 13,
+      "classical_risk": 0.3,
+      "risk_class": "MEDIUM",
+      "heuristic_score": 0.538,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "schedule_maintenance",
+      "priority": "P3",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.0917,
+        "vibration": 0.0704,
+        "humidity": 0.3348,
+        "pressure": 0.5733,
+        "energy_consumption": 0.7258
+      }
+    },
+    {
+      "machine_id": 15,
+      "classical_risk": 0.8,
+      "risk_class": "CRITICAL",
+      "heuristic_score": 0.8556,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "immediate_shutdown",
+      "priority": "P1",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.6177,
+        "vibration": 0.8573,
+        "humidity": 0.1705,
+        "pressure": 0.5253,
+        "energy_consumption": 0.9811
+      }
+    },
+    {
+      "machine_id": 17,
+      "classical_risk": 0.3,
+      "risk_class": "MEDIUM",
+      "heuristic_score": 0.5259,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "schedule_maintenance",
+      "priority": "P3",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.0097,
+        "vibration": 0.2813,
+        "humidity": 0.3467,
+        "pressure": 0.4133,
+        "energy_consumption": 0.4752
+      }
+    },
+    {
+      "machine_id": 19,
+      "classical_risk": 0.35,
+      "risk_class": "MEDIUM",
+      "heuristic_score": 0.6143,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "schedule_maintenance",
+      "priority": "P3",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.2601,
+        "vibration": 0.0744,
+        "humidity": 0.5122,
+        "pressure": 0.2693,
+        "energy_consumption": 1.0
+      }
+    },
+    {
+      "machine_id": 21,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.7431,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.3809,
+        "vibration": 0.7257,
+        "humidity": 0.1909,
+        "pressure": 0.3493,
+        "energy_consumption": 0.3995
+      }
+    },
+    {
+      "machine_id": 23,
+      "classical_risk": 0.15,
+      "risk_class": "LOW",
+      "heuristic_score": 0.8706,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.4456,
+        "vibration": 0.6764,
+        "humidity": 0.9425,
+        "pressure": 0.8453,
+        "energy_consumption": 0.7683
+      }
+    },
+    {
+      "machine_id": 25,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.7135,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.5953,
+        "vibration": 0.2529,
+        "humidity": 0.139,
+        "pressure": 0.5627,
+        "energy_consumption": 0.5697
+      }
+    },
+    {
+      "machine_id": 27,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.5918,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.1836,
+        "vibration": 0.5188,
+        "humidity": 0.4135,
+        "pressure": 0.0453,
+        "energy_consumption": 0.1915
+      }
+    },
+    {
+      "machine_id": 29,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.6206,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.5284,
+        "vibration": 0.2205,
+        "humidity": 0.0926,
+        "pressure": 0.552,
+        "energy_consumption": 0.0165
+      }
+    },
+    {
+      "machine_id": 31,
+      "classical_risk": 0.3,
+      "risk_class": "MEDIUM",
+      "heuristic_score": 0.6585,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "schedule_maintenance",
+      "priority": "P3",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.1232,
+        "vibration": 0.3055,
+        "humidity": 0.7382,
+        "pressure": 0.1253,
+        "energy_consumption": 1.0
+      }
+    },
+    {
+      "machine_id": 33,
+      "classical_risk": 0.6,
+      "risk_class": "HIGH",
+      "heuristic_score": 0.6763,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "inspect",
+      "priority": "P2",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.0014,
+        "vibration": 0.5559,
+        "humidity": 0.1449,
+        "pressure": 0.984,
+        "energy_consumption": 0.3948
+      }
+    },
+    {
+      "machine_id": 35,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.8229,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.3024,
+        "vibration": 0.6373,
+        "humidity": 0.3007,
+        "pressure": 1.0,
+        "energy_consumption": 1.0
+      }
+    },
+    {
+      "machine_id": 37,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.6368,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.0036,
+        "vibration": 0.1412,
+        "humidity": 0.9549,
+        "pressure": 0.5253,
+        "energy_consumption": 0.721
+      }
+    },
+    {
+      "machine_id": 39,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.7671,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.3107,
+        "vibration": 0.1938,
+        "humidity": 0.78,
+        "pressure": 1.0,
+        "energy_consumption": 0.6738
+      }
+    },
+    {
+      "machine_id": 41,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.8434,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.391,
+        "vibration": 0.4331,
+        "humidity": 0.9,
+        "pressure": 1.0,
+        "energy_consumption": 0.8582
+      }
+    },
+    {
+      "machine_id": 43,
+      "classical_risk": 0.25,
+      "risk_class": "LOW",
+      "heuristic_score": 0.6836,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.0714,
+        "vibration": 0.2792,
+        "humidity": 0.5012,
+        "pressure": 0.8933,
+        "energy_consumption": 0.6927
+      }
+    },
+    {
+      "machine_id": 45,
+      "classical_risk": 0.15,
+      "risk_class": "LOW",
+      "heuristic_score": 0.5873,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.1008,
+        "vibration": 0.2374,
+        "humidity": 0.4199,
+        "pressure": 0.3173,
+        "energy_consumption": 0.8298
+      }
+    },
+    {
+      "machine_id": 47,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.8152,
+      "heuristic_label": "QUANTUM-NORMAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.3036,
+        "vibration": 1.0,
+        "humidity": 0.8855,
+        "pressure": 0.1093,
+        "energy_consumption": 0.2246
+      }
+    },
+    {
+      "machine_id": 49,
+      "classical_risk": 0.0,
+      "risk_class": "LOW",
+      "heuristic_score": 0.3501,
+      "heuristic_label": "QUANTUM-MARGINAL",
+      "action": "monitor",
+      "priority": "P4",
+      "override": false,
+      "per_sensor_dist": {
+        "temperature": 0.1103,
+        "vibration": 0.2364,
+        "humidity": 0.0287,
+        "pressure": 0.2213,
+        "energy_consumption": 0.0213
+      }
+    }
+  ]
+}

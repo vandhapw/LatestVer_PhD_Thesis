@@ -1,0 +1,154 @@
+python .\full_comparison_8models.py
+
+==========================================================================================
+ COMPREHENSIVE COMPARATIVE STUDY — 8 APPROACHES
+ Predictive Maintenance in Smart Manufacturing
+==========================================================================================
+[DATA] Connected: mongodb://superUser:superUpsil!@10.247.166.188:27019/server_db?authSource=admin
+[DATA] Loaded 50 machines
+
+  Machines: 50 | Needs attention: 30 | Normal: 20
+  Status: {'Fault': 13, 'Normal': 20, 'Warning': 17}
+  Failures: {'Overheating': 14, 'Pressure Drop': 5, 'Electrical Fault': 2, 'Vibration Issue': 7}
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  [RuleBased] Rule-Based Threshold
+──────────────────────────────────────────────────────────────────────────────────────────
+    Training...
+    Predicting...
+    Done. Train: 0.000s | Predict: 0.000s
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  [Transformer] Transformer Classifier
+──────────────────────────────────────────────────────────────────────────────────────────
+    Training...
+    Predicting...
+    Done. Train: 0.125s | Predict: 0.016s
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  [LSTM] LSTM Classifier
+──────────────────────────────────────────────────────────────────────────────────────────
+    Training...
+    Predicting...
+    Done. Train: 0.438s | Predict: 0.016s
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  [GNN] GNN Spatial-Temporal
+──────────────────────────────────────────────────────────────────────────────────────────
+    Training...
+    Predicting...
+    Done. Train: 0.250s | Predict: 0.016s
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  [RL-QLearn] RL Q-Learning Policy
+──────────────────────────────────────────────────────────────────────────────────────────
+    Training...
+    Predicting...
+    Done. Train: 0.063s | Predict: 0.000s
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  [FedLearn] Federated Learning (FedAvg)
+──────────────────────────────────────────────────────────────────────────────────────────
+    Training...
+    Predicting...
+    Done. Train: 0.030s | Predict: 0.000s
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  [TransferL] Transfer Learning Classifier
+──────────────────────────────────────────────────────────────────────────────────────────
+    Training...
+    Predicting...
+    Done. Train: 0.058s | Predict: 0.000s
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  [AgenticAI] Agentic AI (9 Agents + LLM)
+──────────────────────────────────────────────────────────────────────────────────────────
+    Training...
+    Predicting...
+    LLM calls for 34/50 machines
+    Done. Train: 0.000s | Predict: 5771.824s
+
+
+==========================================================================================
+ RESULTS — QUANTITATIVE COMPARISON
+==========================================================================================
+
+──────────────────────────────────────────────────────────────────────────────────────────
+ TABLE 1: Detection Performance (vs Digital Twin Ground Truth)
+──────────────────────────────────────────────────────────────────────────────────────────
+  Model                TP   FP   FN   TN    Prec  Recall      F1     Acc
+  ──────────────────────────────────────────────────────────────────────────────────────
+  RuleBased             0    0   30   20  0.0000  0.0000  0.0000  0.4000
+  Transformer          29   20    1    0  0.5918  0.9667  0.7342  0.5800
+  LSTM                 30   20    0    0  0.6000  1.0000  0.7500  0.6000
+  GNN                  30   20    0    0  0.6000  1.0000  0.7500  0.6000
+  RL-QLearn            30   20    0    0  0.6000  1.0000  0.7500  0.6000
+  FedLearn             30   20    0    0  0.6000  1.0000  0.7500  0.6000
+  TransferL            30   19    0    1  0.6122  1.0000  0.7595  0.6200
+  AgenticAI             6    0   24   20  1.0000  0.2000  0.3333  0.5200
+
+──────────────────────────────────────────────────────────────────────────────────────────
+ TABLE 2: Capability Coverage (% of machines with each analysis)
+──────────────────────────────────────────────────────────────────────────────────────────
+  Model               Root Cause     XAI  Correlation  Consensus
+  ──────────────────────────────────────────────────────────
+  RuleBased                 0.0%    0.0%         0.0%       0.0%
+  Transformer               0.0%    0.0%         0.0%       0.0%
+  LSTM                      0.0%    0.0%         0.0%       0.0%
+  GNN                       0.0%    0.0%       100.0%       0.0%
+  RL-QLearn                 0.0%    0.0%         0.0%       0.0%
+  FedLearn                  0.0%    0.0%         0.0%       0.0%
+  TransferL                 0.0%    0.0%         0.0%       0.0%
+  AgenticAI                 0.0%    0.0%       100.0%      68.0%
+
+──────────────────────────────────────────────────────────────────────────────────────────
+ TABLE 3: Near-Miss Analysis (False Negatives)
+──────────────────────────────────────────────────────────────────────────────────────────
+  RuleBased          missed  30 / 30 machines needing attention
+  Transformer        missed   1 / 30 machines needing attention
+    → 39(Pressure Drop)
+  LSTM               missed   0 / 30 machines needing attention
+  GNN                missed   0 / 30 machines needing attention
+  RL-QLearn          missed   0 / 30 machines needing attention
+  FedLearn           missed   0 / 30 machines needing attention
+  TransferL          missed   0 / 30 machines needing attention
+  AgenticAI          missed  24 / 30 machines needing attention
+
+──────────────────────────────────────────────────────────────────────────────────────────
+ TABLE 4: Execution Time
+──────────────────────────────────────────────────────────────────────────────────────────
+  Model               Train (s)  Predict (s)  Total (s)
+  ──────────────────────────────────────────────────
+  RuleBased               0.000        0.000      0.000
+  Transformer             0.125        0.016      0.141
+  LSTM                    0.438        0.016      0.454
+  GNN                     0.250        0.016      0.266
+  RL-QLearn               0.063        0.000      0.063
+  FedLearn                0.030        0.000      0.030
+  TransferL               0.058        0.000      0.058
+  AgenticAI               0.000     5771.824   5771.824
+
+==========================================================================================
+ ANALYSIS SUMMARY
+==========================================================================================
+
+  Best F1 Score   : TransferL (0.7595)
+  Best Recall     : LSTM (1.0000)
+  Ground truth    : 30/50 machines need attention
+
+  Agentic AI vs each model (F1 difference):
+    vs RuleBased          ΔF1=+0.3333  ΔFN=+6 (fewer missed)
+    vs Transformer        ΔF1=-0.4009  ΔFN=-23
+    vs LSTM               ΔF1=-0.4167  ΔFN=-24
+    vs GNN                ΔF1=-0.4167  ΔFN=-24
+    vs RL-QLearn          ΔF1=-0.4167  ΔFN=-24
+    vs FedLearn           ΔF1=-0.4167  ΔFN=-24
+    vs TransferL          ΔF1=-0.4262  ΔFN=-24
+
+  Key Insight:
+    Capabilities ONLY in Agentic AI: consensus
+    Shared with other models       : correlation
+
+==========================================================================================
+
+[SAVED] full_comparison_results.json

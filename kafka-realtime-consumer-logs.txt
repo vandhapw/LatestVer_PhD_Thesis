@@ -1,0 +1,194 @@
+python .\kafka_realtime_consumer.py
+
+================================================================================
+  AGENTIC AI - KAFKA REAL-TIME CONSUMER
+  Multi-Tier Sliding Window + Dual Trigger
+================================================================================
+  Kafka   : 10.247.166.188:9092
+  Topic   : simulated_digitaltwin_manufactured
+  Group   : agentic_ai_consumer_group
+  Micro   : every 10 min
+  Daily   : every 24 hr
+  Tiers   : T1=15 T2=120 T3=288 T4=336
+  LLM     : glm-5.1:cloud
+================================================================================
+
+[KAFKA] Connecting...
+[KAFKA] Connected: 10.247.166.188:9092 / simulated_digitaltwin_manufactured
+
+[STREAM] Listening...
+
+  OK FIRST EVENT - data flowing!
+    machine_id              : 1
+    machine_status          : 0 (Normal)
+    temperature             : 75.4106
+    vibration               : 56.8118
+    humidity                : 56.531
+    pressure                : 3.028
+    energy_consumption      : 3.1284
+    failure_type            : Normal
+    anomaly_flag            : 0
+    predicted_remaining_life: 252.22
+    downtime_risk           : 0
+    maintenance_required    : 0
+    source                  : PROPAGATED
+    timestamp               : 2026-04-30T08:03:54.172326
+    processed_at            : 2026-04-30T08:03:54.172326
+    Kafka keys              : ['machine_id', 'timestamp', 'temperature', 'vibration', 'humidity', 'pressure', 'energy_consumption', 'machine_status', 'machine_status_label', 'anomaly_flag', 'anomaly_flag_label', 'predicted_remaining_life', 'failure_type', 'downtime_risk', 'downtime_risk_label', 'maintenance_required', 'maintenance_required_label', 'source', 'anchor_machine', 'graph_distance', 'influence_score', 'normalization_method', 'sensor_input', 'processed_at', 'ingested_at']
+
+  [PROGRESS] 50 events | 22 machines | 0 spikes | next micro-batch 596s
+  [PROGRESS] 100 events | 22 machines | 0 spikes | next micro-batch 596s
+  [PROGRESS] 150 events | 39 machines | 0 spikes | next micro-batch 596s
+  [PROGRESS] 200 events | 39 machines | 0 spikes | next micro-batch 596s
+  [PROGRESS] 250 events | 50 machines | 0 spikes | next micro-batch 596s
+  [PROGRESS] 300 events | 50 machines | 0 spikes | next micro-batch 596s
+  [PROGRESS] 350 events | 50 machines | 0 spikes | next micro-batch 578s
+  [PROGRESS] 400 events | 50 machines | 0 spikes | next micro-batch 518s
+  [PROGRESS] 450 events | 50 machines | 0 spikes | next micro-batch 458s
+  [PROGRESS] 500 events | 50 machines | 0 spikes | next micro-batch 398s
+  [PROGRESS] 550 events | 50 machines | 0 spikes | next micro-batch 338s
+  [PROGRESS] 600 events | 50 machines | 0 spikes | next micro-batch 278s
+  [PROGRESS] 650 events | 50 machines | 0 spikes | next micro-batch 217s
+  [PROGRESS] 700 events | 50 machines | 0 spikes | next micro-batch 158s
+  [PROGRESS] 750 events | 50 machines | 0 spikes | next micro-batch 97s
+  [PROGRESS] 800 events | 50 machines | 0 spikes | next micro-batch 38s
+
+================================================================================
+  MICRO-BATCH #1 - 2026-04-30 08:19:34 | 50 machines | Tier 2
+================================================================================
+  [SELECT] 36/50 machines for LLM
+    M-2   risk=?        cause=?               action=?
+    M-3   risk=?        cause=?               action=?
+    M-5   risk=?        cause=?               action=?
+    M-6   risk=?        cause=?               action=?
+    M-7   risk=?        cause=?               action=?
+    M-8   risk=?        cause=?               action=?
+    M-9   risk=?        cause=?               action=?
+    M-10  risk=?        cause=?               action=?
+    M-13  risk=?        cause=?               action=?
+    M-14  risk=?        cause=?               action=?
+    M-15  risk=?        cause=?               action=?
+    M-16  risk=?        cause=?               action=?
+    M-18  risk=?        cause=?               action=?
+    M-19  risk=?        cause=?               action=?
+    M-23  risk=?        cause=?               action=?
+    M-24  risk=?        cause=?               action=?
+    M-25  risk=?        cause=?               action=?
+    M-26  risk=?        cause=?               action=?
+    M-28  risk=?        cause=?               action=?
+    M-30  risk=?        cause=?               action=?
+    M-31  risk=?        cause=?               action=?
+    M-32  risk=?        cause=?               action=?
+    M-33  risk=?        cause=?               action=?
+    M-34  risk=?        cause=?               action=?
+    M-35  risk=?        cause=?               action=?
+    M-37  risk=?        cause=?               action=?
+    M-38  risk=?        cause=?               action=?
+    M-39  risk=?        cause=?               action=?
+    M-41  risk=MEDIUM   cause=?               action=?
+    M-42  risk=?        cause=?               action=?
+    M-43  risk=?        cause=?               action=?
+    M-46  risk=?        cause=?               action=?
+    M-47  risk=?        cause=?               action=?
+    M-48  risk=?        cause=?               action=?
+    M-49  risk=?        cause=?               action=?
+    M-50  risk=?        cause=?               action=?
+  [DONE] 36 LLM calls
+
+  [SAVED] microbatch_20260430_092717.json
+
+================================================================================
+  MICRO-BATCH #2 - 2026-04-30 09:27:21 | 50 machines | Tier 2
+================================================================================
+  [SELECT] 36/50 machines for LLM
+    M-2   risk=?        cause=?               action=?
+    M-3   risk=?        cause=?               action=?
+    M-5   risk=?        cause=electrical      action=?
+    M-6   risk=LOW      cause=?               action=?
+    M-7   risk=?        cause=?               action=?
+    M-8   risk=?        cause=?               action=?
+    M-9   risk=?        cause=?               action=?
+    M-10  risk=?        cause=?               action=?
+    M-13  risk=?        cause=?               action=?
+    M-14  risk=?        cause=?               action=?
+    M-15  risk=?        cause=?               action=?
+    M-16  risk=?        cause=?               action=?
+    M-18  risk=?        cause=?               action=?
+    M-19  risk=?        cause=?               action=?
+    M-23  risk=?        cause=?               action=?
+    M-24  risk=?        cause=?               action=?
+    M-25  risk=?        cause=?               action=?
+    M-26  risk=?        cause=?               action=?
+    M-28  risk=?        cause=?               action=?
+    M-30  risk=LOW      cause=?               action=?
+    M-31  risk=?        cause=?               action=?
+    M-32  risk=?        cause=?               action=schedule_maintenance
+    M-33  risk=?        cause=?               action=?
+    M-34  risk=?        cause=?               action=?
+    M-35  risk=?        cause=?               action=?
+    M-37  risk=?        cause=?               action=?
+    M-38  risk=?        cause=?               action=?
+    M-39  risk=?        cause=?               action=?
+    M-41  risk=?        cause=?               action=?
+    M-42  risk=?        cause=?               action=?
+    M-43  risk=?        cause=?               action=?
+    M-46  risk=?        cause=?               action=?
+    M-47  risk=?        cause=?               action=?
+    M-48  risk=?        cause=?               action=?
+    M-49  risk=?        cause=?               action=?
+    M-50  risk=?        cause=?               action=?
+  [DONE] 36 LLM calls
+
+  [SAVED] microbatch_20260430_110809.json
+
+================================================================================
+  MICRO-BATCH #3 - 2026-04-30 11:08:13 | 50 machines | Tier 2
+================================================================================
+  [SELECT] 36/50 machines for LLM
+    M-2   risk=?        cause=?               action=?
+    M-3   risk=?        cause=?               action=?
+    M-5   risk=?        cause=?               action=?
+    M-6   risk=?        cause=?               action=?
+    M-7   risk=?        cause=?               action=?
+    M-8   risk=?        cause=?               action=?
+    M-9   risk=?        cause=?               action=?
+    M-10  risk=?        cause=?               action=?
+    M-13  risk=?        cause=?               action=?
+    M-14  risk=?        cause=?               action=?
+    M-15  risk=?        cause=electrical      action=?
+    M-16  risk=?        cause=?               action=?
+    M-18  risk=?        cause=?               action=?
+    M-19  risk=?        cause=?               action=?
+    M-23  risk=?        cause=overheating     action=?
+    M-24  risk=?        cause=?               action=?
+    M-25  risk=?        cause=?               action=?
+    M-26  risk=?        cause=?               action=?
+    M-28  risk=?        cause=normal          action=?
+    M-30  risk=?        cause=?               action=?
+    M-31  risk=?        cause=?               action=?
+    M-32  risk=?        cause=?               action=?
+    M-33  risk=?        cause=?               action=?
+    M-34  risk=?        cause=?               action=?
+    M-35  risk=?        cause=?               action=?
+    M-37  risk=?        cause=?               action=?
+    M-38  risk=?        cause=?               action=?
+    M-39  risk=?        cause=?               action=?
+    M-41  risk=?        cause=?               action=?
+    M-42  risk=?        cause=?               action=?
+    M-43  risk=?        cause=?               action=?
+    M-46  risk=?        cause=?               action=?
+    M-47  risk=?        cause=?               action=?
+    M-48  risk=?        cause=?               action=?
+    M-49  risk=?        cause=?               action=?
+    M-50  risk=?        cause=?               action=?
+  [DONE] 36 LLM calls
+
+  [SAVED] microbatch_20260430_125908.json
+
+================================================================================
+  MICRO-BATCH #4 - 2026-04-30 12:59:12 | 50 machines | Tier 2
+================================================================================
+  [SELECT] 36/50 machines for LLM
+    M-2   risk=?        cause=?               action=?
+    M-3   risk=?        cause=?               action=?
+    M-5   risk=?        cause=?               action=?
