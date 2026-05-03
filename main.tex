@@ -1,0 +1,96 @@
+\documentclass[11pt]{report}
+
+\input{structures/libraries}
+
+
+% --- Document Start ---
+\begin{document}
+
+% --- Front Matter: Roman numeral page numbering ---
+\pagenumbering{roman}
+
+% --- Title Page (no page number) ---
+\thispagestyle{empty}
+\input{structures/title}
+
+% --- Approval Page ---
+\newpage
+\input{structures/approval_form}
+
+% --- Table of Contents ---
+\newpage
+\input{structures/table_of_content}
+
+% --- List of Tables and Figures ---
+\newpage
+\input{structures/list_table_figure}
+
+% --- Abstracts ---
+\newpage
+\chapter*{Abstract}
+\input{structures/kor_abstract}
+
+\newpage
+\chapter*{Abstract}
+\input{structures/eng_abstract}
+
+% --- Switch to Arabic page numbering for main text ---
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% --- Main Text ---
+\chapter{Introduction}
+\input{structures/introduction}
+
+% ------ Literature Review ------------------%
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\chapter{Literature Review}
+\input{structures/related_works}
+\renewcommand{\thechapter}{\arabic{chapter}}
+\renewcommand{\thesection}{\thechapter.\arabic{section}}
+
+% ------ methods ------------------%
+\chapter{Quantum-Agentic Smart Manufacturing Framework}
+\input{structures/method}
+
+% ------ Chapter 4 ------------------%
+\chapter{Data Ingestion and Spatio-Temporal Modeling using Temporal Graph Convolutional Networks}
+\label{chap:tgcn}
+\input{structures/experimental}
+
+% ------ Chapter 5 ------------------%
+\chapter{Multi-Agent System for Monitoring, Diagnosis, Planning, and Action}
+\label{chap:agentic}
+\input{structures/analysis_discussion}
+
+% ------ Chapter 6 ------------------%
+\chapter{Quantum Approaches for Optimizing Maintenance Scheduling}
+\label{chap:quantum}
+\input{structures/chapter6}
+
+% ------ Chapter 7 ------------------%
+\chapter{Conclusions and Future Work}
+\label{chap:conclusion}
+\input{structures/conclusion}
+
+% --- References ---
+\newpage
+\input{structures/references}
+
+% --- Appendices ---
+\input{structures/appendix}
+
+% --- Acknowledgements ---
+\newpage
+\chapter*{Acknowledgements}
+\input{structures/acknowledgment}
+
+% --- List of Publications ---
+\newpage
+\chapter*{List of Publications}
+\input{structures/publication_list}
+
+
+\end{document}
